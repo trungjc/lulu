@@ -1,0 +1,125 @@
+
+
+
+
+
+
+
+.zoom-section { 
+	display:inline;
+        float: left;
+        width: 500px;
+      margin-bottom: 40px;
+        
+	
+}
+/* Feature descriptions in ZoomEngine page */
+.zoom-desc {
+	float:left;	
+	width:250px;
+	margin-left: 5px;
+
+}
+.zoom-desc h3 {
+	font-family:  serif;
+        font-size: 14px;
+        font-weight: 400px;
+        text-shadow: 2xz 1px 2px #000000;
+        color:  #222;
+        padding-left: 5px;
+}
+.zoom-small-image {
+
+	float:left;
+	margin-bottom:5px;
+        margin-left: -5px;
+        
+}
+.zoom-tiny-image {
+	border:1px solid #CCC;
+	margin:0px;
+	
+}
+.zoom-tiny-image:hover {
+	
+}
+
+
+
+
+
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	
+	cursor:move;		
+}
+
+/* This is for the title text. */
+.cloud-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+	overflow:hidden;
+}
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+
+	overflow:hidden;
+	-webkit-box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.25);
+	box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.25);
+	
+	
+
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+}
+
+
+
+.product-info .image-additional ul li{width:80px; float:left; margin-right:10px;list-style:none;}
+.product-info .image-additional ul li.last{margin-right:0}
+.product-info .image-additional .jcarousel-skin-opencart .jcarousel-container-horizontal{
+	padding-bottom:16px;
+	
+}
+.product-info .image-additional .jcarousel-skin-opencart .jcarousel-item{
+}
+
+.product-info .image-additional .jcarousel-skin-opencart .jcarousel-item img{
+	width:78px;
+	height:78px;
+}
+.product-info .image-additional .jcarousel-skin-opencart .jcarousel-prev-horizontal{
+	background: url("../../image/sft_quickshop/but_info_pre.png") no-repeat center center;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    width: 32px;
+	left: 5px;
+    top: 78px !important;
+}
+.product-info .image-additional .jcarousel-skin-opencart .jcarousel-next-horizontal{
+	 background: url("../../image/sft_quickshop/but_info_next.png") no-repeat center center;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    width: 32px;
+	right: -4px !important;
+    top: 78px !important;
+}
+

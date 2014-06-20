@@ -1,0 +1,135 @@
+---------- Date: 2014-06-20 09:01:45 ~ IP : ::1 ----------
+REQUEST URI : /lulu/
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/themutli_heademenu.xml
+   id        : Header Menu
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : TMD(opencartextensions.in)
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php } ?>
+    </li>
+    <?php } ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-06-20 09:02:55 ~ IP : ::1 ----------
+REQUEST URI : /lulu/
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/themutli_heademenu.xml
+   id        : Header Menu
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : TMD(opencartextensions.in)
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php foreach ($categories as $category) { ?>
+    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+      <?php if ($category['children']) { ?>
+      <div>
+        <?php for ($i = 0; $i < count($category['children']);) { ?>
+        <ul>
+          <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
+          <?php for (; $i < $j; $i++) { ?>
+          <?php if (isset($category['children'][$i])) { ?>
+          <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+          <?php } ?>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+      </div>
+      <?php } ?>
+    </li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-06-20 09:03:06 ~ IP : ::1 ----------
+REQUEST URI : /lulu/
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/themutli_heademenu.xml
+   id        : Header Menu
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : TMD(opencartextensions.in)
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php foreach ($categories as $category) { ?>
+    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+      <?php if ($category['children']) { ?>
+      <div>
+        <?php for ($i = 0; $i < count($category['children']);) { ?>
+        <ul>
+          <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
+          <?php for (; $i < $j; $i++) { ?>
+          <?php if (isset($category['children'][$i])) { ?>
+          <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+          <?php } ?>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+      </div>
+      <?php } ?>
+    </li>
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-06-20 09:06:27 ~ IP : ::1 ----------
+REQUEST URI : /lulu/
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/themutli_heademenu.xml
+   id        : Header Menu
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : TMD(opencartextensions.in)
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): </li>
+    <?php } ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-06-20 09:06:43 ~ IP : ::1 ----------
+REQUEST URI : /lulu/
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/themutli_heademenu.xml
+   id        : Header Menu
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : TMD(opencartextensions.in)
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): </li>
+    <?php } ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-06-20 09:13:12 ~ IP : ::1 ----------
+REQUEST URI : /lulu/
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/themutli_heademenu.xml
+   id        : Header Menu
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : TMD(opencartextensions.in)
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): </li>
+    <?php } ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-06-20 09:13:46 ~ IP : ::1 ----------
+REQUEST URI : /lulu/
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/themutli_heademenu.xml
+   id        : Header Menu
+   version   : 1.4.x and 1.5.x
+   vqmver    : 2.4.0
+   author    : TMD(opencartextensions.in)
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php } echo ""; ?>
+----------------------------------------------------------------------
+
+

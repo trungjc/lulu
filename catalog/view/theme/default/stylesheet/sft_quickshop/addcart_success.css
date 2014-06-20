@@ -1,0 +1,68 @@
+﻿
+/* notification */
+
+
+
+#lightbox {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background: #fff;
+	z-index: 1001;
+	display: none;
+	padding: 15px;
+	z-index: 1001;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0, 0, 30px, #000;
+	-moz-box-shadow: 0, 0, 30px, #000;
+	-o-box-shadow: 0, 0, 30px, #000;
+	box-shadow: 0, 0, 30px, #000;
+}
+#lightbox-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+	z-index: 1000;
+	display: none;
+	cursor:pointer;
+}
+
+
+#lightbox-close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	cursor: pointer;
+}
+#lightbox p {
+	margin: 0 0 0.3em 0;
+	line-height: 1.3em;
+}
+
+#lightbox-image.loading {
+	
+	
+}
+
+
+.addcart_success h2.sft_icon_success{
+    
+	font-family:Arial;
+	background:url(../../image/sft_quickshop/add_success.png) no-repeat;
+	border-bottom: 1px solid #f5f5f5;
+	padding-left:20px;
+}
+.addcart_success .content{width:250px;}
+.addcart_success .content h3{float:right; width:170px; }
