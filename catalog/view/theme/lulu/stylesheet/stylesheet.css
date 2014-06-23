@@ -636,15 +636,21 @@ table.radio tr.highlight:hover td {
 	padding-top: 3px;
 }
 /* button */
+.name {
+    min-height: 42px;
+}
 a.button, input.button,.quickview {
-	cursor: pointer;
-	color: #FFFFFF;
-	line-height: 12px;
-	font-family: Brandon, Helvetica, sans-serif;
-	font-size: 13px;
-        padding: 0 5px;
-        text-transform: uppercase;
-	background: #000;
+	 background: none repeat scroll 0 0 #000;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Brandon,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 19px;
+    line-height: 20px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    vertical-align: middle;
 }
 .cart .wishlist {
     display:inline-block;
@@ -665,7 +671,7 @@ a.button, input.button,.quickview {
     height: 20px;
     padding: 0;
     vertical-align: middle;
-    margin: 0 2px;
+    margin: 0 5px;
     width: 60px;
     background: url('../image/button.png')no-repeat;
 }
@@ -742,9 +748,9 @@ a.button:hover, input.button:hover {
 }
 /* box */
 .box {
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
-.box .box-heading {
+.box .box-heading.withLine {
 	position: relative;text-align: center;
 	padding: 8px 10px 7px 10px;
 	font-family: Brandon, Helvetica, sans-serif;
@@ -939,8 +945,8 @@ ul.box-filter > li ul {
 /* product */
 .product-filter {
 	border-bottom: 1px solid #EEEEEE;
-	padding-bottom: 5px;
-	overflow: auto;
+	padding-bottom: 15px;
+        min-height: 40px;
 }
 .product-filter .display {
 	margin-right: 15px;
@@ -1047,14 +1053,14 @@ ul.box-filter > li ul {
 }
 .product-grid {
 	width: 100%;
-	overflow: auto;
+	overflow: auto;text-align: center
 }
 .product-grid > div {
-	width: 130px;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 20px;
-	margin-bottom: 15px;
+	   display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 4px;
+    vertical-align: top;
+    width: 190px;
 }
 #column-left + #column-right + #content .product-grid > div {
 	width: 125px;
@@ -1064,11 +1070,8 @@ ul.box-filter > li ul {
 	margin-bottom: 0px;
 }
 .product-grid .image img {
-	padding: 3px;
-	border: 1px solid #E7E7E7;
 }
 .product-grid .name a {
-	color: #000;
 	font-family: "BrandonBold",Helvetica,sans-serif;
 	text-decoration: none;
 	display: block;
@@ -1084,7 +1087,6 @@ ul.box-filter > li ul {
 .product-grid .price {
 	display: block;
 	font-family: "BrandonBold",Helvetica,sans-serif;
-	color: #333333;
 	margin-bottom: 4px;
 }
 .product-grid .price-old {
@@ -1103,20 +1105,7 @@ ul.box-filter > li ul {
 .product-grid .wishlist, .product-grid .compare {
 	margin-bottom: 3px;
 }
-.product-grid .wishlist a {
-	color: #333333;
-	text-decoration: none;
-	padding-left: 18px;
-	display: block;
-	background: url('image/add.png') left center no-repeat;
-}
-.product-grid .compare a {
-	color: #333333;
-	text-decoration: none;
-	padding-left: 18px;
-	display: block;
-	background: url('image/add.png') left center no-repeat;
-}
+
 /* Product */
 .product-info {
 	overflow: auto;
@@ -1750,14 +1739,13 @@ ul.box-filter > li ul {
 .banner div {
 	text-align: center;
 	width: 100%;
-	display: none; max-height: 360px;
+	display: none; 
 }
 .banner div img {
 	margin-bottom: 20px;
-        max-height: 360px;
 }
 #banner1,#banner2,#banner3 {
         float: left;
         width: 33.3333%;
-    
+        margin:20px 0;
 }

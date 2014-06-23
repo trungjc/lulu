@@ -145,7 +145,7 @@ class ControllerProductCategory extends Controller {
 			);
 
 			if ($category_info['image']) {
-				$this->data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('config_image_category_width'), $this->config->get('config_image_category_height'));
+				$this->data['thumb'] = $this->model_tool_image->resize($category_info['image'],980,218);
 			} else {
 				$this->data['thumb'] = '';
 			}
@@ -203,7 +203,7 @@ class ControllerProductCategory extends Controller {
 			$product_total = $this->model_catalog_product->getTotalProducts($data); 
 
 			$results = $this->model_catalog_product->getProducts($data);
-
+                            
 			foreach ($results as $result) {
 				if ($result['image']) {
 					$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
@@ -245,7 +245,7 @@ class ControllerProductCategory extends Controller {
 					'tax'         => $tax,
 					'rating'      => $result['rating'],
 					'manufacturers' => $result['manufacturer'],
-				'href_manufacter'    	 =>  $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id']),
+                                        'href_manufacter'    	 =>  $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $result['manufacturer_id']),
 			
 					'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
 					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)

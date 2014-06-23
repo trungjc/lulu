@@ -46,4 +46,15 @@ OpenCart is open source software and you are free to remove the powered by OpenC
 Please donate via PayPal to donate@opencart.com
 //-->
 </div>
+
+<script type="text/javascript" src="catalog/view/theme/lulu/js/jquery.selectbox-0.1.3.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="catalog/view/theme/lulu/stylesheet/jquery.selectbox.css" >
+<script type="text/javascript">
+    jQuery(document).ready(function(){ 
+        jQuery('select').selectbox();
+    })
+     
+    
+</script>
 </body></html>

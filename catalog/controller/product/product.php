@@ -102,7 +102,8 @@ class ControllerProductProduct extends Controller {
 			}
 
 			$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($this->request->get['manufacturer_id']);
-
+                       
+                        $this->data['thumb-manufacture']    =   $manufacturer_info["image"];
 			if ($manufacturer_info) {
 				$this->data['breadcrumbs'][] = array(
 					'text'	    => $manufacturer_info['name'],
@@ -234,7 +235,12 @@ class ControllerProductProduct extends Controller {
 			$this->document->addStyle('catalog/view/javascript/jquery/colorbox/colorbox.css');
 
 			$this->data['heading_title'] = $product_info['name'];
-$this->data['thumb_category']    =   $category_info["image"];
+                        if(isset($category_info)){
+                           $this->data['thumb_category']    =   $category_info["image"]; 
+                        }
+                         if(isset($manufacturer_info)){
+                           $this->data['thumb_manufacturer']    =   $manufacturer_info["image"]; 
+                        }
 			$this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');

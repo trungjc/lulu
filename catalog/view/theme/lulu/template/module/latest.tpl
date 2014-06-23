@@ -1,5 +1,5 @@
 <div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div> <hr/>
+  <div class="box-heading withLine "><?php echo $heading_title; ?></div> <hr/>
   <div class="box-content">
     <div class="box-product">
       <?php foreach ($products as $product) { ?>

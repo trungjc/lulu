@@ -101,3 +101,45 @@
 2014-06-23 13:11:30 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
 2014-06-23 13:13:15 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
 2014-06-23 13:14:55 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 8
+2014-06-23 8:21:04 - PHP Warning:  Missing argument 2 for ModelToolImage::resize(), called in D:\xampp\htdocs\lulu\catalog\controller\product\category.php on line 148 and defined in D:\xampp\htdocs\lulu\catalog\model\tool\image.php on line 14
+2014-06-23 8:21:04 - PHP Warning:  Missing argument 3 for ModelToolImage::resize(), called in D:\xampp\htdocs\lulu\catalog\controller\product\category.php on line 148 and defined in D:\xampp\htdocs\lulu\catalog\model\tool\image.php on line 14
+2014-06-23 8:21:04 - PHP Notice:  Undefined variable: width in D:\xampp\htdocs\lulu\catalog\model\tool\image.php on line 24
+2014-06-23 8:21:04 - PHP Notice:  Undefined variable: height in D:\xampp\htdocs\lulu\catalog\model\tool\image.php on line 24
+2014-06-23 8:21:04 - PHP Notice:  Undefined variable: width in D:\xampp\htdocs\lulu\catalog\model\tool\image.php on line 41
+2014-06-23 8:21:04 - PHP Notice:  Undefined variable: width in D:\xampp\htdocs\lulu\catalog\model\tool\image.php on line 43
+2014-06-23 8:21:04 - PHP Notice:  Undefined variable: height in D:\xampp\htdocs\lulu\catalog\model\tool\image.php on line 43
+2014-06-23 8:21:04 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\xampp\htdocs\lulu\system\library\image.php on line 86
+2014-06-23 8:21:04 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\system\library\image.php on line 89
+2014-06-23 8:21:04 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\system\library\image.php on line 90
+2014-06-23 8:21:04 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\system\library\image.php on line 91
+2014-06-23 8:21:04 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\system\library\image.php on line 92
+2014-06-23 8:21:04 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\system\library\image.php on line 97
+2014-06-23 8:21:04 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\system\library\image.php on line 99
+2014-06-23 8:23:20 - PHP Notice:  Use of undefined constant auto - assumed 'auto' in D:\xampp\htdocs\lulu\catalog\controller\product\category.php on line 148
+2014-06-23 8:23:20 - PHP Warning:  imagecreatetruecolor() expects parameter 2 to be long, string given in D:\xampp\htdocs\lulu\system\library\image.php on line 86
+2014-06-23 8:23:20 - PHP Warning:  imagealphablending() expects parameter 1 to be resource, null given in D:\xampp\htdocs\lulu\system\library\image.php on line 89
+2014-06-23 8:23:20 - PHP Warning:  imagesavealpha() expects parameter 1 to be resource, null given in D:\xampp\htdocs\lulu\system\library\image.php on line 90
+2014-06-23 8:23:20 - PHP Warning:  imagecolorallocatealpha() expects parameter 1 to be resource, null given in D:\xampp\htdocs\lulu\system\library\image.php on line 91
+2014-06-23 8:23:20 - PHP Warning:  imagecolortransparent() expects parameter 1 to be resource, null given in D:\xampp\htdocs\lulu\system\library\image.php on line 92
+2014-06-23 8:23:20 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, null given in D:\xampp\htdocs\lulu\system\library\image.php on line 97
+2014-06-23 8:23:20 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, null given in D:\xampp\htdocs\lulu\system\library\image.php on line 99
+2014-06-23 8:30:30 - PHP Warning:  Division by zero in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 15
+2014-06-23 9:00:39 - PHP Notice:  Undefined variable: base in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 3
+2014-06-23 9:21:13 - PHP Notice:  Undefined variable: category_info in D:\xampp\htdocs\lulu\catalog\controller\product\product.php on line 237
+2014-06-23 9:27:32 - PHP Notice:  Undefined variable: category_info in D:\xampp\htdocs\lulu\catalog\controller\product\product.php on line 238
+2014-06-23 9:29:09 - PHP Notice:  Undefined variable: thumb_category in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 2
+2014-06-23 9:31:41 - PHP Notice:  Undefined variable: thumb_category in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 2
+2014-06-23 9:32:38 - PHP Notice:  Undefined variable: thumb_category in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 2
+2014-06-23 9:36:43 - PHP Notice:  Undefined variable: thumb_category in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 2
+2014-06-23 9:39:07 - PHP Notice:  Undefined variable: thumb_manufacturer in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 5
+2014-06-23 9:39:30 - PHP Notice:  Undefined variable: thumb_manufacturer in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 5
+2014-06-23 9:39:38 - PHP Notice:  Undefined variable: thumb_manufacturer in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 5
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67

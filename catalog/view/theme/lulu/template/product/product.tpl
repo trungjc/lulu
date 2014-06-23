@@ -1,11 +1,19 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
-  <div class="breadcrumb">
+<?php echo $header; ?>
+ <?php if (isset($thumb_category)) { ?>
+    <div class="category-image"><img src="<?php echo HTTP_SERVER ; ?>/image/<?php echo $thumb_category; ?>" alt="<?php echo $heading_title; ?>" /></div>
+    <?php } ?>
+    <?php if (isset($thumb_manufacturer)) { ?>
+    <div class="category-image"><img src="<?php echo HTTP_SERVER ; ?>/image/<?php echo $thumb_manufacturer; ?>" alt="<?php echo $heading_title; ?>" /></div>
+    <?php } ?>
+    <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title;  echo $thumb_category; ?></h1>
+<?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content"><?php echo $content_top; ?>
+
+  <h1><?php echo $heading_title;   ?></h1>
   <div class="product-info">
     <?php  if ($thumb || $images) { ?>
     <div class="left">

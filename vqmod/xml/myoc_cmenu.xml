@@ -35,7 +35,7 @@
                     'parent_category_id' => 0,
                 );
                 $cmenus = $cmenu_installed ? $this->model_myoc_cmenu->getCmenus($data) : array();
-                //$cmenus = array_merge($cmenus, $categories);
+                $cmenus = array_merge($cmenus, $categories);
                 
                 usort($cmenus, array(get_class($this), 'sortCatCmenu'));
 

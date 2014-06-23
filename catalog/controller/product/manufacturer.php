@@ -125,7 +125,11 @@ class ControllerProductManufacturer extends Controller {
 		);
 
 		$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($manufacturer_id);
-
+                if ($manufacturer_info['image']) {
+				$this->data['thumb'] = $this->model_tool_image->resize($manufacturer_info['image'],980,218);
+			} else {
+				$this->data['thumb'] = '';
+			}
 		if ($manufacturer_info) {
 			$this->document->setTitle($manufacturer_info['name']);
 			$this->document->addScript('catalog/view/javascript/jquery/jquery.total-storage.min.js');
