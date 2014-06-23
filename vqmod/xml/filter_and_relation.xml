@@ -1,0 +1,68 @@
+<modification>
+	<id>Filter And Relation</id>
+	<version>1.5.5.1</version>
+	<vqmver>2.2.1</vqmver>
+	<author>Istvan Dobrentei, http://www.dobrenteiistvan.hu</author>
+	<file name="catalog/model/catalog/product.php">
+		<operation>
+			<search position="replace" offset="10" index="2,4"><![CDATA[if (!empty($data['filter_filter'])) {]]></search>
+			<add><![CDATA[
+				if (!empty($data['filter_filter'])) 
+				{
+					$sql .= $this->createFilterSql($data['filter_filter']);
+				}
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[public function getTotalProductSpecials() {]]></search>
+			<add><![CDATA[
+					public function createFilterSql($filter)
+					{
+						$temp = array('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','x','y','v','z');
+						$sql = " AND p.product_id IN (SELECT a.product_id FROM " . DB_PREFIX . "product_filter a";
+						$filters = explode(',', $filter);
+						$groups = array();
+						foreach ($filters as $filter_id) 
+						{
+							$implode[] = (int)$filter_id;
+						}
+						$query = $this->db->query("SELECT filter_id, filter_group_id FROM " . DB_PREFIX . "filter WHERE filter_id IN (" . implode(',', $implode) . ")");
+						if($query->rows)
+						{
+							foreach($query->rows as $row)
+							{
+								if(!in_array($row['filter_group_id'], $groups))
+								{
+									array_push($groups, $row['filter_group_id']);
+								}
+							}
+							for($i=1;$i <= count($groups);$i++)
+							{
+								$condition_id = array();
+								foreach($query->rows as $row)
+								{
+									if($groups[$i-1] == $row['filter_group_id'])
+									{
+										array_push($condition_id, (int)$row['filter_id']);
+									}
+								}
+								if($i == count($groups))
+								{
+									$sql .= " WHERE filter_id='" . implode("' OR filter_id='", $condition_id) . "'";
+								}
+								else
+								{
+									$sql .= " INNER JOIN (SELECT product_id FROM " . DB_PREFIX . "product_filter 
+										WHERE filter_id='" . implode("' OR filter_id='", $condition_id) . "' ) " . $temp[$i] . " 
+										ON " . $temp[$i-1] . ".product_id=" . $temp[$i] . ".product_id";	
+								}
+							}
+							$sql .= " GROUP BY product_id)";
+						}
+						
+						return $sql;
+					}
+			]]></add>
+		</operation>
+	</file>
+</modification>

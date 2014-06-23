@@ -91,3 +91,6 @@
 2014-06-20 10:25:07 - PHP Notice:  Undefined variable: button_wishlist in D:\xampp\htdocs\lulu\catalog\view\theme\default\template\module\featured.tpl on line 27
 2014-06-20 10:25:07 - PHP Notice:  Undefined variable: button_wishlist in D:\xampp\htdocs\lulu\catalog\view\theme\default\template\module\featured.tpl on line 27
 2014-06-20 10:25:07 - PHP Notice:  Undefined variable: button_wishlist in D:\xampp\htdocs\lulu\catalog\view\theme\default\template\module\featured.tpl on line 27
+2014-06-23 6:17:52 - PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 207
+2014-06-23 6:17:52 - PHP Warning:  usort() expects parameter 1 to be array, null given in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 209
+2014-06-23 6:17:52 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 211
