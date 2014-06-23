@@ -42,7 +42,7 @@ class ControllerProductProduct extends Controller {
 
 			// Set the last category breadcrumb
 			$category_info = $this->model_catalog_category->getCategory($category_id);
-
+                        $this->data['thumb-category']    =   $category_info["image"];
 			if ($category_info) {
 				$url = '';
 
@@ -67,8 +67,12 @@ class ControllerProductProduct extends Controller {
 					'href'      => $this->url->link('product/category', 'path=' . $this->request->get['path'].$url),
 					'separator' => $this->language->get('text_separator')
 				);
+                                 
 			}
 		}
+                
+                
+
 
 		$this->load->model('catalog/manufacturer');
 
@@ -230,7 +234,7 @@ class ControllerProductProduct extends Controller {
 			$this->document->addStyle('catalog/view/javascript/jquery/colorbox/colorbox.css');
 
 			$this->data['heading_title'] = $product_info['name'];
-
+$this->data['thumb_category']    =   $category_info["image"];
 			$this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');
@@ -293,7 +297,7 @@ class ControllerProductProduct extends Controller {
 			} else {
 				$this->data['popup'] = '';
 			}
-
+                       
 			if ($product_info['image']) {
 				$this->data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
 			} else {
@@ -429,6 +433,7 @@ class ControllerProductProduct extends Controller {
 				$this->data['products'][] = array(
 					'product_id' => $result['product_id'],
 					'thumb'   	 => $image,
+                                         
 					'name'    	 => $result['name'],
 					'price'   	 => $price,
 					'special' 	 => $special,
@@ -555,7 +560,7 @@ class ControllerProductProduct extends Controller {
 				'common/footer',
 				'common/header'
 			);
-
+                        
 			$this->response->setOutput($this->render());
 		}
 	}

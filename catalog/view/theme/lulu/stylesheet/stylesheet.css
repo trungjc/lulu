@@ -182,13 +182,16 @@ label {
 #header #cart .heading h4 {
 	color: #333333;
 	font-size: 15px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	margin-top: 0px;
 	margin-bottom: 3px;
 }
 #header #cart .heading a {
 	color: #38B0E3;
 	text-decoration: none;
+}
+b, strong,h1,h2,h3,h4,h5 {
+    font-family: "BrandonBold",Helvetica,sans-serif;font-weight: normal;
 }
 #header #cart .heading a span {
 	background: #FFFFFF url('image/arrow-down.png') 100% 50% no-repeat;
@@ -517,7 +520,7 @@ label {
 }
 .required {
 	color: #FF0000;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .error {
 	display: block;
@@ -565,7 +568,7 @@ table.list thead td {
 table.list thead td a, .list thead td {
 	text-decoration: none;
 	color: #222222;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 table.list tbody td {
 	padding: 0px 5px;
@@ -717,7 +720,7 @@ a.button:hover, input.button:hover {
 	float: left;
 	font-family: Brandon, Helvetica, sans-serif;
 	font-size: 13px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	text-align: center;
 	text-decoration: none;
 	color: #000000;
@@ -843,7 +846,7 @@ ul.box-category > li ul {
 	display: none;
 }
 ul.box-category > li a.active {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 ul.box-category > li a.active + ul {
 	display: block;
@@ -856,7 +859,7 @@ ul.box-category > li ul > li > a {
 	display: block;
 }
 ul.box-category > li ul > li > a.active {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 /* box filter */
 ul.box-filter, ul.box-filter ul {
@@ -865,7 +868,7 @@ ul.box-filter, ul.box-filter ul {
 	padding: 0;
 }
 ul.box-filter span {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	border-bottom: 1px solid #EEEEEE;	
 	display: block;
 	padding-bottom: 5px;
@@ -918,7 +921,7 @@ ul.box-filter > li ul {
 .manufacturer-heading {
 	background: #F8F8F8;
 	font-size: 15px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	padding: 5px 8px;
 	margin-bottom: 6px;
 }
@@ -946,7 +949,7 @@ ul.box-filter > li ul {
 	color: #333;
 }
 .product-filter .display a {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-filter .sort {
 	float: right;
@@ -960,11 +963,11 @@ ul.box-filter > li ul {
 .product-compare {
 	padding-top: 6px;
 	margin-bottom: 25px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-compare a {
 	text-decoration: none;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-list > div {
 	overflow: auto;
@@ -991,7 +994,7 @@ ul.box-filter > li ul {
 }
 .product-list .name a {
 	color: #38B0E3;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	text-decoration: none;
 }
 .product-list .description {
@@ -1015,7 +1018,7 @@ ul.box-filter > li ul {
 	text-decoration: line-through;
 }
 .product-list .price-new {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-list .price-tax {
 	font-size: 12px;
@@ -1066,7 +1069,7 @@ ul.box-filter > li ul {
 }
 .product-grid .name a {
 	color: #000;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	text-decoration: none;
 	display: block;
 	margin-bottom: 4px;
@@ -1080,7 +1083,7 @@ ul.box-filter > li ul {
 }
 .product-grid .price {
 	display: block;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	color: #333333;
 	margin-bottom: 4px;
 }
@@ -1089,7 +1092,7 @@ ul.box-filter > li ul {
 	text-decoration: line-through;
 }
 .product-grid .price-new {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-grid .price .price-tax {
 	display: none;
@@ -1169,7 +1172,7 @@ ul.box-filter > li ul {
 	padding: 0px 5px 10px 5px;
 	margin-bottom: 10px;
 	font-size: 15px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	color: #333333;
 }
 .product-info .price-old {
@@ -1280,13 +1283,13 @@ ul.box-filter > li ul {
 .attribute thead td, .attribute thead tr td:first-child {
 	color: #000000;
 	font-size: 14px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	background: #F7F7F7;
 	text-align: left;
 }
 .attribute tr td:first-child {
 	color: #000000;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	text-align: right;
 	width: 20%;
 }
@@ -1308,13 +1311,13 @@ ul.box-filter > li ul {
 .compare-info thead td, .compare-info thead tr td:first-child {
 	color: #000000;
 	font-size: 14px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	background: #F7F7F7;
 	text-align: left;
 }
 .compare-info tr td:first-child {
 	color: #000000;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	text-align: right;
 }
 .compare-info td {
@@ -1327,15 +1330,15 @@ ul.box-filter > li ul {
 	border-bottom: 1px solid #DDDDDD;
 }
 .compare-info .name a {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .compare-info .price-old {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	color: #F00;
 	text-decoration: line-through;
 }
 .compare-info .price-new {
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 /* wishlist */
 .wishlist-info table {
@@ -1351,7 +1354,7 @@ ul.box-filter > li ul {
 }
 .wishlist-info thead td {
 	color: #4D4D4D;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	background-color: #F7F7F7;
 	border-bottom: 1px solid #DDDDDD;
 }
@@ -1433,7 +1436,7 @@ ul.box-filter > li ul {
 }
 .order-detail {
 	background: #EFEFEF;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 /* returns */
 .return-list {
@@ -1547,7 +1550,7 @@ ul.box-filter > li ul {
 }
 .cart-info thead td {
 	color: #4D4D4D;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	background-color: #F7F7F7;
 	border-bottom: 1px solid #DDDDDD;
 }
@@ -1583,7 +1586,7 @@ ul.box-filter > li ul {
 }
 .cart-info tbody span.stock {
 	color: #F00;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .cart-module > div {
 	display: none;
@@ -1606,7 +1609,7 @@ ul.box-filter > li ul {
 	background: #F8F8F8;
 	border: 1px solid #DBDEE1;
 	padding: 8px;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	font-size: 13px;
 	color: #555555;
 	margin-bottom: 15px;
@@ -1646,7 +1649,7 @@ ul.box-filter > li ul {
 }
 .checkout-product thead td {
 	color: #4D4D4D;
-	font-weight: bold;
+	font-family: "BrandonBold",Helvetica,sans-serif;
 	background-color: #F7F7F7;
 	border-bottom: 1px solid #DDDDDD;
 }

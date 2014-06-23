@@ -5,9 +5,9 @@
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?></h1>
+  <h1><?php echo $heading_title;  echo $thumb_category; ?></h1>
   <div class="product-info">
-    <?php if ($thumb || $images) { ?>
+    <?php  if ($thumb || $images) { ?>
     <div class="left">
       <?php if ($thumb) { ?>
       <div class="image"><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a></div>

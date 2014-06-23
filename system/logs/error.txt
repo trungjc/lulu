@@ -94,3 +94,10 @@
 2014-06-23 6:17:52 - PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 207
 2014-06-23 6:17:52 - PHP Warning:  usort() expects parameter 1 to be array, null given in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 209
 2014-06-23 6:17:52 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 211
+2014-06-23 12:51:38 - PHP Notice:  Use of undefined constant thumbs - assumed 'thumbs' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
+2014-06-23 13:07:21 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
+2014-06-23 13:07:43 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
+2014-06-23 13:09:25 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
+2014-06-23 13:11:30 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
+2014-06-23 13:13:15 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 10
+2014-06-23 13:14:55 - PHP Notice:  Use of undefined constant category - assumed 'category' in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 8
