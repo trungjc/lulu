@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'DidotBold.ttf';
+	font-family: 'DidotBold';
 	src: url('fonts/DidotBold.eot');
 	src: local('☺'), url('fonts/DidotBold.woff') format('woff'), url('fonts/DidotBold.ttf') format('truetype'), url('fonts/DidotBold.svg') format('svg');
 	font-weight: normal;
@@ -228,9 +228,9 @@ b, strong,h1,h2,h3,h4,h5 {
 	-moz-border-radius: 0px 7px 7px 7px;
 	-khtml-border-radius: 0px 7px 7px 7px;
 	border-radius: 0px 7px 7px 7px;
-	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
-	-moz-box-shadow: 0px 2px 2px #DDDDDD;
-	box-shadow: 0px 2px 2px #DDDDDD;
+	-webkit-box-shadow: 0px 2px 2px #d60c8c;
+	-moz-box-shadow: 0px 2px 2px #d60c8c;
+	box-shadow: 0px 2px 2px #d60c8c;
 	background: #FFF;
 }
 #header #cart.active .heading {
@@ -352,7 +352,7 @@ b, strong,h1,h2,h3,h4,h5 {
     z-index: 5;
 }
 #header #welcome  a {
-    color: #000;
+    color: #000;  font-size: 12px;
 	text-decoration: none;
 }
 #header .links {
@@ -406,11 +406,12 @@ b, strong,h1,h2,h3,h4,h5 {
     display:none;
 }
 .notice {
-    color: #fae4f2;
-    left: 290px;
+  color: #fae4f2;
+    font-size: 12px;
+    left: 320px;
     position: absolute;
     text-transform: uppercase;
-    top: -22px;
+    top: -21px;
 }
 .livechat {
        background: none repeat scroll 0 0 #0d1035;
@@ -421,9 +422,9 @@ b, strong,h1,h2,h3,h4,h5 {
     text-align: center;
     text-transform: uppercase;
     top: -25px;
-    width: 130px;
+    width: 130px; 
 }
-.livechat a {color: white;text-decoration: none;}
+.livechat a {color: white;text-decoration: none; font-size: 12px;}
 /* menu */
 #menu {
 	 min-height: 35px;
@@ -569,13 +570,13 @@ input.large-field, select.large-field {
 table.list {
 	border-collapse: collapse;
 	width: 100%;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
+	border-left: 1px solid #d60c8c;
 	margin-bottom: 20px;
 }
 table.list td {
-	border-right: 1px solid #DDDDDD;
-	border-bottom: 1px solid #DDDDDD;
+	border-right: 1px solid #d60c8c;
+	border-bottom: 1px solid #d60c8c;
 }
 table.list thead td {
 	background-color: #EFEFEF;
@@ -710,7 +711,7 @@ a.button:hover, input.button:hover {
 }
 .buttons {
 	background: #FFFFFF;
-	border: 1px solid #EEEEEE;
+	border: 1px solid #d60c8c;
 	overflow: auto;
 	padding: 6px;
 	margin-bottom: 20px;
@@ -731,12 +732,12 @@ a.button:hover, input.button:hover {
 .htabs {
 	height: 30px;
 	line-height: 16px;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .htabs a {
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
+	border-left: 1px solid #d60c8c;
+	border-right: 1px solid #d60c8c;
 	background: #FFFFFF url('image/tab.png') repeat-x;
 	padding: 7px 15px 6px 15px;
 	float: left;
@@ -754,9 +755,9 @@ a.button:hover, input.button:hover {
 	background: #FFFFFF;
 }
 .tab-content {
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
-	border-bottom: 1px solid #DDDDDD;
+	border-left: 1px solid #d60c8c;
+	border-right: 1px solid #d60c8c;
+	border-bottom: 1px solid #d60c8c;
 	padding: 10px;
 	margin-bottom: 20px;
 	z-index: 2;
@@ -877,6 +878,7 @@ ul.box-filter > li ul {
 ul.box-category > li > a {
 	text-decoration: none;
 	color: #333;
+        font-family: "BrandonBold",Helvetica,sans-serif;
 }
 ul.box-category > li ul {
 	display: none;
@@ -909,17 +911,24 @@ ul.box-filter, ul.box-filter ul {
 	margin: 0;
 	padding: 0;
 }
+ul.box-filter li a ,.results,.backtotop{
+    font-family: "BrandonBold",Helvetica,sans-serif;
+}
 #tab-related .box-product > div {
     display: block;
     float:left;
 }
 ul.box-filter span, .define-title{
 	font-family: "DidotBold",Helvetica,sans-serif;
-	display: block;
-        color:#b7995b;
+	display: block;font-size: 18px;
+        color:#b7995b;text-transform: capitalize;
+}
+.manuff_block .define-title{
+     padding-bottom: 10px;
 }
 span[id^="filter-group"] {
     margin-left: -8px;
+    padding-bottom: 10px;
 }
 ul.box-filter span span ,.define-title span{
 	display:inline;
@@ -933,7 +942,7 @@ ul.box-filter > li ul {
 	padding: 10px;
 	overflow: auto;
 	margin-bottom: 20px;
-	border: 1px solid #EEEEEE;
+	border:1px solid #d60c8c
 }
 #content .content .left {
 	float: left;
@@ -1313,8 +1322,8 @@ ul.box-filter > li ul {
 .attribute {
 	border-collapse: collapse;
 	width: 100%;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
+	border-left: 1px solid #d60c8c;
 	margin-bottom: 20px;
 }
 .attribute thead td, .attribute thead tr td:first-child {
@@ -1335,14 +1344,14 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 	text-align: center;
 	vertical-align: top;
-	border-right: 1px solid #DDDDDD;
-	border-bottom: 1px solid #DDDDDD;
+	border-right: 1px solid #d60c8c;
+	border-bottom: 1px solid #d60c8c;
 }
 .compare-info {
 	border-collapse: collapse;
 	width: 100%;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
+	border-left: 1px solid #d60c8c;
 	margin-bottom: 20px;
 }
 .compare-info thead td, .compare-info thead tr td:first-child {
@@ -1363,8 +1372,8 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 	text-align: center;
 	vertical-align: top;
-	border-right: 1px solid #DDDDDD;
-	border-bottom: 1px solid #DDDDDD;
+	border-right: 1px solid #d60c8c;
+	border-bottom: 1px solid #d60c8c;
 }
 .compare-info .name a {
 	font-family: "BrandonBold",Helvetica,sans-serif;
@@ -1381,9 +1390,9 @@ ul.box-filter > li ul {
 .wishlist-info table {
 	width: 100%;
 	border-collapse: collapse;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
+	border-left: 1px solid #d60c8c;
+	border-right: 1px solid #d60c8c;
 	margin-bottom: 20px;
 }
 .wishlist-info td {
@@ -1393,7 +1402,7 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 	font-family: "BrandonBold",Helvetica,sans-serif;
 	background-color: #F7F7F7;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .wishlist-info thead .image {
 	text-align: center;
@@ -1406,10 +1415,10 @@ ul.box-filter > li ul {
 }
 .wishlist-info tbody td {
 	vertical-align: top;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .wishlist-info tbody .image img {
-	border: 1px solid #DDDDDD;
+	border: 1px solid #d60c8c;
 }
 .wishlist-info tbody .image {
 	text-align: center;
@@ -1578,9 +1587,9 @@ ul.box-filter > li ul {
 	width: 100%;
 	margin-bottom: 15px;
 	border-collapse: collapse;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
+	border-left: 1px solid #d60c8c;
+	border-right: 1px solid #d60c8c;
 }
 .cart-info td {
 	padding: 7px;
@@ -1589,7 +1598,7 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 	font-family: "BrandonBold",Helvetica,sans-serif;
 	background-color: #F7F7F7;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .cart-info thead .image {
 	text-align: center;
@@ -1602,10 +1611,10 @@ ul.box-filter > li ul {
 }
 .cart-info tbody td {
 	vertical-align: top;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .cart-info tbody .image img {
-	border: 1px solid #DDDDDD;
+	border: 1px solid #d60c8c;
 }
 .cart-info tbody .image {
 	text-align: center;
@@ -1629,7 +1638,7 @@ ul.box-filter > li ul {
 	display: none;
 }
 .cart-total {
-	border-top: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
 	overflow: auto;
 	padding-top: 8px;
 	margin-bottom: 15px;
@@ -1644,7 +1653,7 @@ ul.box-filter > li ul {
 /* checkout */
 .checkout-heading {
 	background: #F8F8F8;
-	border: 1px solid #DBDEE1;
+	border: 1px solid #d60c8c;
 	padding: 8px;
 	font-family: "BrandonBold",Helvetica,sans-serif;
 	font-size: 13px;
@@ -1676,9 +1685,9 @@ ul.box-filter > li ul {
 .checkout-product table {
 	width: 100%;
 	border-collapse: collapse;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
+	border-top: 1px solid #d60c8c;
+	border-left: 1px solid #d60c8c;
+	border-right: 1px solid #d60c8c;
 	margin-bottom: 20px;
 }
 .checkout-product td {
@@ -1688,7 +1697,7 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 	font-family: "BrandonBold",Helvetica,sans-serif;
 	background-color: #F7F7F7;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .checkout-product thead .name, .checkout-product thead .model {
 	text-align: left;
@@ -1698,7 +1707,7 @@ ul.box-filter > li ul {
 }
 .checkout-product tbody td {
 	vertical-align: top;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .checkout-product tbody .name, .checkout-product tbody .model {
 	text-align: left;
@@ -1708,7 +1717,7 @@ ul.box-filter > li ul {
 }
 .checkout-product tfoot td {
 	text-align: right;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #d60c8c;
 }
 .contact-info {
 	overflow: auto;

@@ -42,7 +42,9 @@ class ControllerProductProduct extends Controller {
 
 			// Set the last category breadcrumb
 			$category_info = $this->model_catalog_category->getCategory($category_id);
+                        
                         $this->data['thumb-category']    =   $category_info["image"];
+                        
 			if ($category_info) {
 				$url = '';
 
@@ -168,9 +170,15 @@ class ControllerProductProduct extends Controller {
               
 
 		$this->load->model('catalog/product');
-
+                    if((isset($this->request->get['path'])==null) && (isset($this->request->get['manufacturer_id']))==null){
+                            $category_id  = $this->model_catalog_product-> getProductCategories($product_id);
+                            $category_info = $this->model_catalog_category->getCategory( $category_id[0]);
+                        
+                        $this->data['thumb-category']    =   $category_info["image"];
+                           
+                        }
 		$product_info = $this->model_catalog_product->getProduct($product_id);
-
+           
 		if ($product_info) {
 			$url = '';
 
