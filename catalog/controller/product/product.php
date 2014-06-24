@@ -104,6 +104,7 @@ class ControllerProductProduct extends Controller {
 			$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($this->request->get['manufacturer_id']);
                        
                         $this->data['thumb-manufacture']    =   $manufacturer_info["image"];
+                       
 			if ($manufacturer_info) {
 				$this->data['breadcrumbs'][] = array(
 					'text'	    => $manufacturer_info['name'],
@@ -164,6 +165,7 @@ class ControllerProductProduct extends Controller {
 		} else {
 			$product_id = 0;
 		}
+              
 
 		$this->load->model('catalog/product');
 
@@ -283,6 +285,8 @@ class ControllerProductProduct extends Controller {
 
 			$this->data['product_id'] = $this->request->get['product_id'];
 			$this->data['manufacturer'] = $product_info['manufacturer'];
+                        $this->data['manufacturer_description'] = html_entity_decode($product_info['manufacturer_description'], ENT_QUOTES, 'UTF-8');
+
 			$this->data['manufacturers'] = $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']);
 			$this->data['model'] = $product_info['model'];
 			$this->data['reward'] = $product_info['reward'];

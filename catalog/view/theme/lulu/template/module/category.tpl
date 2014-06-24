@@ -1,5 +1,5 @@
 <div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
+    <div class="box-heading define-title">Refine by <span><?php echo $heading_title; ?></span></div>
   <div class="box-content">
     <ul class="box-category">
       <?php foreach ($categories as $category) { ?>

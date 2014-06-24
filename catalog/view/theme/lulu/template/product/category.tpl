@@ -8,10 +8,10 @@
     <?php } ?>
   </div>
  <?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content">
+<div id="content" name="anchorname">
    
   
-  <h1><?php echo $heading_title; ?></h1>
+    <h1 style="display: none"><?php echo $heading_title; ?></h1>
 
   <?php if ($categories) { ?>
   <h2><?php echo $text_refine; ?></h2>
@@ -37,39 +37,17 @@
   </div>
   <?php } ?>
   <?php if ($products) { ?>
-  <div class="product-filter">
-    <div class="limit"><b><?php echo $text_limit; ?></b>
-      <select onchange="location = this.value;">
-        <?php foreach ($limits as $limits) { ?>
-        <?php if ($limits['value'] == $limit) { ?>
-        <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
-        <?php } else { ?>
-        <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
-        <?php } ?>
-        <?php } ?>
-      </select>
-    </div>
-    <div class="sort"><b><?php echo $text_sort; ?></b>
-      <select onchange="location = this.value;">
-        <?php foreach ($sorts as $sorts) { ?>
-        <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-        <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
-        <?php } else { ?>
-        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
-        <?php } ?>
-        <?php } ?>
-      </select>
-    </div>
-  </div>
+  
   <div class="product-grid">
     <?php foreach ($products as $product) { ?>
     <div>
       <?php if ($product['thumb']) { ?>
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
       <?php } ?>
+      <a class="brand" href="<?php echo $product['href_manufacter']; ?>"><?php echo $product['manufacturers']; ?></a>
+      
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-        <a href="<?php echo $product['href_manufacter']; ?>"><?php echo $product['manufacturers']; ?></a>
-       
+        
 	  <div class="description"><?php echo $product['description']; ?></div>
       <?php if ($product['price']) { ?>
       <div class="price">
@@ -97,6 +75,7 @@
     <?php } ?>
   </div>
   <div class="pagination"><?php echo $pagination; ?></div>
+  <a class="backtotop" href="#anchorname">Back To Top</a>
   <?php } ?>
   <?php if (!$categories && !$products) { ?>
   <div class="content"><?php echo $text_empty; ?></div>

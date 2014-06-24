@@ -1,14 +1,16 @@
 @CHARSET "UTF-8";
 .sbHolder{
-	    background: #E6E7E8;
+	 background: none repeat scroll 0 0 #e7e7e8;
+    border: 1px solid #bcbdc0;
+    border-radius: 14px;
     color: #808284;
-    padding: 4px 12px;
-	height: 20px;
-	position: relative;    min-width: 90px;
-        border-radius: 8px;
-    cursor: pointer;border: 1px solid #808284;
+    cursor: pointer;
     font-weight: normal;
+    height: 20px;
     margin: 5px 0;
+    min-width: 90px;
+    padding: 2px 12px;
+    position: relative
 }
 .sbSelector{
 	display: block;
@@ -21,7 +23,7 @@
 	text-indent: 10px;
 	top: 7px;  text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 11px;
 	width: 170px;
 }
 .sbSelector{
@@ -30,24 +32,24 @@
 	text-decoration: none!important;
 }
 .sbToggle{
-	background: url(../img/select-icons.png) 4px -1px  no-repeat;
-	display: block;
-	height: 26px;
-	outline: none;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 30px;
-        outline: none!important;
+	  background: url("../image/select-icons.png") no-repeat scroll -3px 2px rgba(0, 0, 0, 0);
+    border-left: 1px solid #bcbdc0;
+    display: block;
+    height: 24px;
+    outline: medium none !important;
+    position: absolute;
+    right: -6px;
+    top: 0;
+    width: 30px;
 }
 .sbToggle:hover{
-	background: url(../img/select-icons.png) 4px -46px no-repeat;
+	background: url(../image/select-icons.png)  -3px 2px  no-repeat;
 }
 .sbToggleOpen {
-	background: url(../img/select-icons.png) 4px -46px  no-repeat;
+	background: url(../image/select-icons.png)  -3px 2px  no-repeat;
 }
 .sbSelector {outline: none!important;}
-.sbHolder:hover .sbToggle { background: url(../img/select-icons.png) 4px -46px no-repeat;}
+.sbHolder:hover .sbToggle { background: url(../image/select-icons.png) -3px 2px no-repeat;}
 
 .sbHolderDisabled{
 	background-color: #3C3C3C;
@@ -64,14 +66,14 @@
 }
 .sbOptions{
 	background-color: white;
-	border: solid 1px #515151;
+	border: 1px solid #bcbdc0;
 	list-style: none;
 	left: -1px;
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	top: 26px !important;
-	width: 194px;
+	width: 218px;
 	z-index: 1;
 	overflow-y: auto;
 }
@@ -79,10 +81,10 @@
 	padding: 0 7px;
 }
 .sbOptions a{
-	border-bottom: dotted 1px #515151;
+	border-bottom: dotted 1px #bcbdc0;
 	display: block;
-	outline: none;
-	padding: 7px 0 7px 3px;
+	outline: none;font-size: 11px;
+	padding: 5px 0 5px 3px;
 }
 .sbOptions a:link, .sbOptions a:visited{
 	color: #4a4a4a;

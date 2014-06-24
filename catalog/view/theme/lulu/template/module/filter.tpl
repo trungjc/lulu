@@ -2,26 +2,19 @@
   <div class="box-content">
     <ul class="box-filter">
       <?php foreach ($filter_groups as $filter_group) { ?>
-      <li><span id="filter-group<?php echo $filter_group['filter_group_id']; ?>"><?php echo $filter_group['name']; ?></span>
+      <li class="first"><span id="filter-group<?php echo $filter_group['filter_group_id']; ?>">Refine by <span><?php echo $filter_group['name']; ?></span></span>
         <ul>
           <?php foreach ($filter_group['filter'] as $filter) { ?>
-          <?php if (in_array($filter['filter_id'], $filter_category)) { ?>
+         
           <li>
-            <input type="checkbox" value="<?php echo $filter['filter_id']; ?>" id="filter<?php echo $filter['filter_id']; ?>" checked="checked" />
-            <label for="filter<?php echo $filter['filter_id']; ?>"><?php echo $filter['name']; ?></label>
+              <a href="<?php echo HTTP_SERVER; ?>index.php?route=product/category&path=20&filter=<?php echo $filter['filter_id']; ?>" ><?php echo $filter['name']; ?></a>
           </li>
-          <?php } else { ?>
-          <li>
-            <input type="checkbox" value="<?php echo $filter['filter_id']; ?>" id="filter<?php echo $filter['filter_id']; ?>" />
-            <label for="filter<?php echo $filter['filter_id']; ?>"><?php echo $filter['name']; ?></label>
-          </li>
-          <?php } ?>
+         
           <?php } ?>
         </ul>
       </li>
       <?php } ?>
     </ul>
-    <a id="button-filter" class="button"><?php echo $button_filter; ?></a>
   </div>
 </div>
 <script type="text/javascript"><!--

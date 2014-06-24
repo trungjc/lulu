@@ -143,3 +143,9 @@
 2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
 2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
 2014-06-23 9:54:04 - PHP Notice:  Undefined index: thumb in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\category.tpl on line 67
+2014-06-24 8:55:06 - PHP Notice:  unserialize(): Error at offset 4493 of 51927 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
+2014-06-24 8:55:07 - PHP Notice:  unserialize(): Error at offset 248 of 1396 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
+2014-06-24 12:39:10 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-06-24 12:39:43 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-06-24 12:39:44 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-06-24 12:39:44 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128

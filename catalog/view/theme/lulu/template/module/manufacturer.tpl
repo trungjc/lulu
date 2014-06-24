@@ -1,4 +1,5 @@
 <div class="manuff_block">
+    <div class="box-heading define-title">Refine by <span>brand</span></div>
     <select onchange="location = this.value">
       <option value=""><?php echo $heading_title; ?></option>
       <?php foreach ($manufacturers as $manufacturer) { ?>

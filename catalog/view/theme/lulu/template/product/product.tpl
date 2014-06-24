@@ -27,13 +27,22 @@
         <?php } ?>
       </div>
       <?php } ?>
+      <?php if ($manufacturer) { ?>
+      <div class='brand-name'>
+          <h3><?php echo $manufacturer; ?></h3>
+      </div>
+        <?php } ?>
+       <?php echo $manufacturer_description; ?>
+    <?php if ($manufacturer) { ?>
+      <div class='brand-name-all'>
+          <a  href="<?php echo $manufacturers; ?>">show all <?php echo $manufacturer; ?></a>
+      </div>
+        <?php } ?>
     </div>
     <?php } ?>
     <div class="right">
       <div class="description">
-        <?php if ($manufacturer) { ?>
-        <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
-        <?php } ?>
+        
         <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
         <?php if ($reward) { ?>
         <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
