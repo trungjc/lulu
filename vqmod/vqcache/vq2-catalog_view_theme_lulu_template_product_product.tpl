@@ -84,7 +84,7 @@
                           <?php } ?>
                       </td>
                       <?php } ?>
-                      <td width="50%" class="button-container">
+                      <td width="30%" class="button-container">
                            <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
 
                            <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><span style="display: none"><?php echo $button_wishlist; ?></span></a><br />
