@@ -284,3 +284,9 @@
 2014-06-25 5:46:46 - PHP Notice:  Undefined variable: product_id in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 518
 2014-06-25 5:46:46 - PHP Notice:  Undefined variable: text_wait in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 525
 2014-06-25 5:46:46 - PHP Notice:  Undefined variable: footer in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\product.tpl on line 566
+2014-06-25 10:28:40 - PHP Notice:  Undefined variable: contact in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 221
+2014-06-25 10:28:40 - PHP Notice:  Undefined variable: text_contact in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 221
+2014-06-25 10:28:40 - PHP Notice:  Undefined variable: return in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 222
+2014-06-25 10:28:40 - PHP Notice:  Undefined variable: text_return in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 222
+2014-06-25 10:28:40 - PHP Notice:  Undefined variable: sitemap in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 223
+2014-06-25 10:28:40 - PHP Notice:  Undefined variable: text_sitemap in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 223

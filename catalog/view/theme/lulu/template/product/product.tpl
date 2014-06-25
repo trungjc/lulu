@@ -46,7 +46,14 @@
         <div class="clearfix">
         <div class="right-content">
             <div class="share"><!-- AddThis Button BEGIN -->
-              <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
+              <div class="addthis_default_style">
+                  <a class="addthis_button_compact">Share this product</a> 
+                  
+                  <a class="addthis_button_facebook"></a>
+                  <a class="addthis_button_twitter"></a>
+                  <a class="addthis_button_instagram"></a>
+                  <a class="addthis_button_printest"></a>
+              </div>
               <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
               <!-- AddThis Button END --> 
             </div>
@@ -377,7 +384,8 @@
       <?php if ($review_status) { ?>
         <div id="tab-review" class="tab-content">
           <div id="review"></div>
-          <h2 id="review-title"><?php echo $text_write; ?></h2>
+          <a class="write-review" >Write a review</a>
+          <div class="review-form" style="margin-top: 20px">
           <b><?php echo $entry_name; ?></b><br />
           <input type="text" name="name" value="" />
           <br />
@@ -406,6 +414,8 @@
           <div class="buttons">
             <div class="right"><a id="button-review" class="button"><?php echo $button_continue; ?></a></div>
           </div>
+          </div>
+        
         </div>
         <?php }  ?>
         <?php echo "<span style='display:none'>faq content</span>"; ?>
@@ -420,6 +430,9 @@ $(document).ready(function() {
 		opacity: 0.5,
 		rel: "colorbox"
 	});
+        $('.write-review').click(function(){
+            $(this).next().show();
+        })
 });
 //--></script> 
 <script type="text/javascript"><!--

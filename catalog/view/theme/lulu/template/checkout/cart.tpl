@@ -1,4 +1,4 @@
-<?php echo $header; ?>
+<?php echo $header; ?><?php echo $content_top; ?>
 <?php if ($attention) { ?>
 <div class="attention"><?php echo $attention; ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
 <?php } ?>
@@ -9,17 +9,25 @@
 <div class="warning"><?php echo $error_warning; ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
 <?php } ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?>
-    <?php if ($weight) { ?>
-    &nbsp;(<?php echo $weight; ?>)
-    <?php } ?>
-  </h1>
+    
+    <div class="clearfix">
+        <div class="left-form" style="float: left;width: 70%">  
+            <h1 class="clear"><div class="right" style="float: right">
+                
+                <a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a> <a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
+               
+                <?php echo $heading_title; ?>
+                <?php if ($weight) { ?>
+                &nbsp;(<?php echo $weight; ?>)
+                <?php } ?>
+
+            </h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <div class="cart-info">
       <table>
@@ -27,9 +35,9 @@
           <tr>
             <td class="image"><?php echo $column_image; ?></td>
             <td class="name"><?php echo $column_name; ?></td>
-            <td class="model"><?php echo $column_model; ?></td>
+            <td class="model" style="display: none"><?php echo $column_model; ?></td>
             <td class="quantity"><?php echo $column_quantity; ?></td>
-            <td class="price"><?php echo $column_price; ?></td>
+            <td class="price" style="display: none"><?php echo $column_price; ?></td>
             <td class="total"><?php echo $column_total; ?></td>
           </tr>
         </thead>
@@ -62,12 +70,12 @@
               <?php if ($product['reward']) { ?>
               <small><?php echo $product['reward']; ?></small>
               <?php } ?></td>
-            <td class="model"><?php echo $product['model']; ?></td>
+            <td class="model" style="display: none"><?php echo $product['model']; ?></td>
             <td class="quantity"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
               &nbsp;
               <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
               &nbsp;<a href="<?php echo $product['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
-            <td class="price"><?php echo $product['price']; ?></td>
+            <td class="price" style="display: none"><?php echo $product['price']; ?></td>
             <td class="total"><?php echo $product['total']; ?></td>
           </tr>
           <?php } ?>
@@ -75,10 +83,10 @@
           <tr>
             <td class="image"></td>
             <td class="name"><?php echo $vouchers['description']; ?></td>
-            <td class="model"></td>
+            <td class="model" style="display: none"></td>
             <td class="quantity"><input type="text" name="" value="1" size="1" disabled="disabled" />
               &nbsp;<a href="<?php echo $vouchers['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
-            <td class="price"><?php echo $vouchers['amount']; ?></td>
+            <td class="price" style="display: none"><?php echo $vouchers['amount']; ?></td>
             <td class="total"><?php echo $vouchers['amount']; ?></td>
           </tr>
           <?php } ?>
@@ -191,20 +199,31 @@
     </div>
   </div>
   <?php } ?>
-  <div class="cart-total">
-    <table id="total">
-      <?php foreach ($totals as $total) { ?>
-      <tr>
-        <td class="right"><b><?php echo $total['title']; ?>:</b></td>
-        <td class="right"><?php echo $total['text']; ?></td>
-      </tr>
-      <?php } ?>
-    </table>
+ 
   </div>
-  <div class="buttons">
-    <div class="right"><a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
-    <div class="center"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a></div>
-  </div>
+    <div class="right-form" style="float: right;width: 28%">
+        <p><img src="catalog/view/theme/lulu/image/cart-banner.png" alt="enjoy free shipping on all orders over $75 within aus" style="width: 100%" /></p>
+        <div class="">
+            <h2>Basket Summary </h2>
+             <div class="cart-total">
+                <div id="total">
+                <?php foreach ($totals as $total) { ?>
+                    <div class="label"><?php echo $total['title']; ?>:</div>
+                    <div class="value"><?php echo $total['text']; ?></div>
+                <?php } ?>
+                </div>
+            </div>
+            <a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a>
+            <div class="quickhelp" style="text-align: right"><h3 style="text-align: right">Basket quick help</h3>
+                <ul >
+                <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">our returns policy</a></li>
+                <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">Shipping times</a></li>
+                <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">Secure payment options</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('input[name=\'next\']').bind('change', function() {

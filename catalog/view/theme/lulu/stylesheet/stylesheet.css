@@ -34,7 +34,7 @@ html {
 }
 body {
 	background-color: #ffffff;
-	color: #000000;
+	color: #828283;
         text-transform: uppercase;
         border: 25px solid #d60c8c;
 	font-family: Brandon, Helvetica, sans-serif;
@@ -48,7 +48,7 @@ body, td, th, input, textarea, select, a {
 h1, .welcome {
 	color: #231f20;
 	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size: 32px;
 	font-weight: normal;
 	text-shadow: 0 0 1px rgba(0, 0, 0, .01);
@@ -369,22 +369,40 @@ b, strong,h1,h2,h3,h4,h5 {
 .social a{
     float: left;
     display: block;
-    margin: 5px;
+    margin: 2px;
     width: 25px;
     height: 25px;text-indent: -9999px;
     background-size: 100%;
 }
-.facebook {
-     background: url("../image/facebook.png") no-repeat left center;
+.addthis_button_facebook ,.addthis_button_twitter ,.addthis_button_instagram ,
+.addthis_button_printest {
+    float: left!important;
+    display: block;
+    margin: 2px;
+    width: 25px;
+    height: 25px;text-indent: -9999px;
+    background-size: 100%!important;
 }
-.tiwtter {
-     background: url("../image/tiwtter.png") no-repeat left center;
+
+.addthis_button_compact{
+    margin-right: 10px;
+    margin-top: 6px;
 }
-.diagram {
-     background: url("../image/diagram.png") no-repeat left center;
+.addthis_button_facebook  span,.addthis_button_twitter  span,.addthis_button_instagram  span,
+.addthis_button_printest  span{
+    background: none!important;
 }
-.printest {
-     background: url("../image/printest.png") no-repeat left center;
+.facebook,.addthis_button_facebook {
+     background: url("../image/facebook.png") no-repeat left center!important;
+}
+.tiwtter ,.addthis_button_twitter {
+     background: url("../image/tiwtter.png") no-repeat left center!important;
+}
+.diagram ,.addthis_button_instagram {
+     background: url("../image/diagram.png") no-repeat left center!important;
+}
+.printest,.addthis_button_printest  {
+     background: url("../image/printest.png") no-repeat left center!important;
 }
 #header .links a {
 	float: left;
@@ -406,7 +424,7 @@ b, strong,h1,h2,h3,h4,h5 {
     display:none;
 }
 .notice {
-  color: #fae4f2;
+  color: #fdedf7;
     font-size: 12px;
     left: 320px;
     position: absolute;
@@ -414,7 +432,7 @@ b, strong,h1,h2,h3,h4,h5 {
     top: -21px;
 }
 .livechat {
-       background: none repeat scroll 0 0 #0d1035;
+       background: #0d1035;
     height: 25px;
     left: 777px;
     line-height: 25px;
@@ -664,7 +682,7 @@ table.radio tr.highlight:hover td {
 }
 a.button, input.button,.quickview {
 	 background: none repeat scroll 0 0 #000;
-    color: #ffffff;
+    color: #575455;
     cursor: pointer;
     display: inline-block;
     font-family: Brandon,Helvetica,sans-serif;
@@ -673,8 +691,9 @@ a.button, input.button,.quickview {
     line-height: 19px;
     padding: 0 5px;
     text-transform: uppercase;
-    vertical-align: middle;
+    vertical-align: middle; letter-spacing: 1px;
 }
+
 .cart .wishlist {
     display:inline-block;
 }
@@ -746,12 +765,12 @@ a.button:hover, input.button:hover {
 	float: left;
 	font-family: Brandon, Helvetica, sans-serif;
 	font-size: 13px;
-	font-family: "BrandonBold",Helvetica,sans-serif;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 	display: none;
 }
+#review .results,.review-form {display: none}
 .htabs a:nth-child(3) {
     border-left:1px solid white;
 }
@@ -767,6 +786,11 @@ a.button:hover, input.button:hover {
 	margin-bottom: 20px;
 	z-index: 2;        
 	overflow: auto;
+}
+#tab-review.tab-content {
+     padding: 0;
+    position: relative;
+    top: -2px;
 }
 /* box */
 .box {
@@ -805,18 +829,18 @@ hr {
         text-align: center;
 }
 .box-product > div {
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
     margin-left: 4px;
     margin-right: 4px;
     text-align: left;
     vertical-align: top;
-    width: 180px;
+    width: 180px; float:left;
 }
 .tab-content  .box-product > div {
     display: block;
     float:left;
-    width: 165px;
+    width: 225px;
 }
 img {
     max-width: 100%;
@@ -1186,7 +1210,6 @@ ul.box-filter > li ul {
 	margin-left: 280px;
 }
 .product-info .left .image {
-	border: 1px solid #E7E7E7;
 	float: left;
 	margin-bottom: 20px;
 	padding: 10px;
@@ -1219,12 +1242,27 @@ ul.box-filter > li ul {
 	color: #4D4D4D;
 	text-decoration: none;
 }
-.product-info .price {
+.product-info .cart .price {
 	font-family: "BrandonBold",Helvetica,sans-serif;
-	color: #333333;
+	color: #231f20;
+}
+.viewlarge ,.brand-name-all a{
+    color:#e049a9;
+    margin: 20px 0 15px;
+}
+.brand-name > h3 {
+    font-family: brandon;
+    font-size: 56px;
+    line-height: 110%;
+    margin: 0;
+}
+.image-additional {
+    border-bottom: 3px solid #e049a9;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .product-info .price-old {
-	color: #F00;
+	color: #e049a9;
 	text-decoration: line-through;
 }
 .product-info .price-new {
@@ -1292,22 +1330,25 @@ html[xmlns] .clearfix {
 .product-info .cart {
 	margin-bottom: 20px;
 }
+.quantity-container {font-size: 12px;}
+.right-content .share {float: right;margin-bottom: 15px;}
 .product-info .right-content .cart {
 	border: 1px solid #d50c8c;
-        padding: 10px;
+        padding: 5px 10px;
+        clear: both;
 }
 .button-container {text-align: right;}
 .button-container .button ,.button-container .button:hover{
-    background: url("../image/add-to-basket.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    background: url("../image/add-to-basket.png") no-repeat  rgba(0, 0, 0, 0);
     height: 22px;
-    width: 140px;
+    width: 142px;
     margin: 0 0 10px 0;
 }
 .button-container .links a {
-    background: url("../image/add-to-love.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    background: url("../image/add-to-love.png") no-repeat rgba(0, 0, 0, 0);
     height: 22px;
     text-indent: -9999px;
-    width: 140px;    display: inline-block;
+    width: 142px;    display: inline-block;
 }
 
 .left-content {
@@ -1346,17 +1387,24 @@ html[xmlns] .clearfix {
 	text-decoration: none;
 }
 .review-list {
-	padding: 10px;
+	padding: 15px;
 	overflow: auto;
-	margin-bottom: 20px;
-	border: 1px solid #EEEEEE;
+        background: #fae6f3;
+	border-bottom:  1px solid #d50c8c;
 }
+.review-list:first-child {
+    border-top:  1px solid #d50c8c;
+}
+.review-list:nth-child(2n+2){
+    background: white;
+}
+.review-list img {max-height: 20px;}
 .review-list .author {
-	float: left;
+	float: right;
 	margin-bottom: 20px;
 }
 .review-list .rating {
-	float: right;
+	float: left;
 	margin-bottom: 20px;
 }
 .review-list .text {

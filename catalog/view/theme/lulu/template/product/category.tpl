@@ -84,4 +84,15 @@
   </div>
   <?php } ?>
   <?php echo $content_bottom; ?></div>
+ <script type="text/javascript">
+$(document).ready(function(){ 
+$('.backtotop').click(function(){
+  $("html, body").animate({
+ scrollTop:0
+ },"slow");
+    return false;
+});
+})
+
+ </script>
 <?php echo $footer; ?>
