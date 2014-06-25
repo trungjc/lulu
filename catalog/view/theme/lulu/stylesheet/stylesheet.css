@@ -1183,7 +1183,7 @@ ul.box-filter > li ul {
         width: 250px;
 }
 .product-info > .left + .right {
-	margin-left: 265px;
+	margin-left: 280px;
 }
 .product-info .left .image {
 	border: 1px solid #E7E7E7;
@@ -1194,9 +1194,7 @@ ul.box-filter > li ul {
 }
 .product-info .image-additional {
 	width: 260px;
-	margin-left: -10px;
 	clear: both;
-	overflow: hidden;
 }
 .product-info .image-additional img {
 	border: 1px solid #E7E7E7;
@@ -1204,8 +1202,8 @@ ul.box-filter > li ul {
 .product-info .image-additional a {
 	float: left;
 	display: block;
-	margin-left: 10px;
-	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
 .product-info .description {
 	
@@ -1309,7 +1307,7 @@ html[xmlns] .clearfix {
     background: url("../image/add-to-love.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
     height: 22px;
     text-indent: -9999px;
-    width: 140px;    display: block;
+    width: 140px;    display: inline-block;
 }
 
 .left-content {
