@@ -5,10 +5,9 @@ $.fn.tabs = function() {
 		var obj = $(this); 
 		
 		$(obj.attr('href')).hide();
-		
+		//console.log(obj);
 		obj.click(function() {
 			$(selector).removeClass('selected');
-			
 			$(this).addClass('selected');
 			
 			$($(this).attr('href')).fadeIn();

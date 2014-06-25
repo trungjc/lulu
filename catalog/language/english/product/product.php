@@ -47,9 +47,9 @@ $_['entry_captcha']     = 'Enter the code in the box below:';
 
 // Tabs
 $_['tab_description']   = 'Description';
-$_['tab_attribute']     = 'Specification';
+$_['tab_attribute']     = 'ingredients';
 $_['tab_review']        = 'Reviews (%s)';
-$_['tab_related']       = 'Related Products'; 
+$_['tab_related']       = 'Pair with'; 
 
 // Error
 $_['error_name']        = 'Warning: Review Name must be between 3 and 25 characters!';

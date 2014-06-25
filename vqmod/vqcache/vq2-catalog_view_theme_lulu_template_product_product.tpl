@@ -290,12 +290,32 @@
         </div><!--end clearfix-->
         <div class="tabs1">
             <div id="tabs1" class="htabs">
-                <a href="#tab-description"><?php echo $tab_description; ?></a>
+                <?php if ($product_tabs_1) { ?>
+					<?php foreach($product_tabs_1 as $product_tab_1) { ?>
+						<a href="#tab-product-tab<?php echo $product_tab_1['tab_id'];?>"><?php echo $product_tab_1['name']; ?></a>
+					<?php } ?>
+				<?php } ?>
+				<a href="#tab-description"><?php echo $tab_description; ?></a>
               <?php if ($attribute_groups) { ?>
               <a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
+<?php if ($product_tabs_2) { ?>
+					<?php foreach($product_tabs_2 as $product_tab_2) { ?>
+						<a href="#tab-product-tab<?php echo $product_tab_2['tab_id'];?>"><?php echo $product_tab_2['name']; ?></a>
+					<?php } ?>
+				<?php } ?>
               <?php } echo "<span style='display:none'>shipping info</span>"; ?>    
             </div>
+<?php if ($product_tabs_1) { ?>
+					<?php foreach($product_tabs_1 as $product_tab_1) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_1['tab_id'];?>" class="tab-content"><?php echo $product_tab_1['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
             <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+<?php if ($product_tabs_2) { ?>
+					<?php foreach($product_tabs_2 as $product_tab_2) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_2['tab_id'];?>" class="tab-content"><?php echo $product_tab_2['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
             <?php if ($attribute_groups) { ?>
             <div id="tab-attribute" class="tab-content">
               <table class="attribute">
@@ -318,6 +338,11 @@
             </div>
             <?php } ?>
             <?php echo "<span style='display:none'>shipping info content</span>"; ?>
+<?php if ($product_tabs_5) { ?>
+					<?php foreach($product_tabs_5 as $product_tab_5) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_5['tab_id'];?>" class="tab-content"><?php echo $product_tab_5['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
             <?php if ($tags) { ?>
             <div class="tags"><b><?php echo $text_tags; ?></b>
               <?php for ($i = 0; $i < count($tags); $i++) { ?>
@@ -337,6 +362,11 @@
             <?php if ($products) { ?>
             <a href="#tab-related"><?php echo $tab_related; ?> </a>
             <?php } ?>
+<?php if ($product_tabs_5) { ?>
+					<?php foreach($product_tabs_5 as $product_tab_5) { ?>
+						<a href="#tab-product-tab<?php echo $product_tab_5['tab_id'];?>"><?php echo $product_tab_5['name']; ?></a>
+					<?php } ?>
+				<?php } ?>
       </div>
       <?php echo $content_bottom; ?>      
         <?php if ($products) { ?>
@@ -368,11 +398,26 @@
   </div>  
         <div class="tabs3">
       <div id="tabs3" class="htabs">
+<?php if ($product_tabs_3) { ?>
+					<?php foreach($product_tabs_3 as $product_tab_3) { ?>
+						<a href="#tab-product-tab<?php echo $product_tab_3['tab_id'];?>"><?php echo $product_tab_3['name']; ?></a>
+					<?php } ?>
+				<?php } ?>
         <?php if ($review_status) { ?>
         <a href="#tab-review"><?php echo $tab_review; ?></a>
         <?php } ?>
+<?php if ($product_tabs_4) { ?>
+					<?php foreach($product_tabs_4 as $product_tab_4) { ?>
+						<a href="#tab-product-tab<?php echo $product_tab_4['tab_id'];?>"><?php echo $product_tab_4['name']; ?></a>
+					<?php } ?>
+				<?php } ?>
         <?php echo "<span style='display:none'>tab faq</span>"; ?>
       </div>
+<?php if ($product_tabs_3) { ?>
+					<?php foreach($product_tabs_3 as $product_tab_3) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_3['tab_id'];?>" class="tab-content"><?php echo $product_tab_3['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
       <?php if ($review_status) { ?>
         <div id="tab-review" class="tab-content">
           <div id="review"></div>
@@ -406,6 +451,11 @@
             <div class="right"><a id="button-review" class="button"><?php echo $button_continue; ?></a></div>
           </div>
         </div>
+<?php if ($product_tabs_4) { ?>
+					<?php foreach($product_tabs_4 as $product_tab_4) { ?>
+						<div id="tab-product-tab<?php echo $product_tab_4['tab_id'];?>" class="tab-content"><?php echo $product_tab_4['text']; ?></div>
+					<?php } ?>
+				<?php } ?>
         <?php }  ?>
         <?php echo "<span style='display:none'>faq content</span>"; ?>
   </div>

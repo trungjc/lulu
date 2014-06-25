@@ -686,6 +686,23 @@ class ModelCatalogProduct extends Model {
                     $product_category_data[] = $result['category_id'];
             }
             return $product_category_data;
-        }
+        }public function getProductTabs($product_id) {
+
+					$product_tab_data = array();
+
+					$product_tab_query = $this->db->query("SELECT t.tab_id, td.name, pt.text, t.position, t.show_empty FROM " . DB_PREFIX . "product_tab pt LEFT JOIN " . DB_PREFIX . "tab t ON (pt.tab_id = t.tab_id) LEFT JOIN " . DB_PREFIX . "tab_description td ON (t.tab_id = td.tab_id) WHERE pt.product_id = '" . (int)$product_id . "' AND td.language_id = '" . (int)$this->config->get('config_language_id') . "' AND pt.language_id = '" . (int)$this->config->get('config_language_id') . "' AND t.status = '1' AND ( t.show_empty = '1' OR NOT pt.text REGEXP '^[[:space:]]*$' ) ORDER BY t.position, t.sort_order, td.name");
+
+					foreach ($product_tab_query->rows as $product_tab) {
+
+						$product_tab_data[] = array(
+								'tab_id' 				=> $product_tab['tab_id'],
+								'name'      		=> $product_tab['name'],
+								'text'      		=> $product_tab['text'],
+								'position' 			=> $product_tab['position']
+							);
+					}
+
+					return $product_tab_data;
+				}
 }
 ?>
