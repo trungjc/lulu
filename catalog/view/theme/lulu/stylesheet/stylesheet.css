@@ -46,7 +46,7 @@ body, td, th, input, textarea, select, a {
 	font-size: 14px;
 }
 h1, .welcome {
-	color: #636E75;
+	color: #231f20;
 	margin-top: 0px;
 	margin-bottom: 20px;
 	font-size: 32px;
@@ -493,8 +493,14 @@ b, strong,h1,h2,h3,h4,h5 {
 	color: #FFFFFF;
 }
 .breadcrumb {
-	color: #CCCCCC;
+	color:#6d6e71;
 	margin-bottom: 20px;
+}
+.addthis_button_compact {
+    color:#d50c8c;
+}
+.breadcrumb a {
+    color:#6d6e71;
 }
 .success, .warning, .attention, .information {
 	padding: 10px 10px 10px 33px;
@@ -688,7 +694,7 @@ a.button, input.button,.quickview {
     height: 19px;
     padding: 0;
     vertical-align: middle;
-    margin: 0 ;
+    margin: 0 2px;
     width: 60px;
     background: url('../image/button.png')no-repeat;
 }
@@ -730,9 +736,8 @@ a.button:hover, input.button:hover {
 	margin-right: auto;
 }
 .htabs {
-	height: 30px;
+	height: 32px;
 	line-height: 16px;
-	border-bottom: 1px solid #d60c8c;
 }
 .htabs a {
 	border: 1px solid #e049a9;
@@ -799,7 +804,7 @@ hr {
 	overflow: auto;
         text-align: center;
 }
-box-product > div {
+.box-product > div {
     display: inline-block;
     margin-bottom: 16px;
     margin-left: 4px;
@@ -1291,7 +1296,22 @@ html[xmlns] .clearfix {
 }
 .product-info .right-content .cart {
 	border: 1px solid #d50c8c;
+        padding: 10px;
 }
+.button-container {text-align: right;}
+.button-container .button ,.button-container .button:hover{
+    background: url("../image/add-to-basket.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    height: 22px;
+    width: 140px;
+    margin: 0 0 10px 0;
+}
+.button-container .links a {
+    background: url("../image/add-to-love.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    height: 22px;
+    text-indent: -9999px;
+    width: 140px;    display: block;
+}
+
 .left-content {
     float: left;
 }

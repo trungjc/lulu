@@ -52,13 +52,13 @@
             <div class="cart">
                 <table >
                   <tr>
-                      <td class="quantity-container">
+                      <td width="25%" class="quantity-container">
                           <?php echo $text_qty; ?>
                           <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
                           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
                       </td> 
                     <?php if ($price) { ?>
-                      <td class="price"><?php echo $text_price; ?>
+                      <td class="price">
                         <?php if (!$special) { ?>
                         <?php echo $price; ?>
                         <?php } else { ?>
@@ -84,10 +84,10 @@
                           <?php } ?>
                       </td>
                       <?php } ?>
-                      <td class="button-container">
+                      <td width="50%" class="button-container">
                            <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
 
-                          <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a><br />
+                           <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><span style="display: none"><?php echo $button_wishlist; ?></span></a><br />
 
                       </td>
                    </tr>
