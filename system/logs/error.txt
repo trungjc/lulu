@@ -290,3 +290,5 @@
 2014-06-25 10:28:40 - PHP Notice:  Undefined variable: text_return in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 222
 2014-06-25 10:28:40 - PHP Notice:  Undefined variable: sitemap in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 223
 2014-06-25 10:28:40 - PHP Notice:  Undefined variable: text_sitemap in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 223
+2014-06-26 5:13:44 - PHP Notice:  unserialize(): Error at offset 333 of 7138 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
+2014-06-26 5:20:58 - PHP Notice:  unserialize(): Error at offset 4493 of 51927 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11

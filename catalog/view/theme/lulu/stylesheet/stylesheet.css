@@ -34,7 +34,7 @@ html {
 }
 body {
 	background-color: #ffffff;
-	color: #828283;
+	color: #626264;
         text-transform: uppercase;
         border: 25px solid #d60c8c;
 	font-family: Brandon, Helvetica, sans-serif;
@@ -80,7 +80,7 @@ form {
 	display: inline;
 }
 input[type='text'], input[type='password'], textarea {
-	background: #F8F8F8;
+	background: #fff;
 	border: 1px solid #CCCCCC;
 	padding: 3px;
 	margin-left: 0px;
@@ -702,10 +702,10 @@ a.button, input.button,.quickview {
       vertical-align: middle;
       text-indent: -9999px;
       height: 21px;width: 25px;
-      background: url('../image/wishlist.png')no-repeat;
+      background: url('../image/wishlist.png') no-repeat;
 }
 .cart .wishlist a:visted {
-     background: url('../image/heart.png')no-repeat;
+     background: url('../image/heart.png') no-repeat;
 }
 .cart .button ,.tab-content .box-product .button {    
     display: inline-block;
@@ -715,10 +715,40 @@ a.button, input.button,.quickview {
     vertical-align: middle;
     margin: 0 2px;
     width: 60px;
-    background: url('../image/button.png')no-repeat;
+    background: url('../image/button.png') no-repeat;
 }
 .cart .button:hover ,.tab-content .box-product .button:hover{
-    background: url('../image/button.png')no-repeat;
+    background: url('../image/button.png') no-repeat;
+    
+}
+.left-form h1,.checkout-page .box-heading {
+    font-family: "BrandonBold",Helvetica,sans-serif;
+    padding-bottom: 15px;margin-bottom: 10px;
+    border-bottom:3px solid   #d50c8c;font-size: 20px;color: #231f20;
+
+}
+.checkout-page > .box {
+    width: 70%;
+}
+.button.checkout {
+     background: url("../image/arrow-right.png") no-repeat scroll 92% center #d50c8c;
+    border-radius: 15px;
+    color: white;
+    padding: 6px 30px;font-family: "BrandonBold",Helvetica,sans-serif;
+    
+}
+.button.checkout:hover {
+    background: url("../image/arrow-right.png") no-repeat scroll 92% center #d50c8c;
+}
+.continue.button {
+    font-family: "BrandonBold",Helvetica,sans-serif;
+    background: none;color:#d50c8c;
+   
+}
+.basket-summary{
+    border:1px solid #dddddf;
+    background:#fae6f3;
+    padding: 15px;
 }
 a.button {
 	display: inline-block;
@@ -1146,9 +1176,9 @@ ul.box-filter > li ul {
 .product-grid > div {
  display: block;
     float: left;
-    margin: 15px 12px 15px 0;
+    margin: 15px 9px 15px 0;
     vertical-align: top;
-    width: 171px;
+    width: 176px;
     
 }
 .backtotop {
@@ -1678,9 +1708,6 @@ html[xmlns] .clearfix {
 	width: 100%;
 	margin-bottom: 15px;
 	border-collapse: collapse;
-	border-top: 1px solid #d60c8c;
-	border-left: 1px solid #d60c8c;
-	border-right: 1px solid #d60c8c;
 }
 .cart-info td {
 	padding: 7px;
@@ -1688,8 +1715,7 @@ html[xmlns] .clearfix {
 .cart-info thead td {
 	color: #4D4D4D;
 	font-family: "BrandonBold",Helvetica,sans-serif;
-	background-color: #F7F7F7;
-	border-bottom: 1px solid #d60c8c;
+        display:none;
 }
 .cart-info thead .image {
 	text-align: center;
@@ -1701,11 +1727,11 @@ html[xmlns] .clearfix {
 	text-align: right;
 }
 .cart-info tbody td {
-	vertical-align: top;
-	border-bottom: 1px solid #d60c8c;
+	vertical-align: middle;
+        border-bottom: 2px solid #e8e8e9;
 }
-.cart-info tbody .image img {
-	border: 1px solid #d60c8c;
+.cart-info tbody .name,.cart-info tbody .total {
+	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .cart-info tbody .image {
 	text-align: center;
@@ -1727,9 +1753,27 @@ html[xmlns] .clearfix {
 }
 .cart-module > div {
 	display: none;
+        margin: 15px 0 50px;
+}
+.quickhelp  ul {
+    margin:0;
+}
+.quickhelp li {
+    list-style: none;
+}
+.quickhelp h3{
+    color:#ea85c6;    margin-bottom: 0;
+}
+.cart-info {
+    margin: 10px 0 30px;
+}
+.cart-module .button {
+    background: #d50c8c;color:white;
+}
+.cart-module input {
+    background: white; vertical-align: middle;
 }
 .cart-total {
-	border-top: 1px solid #d60c8c;
 	overflow: auto;
 	padding-top: 8px;
 	margin-bottom: 15px;
@@ -1740,6 +1784,19 @@ html[xmlns] .clearfix {
 .cart-total td {
 	padding: 3px;
 	text-align: right;
+}
+.right-form p {
+    margin-bottom: 10px;
+}
+.right-form .label {
+    color:#58585a;font-family: "BrandonBold",Helvetica,sans-serif;
+}
+.cart-total .value{
+    color:#e150ac;
+    display:block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:2px solid #d1d2d4;
 }
 /* checkout */
 .checkout-heading {
@@ -1864,7 +1921,7 @@ html[xmlns] .clearfix {
 }
 #footer .column a {
 	text-decoration: none;
-	color: #979798;
+	color: #828283;
 }
 #footer .column a:hover {
 	text-decoration: underline;

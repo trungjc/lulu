@@ -9,7 +9,7 @@
 <div class="warning"><?php echo $error_warning; ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
 <?php } ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content">
+<div id="content " class="checkout-page">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -20,12 +20,9 @@
         <div class="left-form" style="float: left;width: 70%">  
             <h1 class="clear"><div class="right" style="float: right">
                 
-                <a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a> <a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
+                <a href="<?php echo $continue; ?>" class="button continue"><?php echo $button_shopping; ?></a> <a href="<?php echo $checkout; ?>" class="button checkout"><?php echo $button_checkout; ?> now</a></div>
                
-                <?php echo $heading_title; ?>
-                <?php if ($weight) { ?>
-                &nbsp;(<?php echo $weight; ?>)
-                <?php } ?>
+                My Basket
 
             </h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
@@ -74,7 +71,7 @@
             <td class="quantity"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
               &nbsp;
               <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-              &nbsp;<a href="<?php echo $product['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
+              &nbsp;<a href="<?php echo $product['remove']; ?>">Remove</a></td>
             <td class="price" style="display: none"><?php echo $product['price']; ?></td>
             <td class="total"><?php echo $product['total']; ?></td>
           </tr>
@@ -203,7 +200,7 @@
   </div>
     <div class="right-form" style="float: right;width: 28%">
         <p><img src="catalog/view/theme/lulu/image/cart-banner.png" alt="enjoy free shipping on all orders over $75 within aus" style="width: 100%" /></p>
-        <div class="">
+        <div class="basket-summary">
             <h2>Basket Summary </h2>
              <div class="cart-total">
                 <div id="total">
@@ -213,15 +210,16 @@
                 <?php } ?>
                 </div>
             </div>
-            <a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a>
-            <div class="quickhelp" style="text-align: right"><h3 style="text-align: right">Basket quick help</h3>
+            <a href="<?php echo $checkout; ?>" class="button checkout"><?php echo $button_checkout; ?> now</a>
+            
+        </div>
+        <div class="quickhelp" style="text-align: right"><h3 style="text-align: right">Basket quick help</h3>
                 <ul >
                 <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">our returns policy</a></li>
                 <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">Shipping times</a></li>
                 <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">Secure payment options</a></li>
                 </ul>
             </div>
-        </div>
     </div>
 </div>
   <?php echo $content_bottom; ?></div>
