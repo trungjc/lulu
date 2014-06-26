@@ -682,7 +682,7 @@ table.radio tr.highlight:hover td {
 }
 a.button, input.button,.quickview {
 	 background: none repeat scroll 0 0 #000;
-    color: #575455;
+    color: #dedede;
     cursor: pointer;
     display: inline-block;
     font-family: Brandon,Helvetica,sans-serif;
@@ -693,7 +693,11 @@ a.button, input.button,.quickview {
     text-transform: uppercase;
     vertical-align: middle; letter-spacing: 1px;
 }
-
+.buttons .button {
+    background: #d50c8c;
+   
+    color: white;font-family: "BrandonBold",Helvetica,sans-serif;
+}
 .cart .wishlist {
     display:inline-block;
 }
