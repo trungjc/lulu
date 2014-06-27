@@ -293,3 +293,70 @@
 2014-06-26 5:13:44 - PHP Notice:  unserialize(): Error at offset 333 of 7138 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
 2014-06-26 5:20:58 - PHP Notice:  unserialize(): Error at offset 4493 of 51927 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
 2014-06-26 21:35:14 - PHP Notice:  Undefined variable: description in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\manufacturer_info.tpl on line 12
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:10 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:15 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:16 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:16 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:16 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:16 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:16 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:16 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:20:16 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
+2014-06-26 23:21:12 - PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php:20) in D:\xampp\htdocs\lulu\catalog\controller\module\viewed.php on line 21
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:31:25 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 42
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:28 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-06-26 23:33:34 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44

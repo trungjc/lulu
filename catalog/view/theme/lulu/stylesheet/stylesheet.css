@@ -383,7 +383,14 @@ b, strong,h1,h2,h3,h4,h5 {
     height: 25px;text-indent: -9999px;
     background-size: 100%!important;
 }
-
+.addthis_button_printest + a {
+	   display: block !important;
+    height: 37px !important;
+    left: -28px;
+    opacity: 0;
+    position: relative;
+    top: 5px;
+}
 .addthis_button_compact{
     margin-right: 10px;
     margin-top: 6px;
@@ -404,6 +411,10 @@ b, strong,h1,h2,h3,h4,h5 {
 .printest,.addthis_button_printest  {
      background: url("../image/printest.png") no-repeat left center!important;
 }
+.right-content .addthis_default_style {
+position: relative;
+    right: -40px;
+	}
 #header .links a {
 	float: left;
 	display: block;
@@ -1015,7 +1026,6 @@ ul.box-filter > li ul {
 /* content */
 #content .content {
 	padding: 10px;
-	overflow: auto;
 	margin-bottom: 20px;
 	border:1px solid #d60c8c
 }
@@ -1243,7 +1253,6 @@ ul.box-filter > li ul {
 
 /* Product */
 .product-info {
-	overflow: auto;
 	margin-bottom: 20px;
 }
 .product-info > .left {
@@ -1276,9 +1285,10 @@ ul.box-filter > li ul {
 .product-info .description {
 	
 	margin-bottom: 10px;
-	line-height: 20px;
+	line-height: 24px;
 	color: #4D4D4D;
 }
+.sbHolder {max-width:190px;}
 .options b {
    font-family: "BrandonLight",Helvetica,sans-serif;
     font-weight: 400;

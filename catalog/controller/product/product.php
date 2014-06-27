@@ -178,7 +178,11 @@ class ControllerProductProduct extends Controller {
                            
                         }
 		$product_info = $this->model_catalog_product->getProduct($product_id);
-           
+       $product_info_m = $this->model_catalog_product->getProductToBrand($product_id);   
+		if ($product_info_m) {
+		 $this->data['manufacturer_description'] = html_entity_decode($product_info_m['manufacturer_description'], ENT_QUOTES, 'UTF-8');
+
+		}
 		if ($product_info) {
 			$url = '';
 
@@ -293,8 +297,7 @@ class ControllerProductProduct extends Controller {
 
 			$this->data['product_id'] = $this->request->get['product_id'];
 			$this->data['manufacturer'] = $product_info['manufacturer'];
-                        $this->data['manufacturer_description'] = html_entity_decode($product_info['manufacturer_description'], ENT_QUOTES, 'UTF-8');
-
+          
 			$this->data['manufacturers'] = $this->url->link('product/manufacturer/info', 'manufacturer_id=' . $product_info['manufacturer_id']);
 			$this->data['model'] = $product_info['model'];
 			$this->data['reward'] = $product_info['reward'];

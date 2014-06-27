@@ -45,7 +45,7 @@
 <body>
 <div id="content">
   <h1><?php echo $heading_title; ?></h1>
-  <div class="product-info"> 
+  <div class="product-info clearfix"> 
     <?php if ($thumb || $images) { ?>
        <div class="left">
 				 <?php if ($thumb)
@@ -280,6 +280,8 @@
       <?php } ?>
     </div>
   </div>
+  
+  
   <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
     <?php if ($attribute_groups) { ?>
     <a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
