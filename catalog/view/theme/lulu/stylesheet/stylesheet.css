@@ -725,7 +725,7 @@ a.button, input.button,.quickview {
     background: url('../image/button.png') no-repeat;
     
 }
-.left-form h1,.checkout-page .box-heading {
+.left-form h1,.checkout-page .box-heading ,.heading-special{
     font-family: "BrandonBold",Helvetica,sans-serif;
     padding-bottom: 15px;margin-bottom: 10px;
     border-bottom:3px solid   #d50c8c;font-size: 20px;color: #231f20;
@@ -874,7 +874,8 @@ hr {
 .tab-content  .box-product > div {
     display: block;
     float:left;
-    width: 225px;
+    width: 166px;
+	min-height: 210px;
 }
 img {
     max-width: 100%;
@@ -885,6 +886,12 @@ img {
 .box-product .image {
 	display: block;
 	margin-bottom: 0px;
+}
+.tab-content .box-product .image {
+	margin-bottom: 10px;
+}
+.success a {
+	color:#e049a9
 }
 .box-product .image img {
 }
@@ -1183,7 +1190,10 @@ ul.box-filter > li ul {
     margin: 15px 9px 15px 0;
     vertical-align: top;
     width: 176px;
-    
+        min-height: 300px;
+}
+#fancybox-frame .share{
+	display: none;
 }
 .backtotop {
     color:#d50c8c;text-decoration: underline;
@@ -1252,6 +1262,7 @@ ul.box-filter > li ul {
 .product-info .image-additional {
 	width: 260px;
 	clear: both;
+	overflow:hidden;
 }
 .product-info .image-additional img {
 	border: 1px solid #E7E7E7;
@@ -1288,7 +1299,11 @@ ul.box-filter > li ul {
     font-family: brandon;
     font-size: 56px;
     line-height: 110%;
+	display:none;
     margin: 0;
+}
+.brand-name {
+    margin-top: 10px;
 }
 .image-additional {
     border-bottom: 3px solid #e049a9;
@@ -1387,6 +1402,7 @@ html[xmlns] .clearfix {
 
 .left-content {
     float: left;
+	width: 45%;
 }
 .product-info .cart div > span {
 	color: #999;

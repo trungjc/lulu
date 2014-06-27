@@ -9,7 +9,6 @@
   </div>
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content"><?php echo $content_top; ?>
-  
 
   <?php if ($products) { ?>
    <div class="product-grid">
