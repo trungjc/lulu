@@ -71,11 +71,11 @@ class ControllerInformationContact extends Controller {
 			$this->data['error_enquiry'] = '';
 		}		
 
-		if (isset($this->error['captcha'])) {
-			$this->data['error_captcha'] = $this->error['captcha'];
-		} else {
-			$this->data['error_captcha'] = '';
-		}	
+		//if (isset($this->error['captcha'])) {
+		//	$this->data['error_captcha'] = $this->error['captcha'];
+		//} else {
+		//	$this->data['error_captcha'] = '';
+		//}	
 
 		$this->data['button_continue'] = $this->language->get('button_continue');
 
@@ -103,11 +103,11 @@ class ControllerInformationContact extends Controller {
 			$this->data['enquiry'] = '';
 		}
 
-		if (isset($this->request->post['captcha'])) {
-			$this->data['captcha'] = $this->request->post['captcha'];
-		} else {
-			$this->data['captcha'] = '';
-		}		
+		//if (isset($this->request->post['captcha'])) {
+		//	$this->data['captcha'] = $this->request->post['captcha'];
+		//} else {
+			//$this->data['captcha'] = '';
+		//}		
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/information/contact.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/information/contact.tpl';
@@ -186,7 +186,7 @@ class ControllerInformationContact extends Controller {
 		}
 
 		if (empty($this->session->data['captcha']) || ($this->session->data['captcha'] != $this->request->post['captcha'])) {
-			$this->error['captcha'] = $this->language->get('error_captcha');
+			//$this->error['captcha'] = $this->language->get('error_captcha');
 		}
 
 		if (!$this->error) {
@@ -197,13 +197,13 @@ class ControllerInformationContact extends Controller {
 	}
 
 	public function captcha() {
-		$this->load->library('captcha');
+		//$this->load->library('captcha');
 
-		$captcha = new Captcha();
+		//$captcha = new Captcha();
 
-		$this->session->data['captcha'] = $captcha->getCode();
+		//$this->session->data['captcha'] = $captcha->getCode();
 
-		$captcha->showImage();
+		//$captcha->showImage();
 	}	
 }
 ?>

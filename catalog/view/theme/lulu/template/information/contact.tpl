@@ -4,60 +4,118 @@
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?></h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <h2><?php echo $text_location; ?></h2>
+ 
     <div class="contact-info">
-      <div class="content"><div class="left"><b><?php echo $text_address; ?></b><br />
-        <?php echo $store; ?><br />
-        <?php echo $address; ?></div>
-      <div class="right">
-        <?php if ($telephone) { ?>
-        <b><?php echo $text_telephone; ?></b><br />
-        <?php echo $telephone; ?><br />
-        <br />
-        <?php } ?>
-        <?php if ($fax) { ?>
-        <b><?php echo $text_fax; ?></b><br />
-        <?php echo $fax; ?>
-        <?php } ?>
-      </div>
+      <div class="contents"><div><?php echo $address; ?></div></div>
     </div>
-    </div>
-    <h2><?php echo $text_contact; ?></h2>
-    <div class="content">
-    <b><?php echo $entry_name; ?></b><br />
-    <input type="text" name="name" value="<?php echo $name; ?>" />
-    <br />
-    <?php if ($error_name) { ?>
-    <span class="error"><?php echo $error_name; ?></span>
-    <?php } ?>
-    <br />
-    <b><?php echo $entry_email; ?></b><br />
-    <input type="text" name="email" value="<?php echo $email; ?>" />
-    <br />
-    <?php if ($error_email) { ?>
-    <span class="error"><?php echo $error_email; ?></span>
-    <?php } ?>
-    <br />
-    <b><?php echo $entry_enquiry; ?></b><br />
-    <textarea name="enquiry" cols="40" rows="10" style="width: 99%;"><?php echo $enquiry; ?></textarea>
-    <br />
-    <?php if ($error_enquiry) { ?>
-    <span class="error"><?php echo $error_enquiry; ?></span>
-    <?php } ?>
-    <br />
-    <b><?php echo $entry_captcha; ?></b><br />
-    <input type="text" name="captcha" value="<?php echo $captcha; ?>" />
-    <br />
-    <img src="index.php?route=information/contact/captcha" alt="" />
-    <?php if ($error_captcha) { ?>
-    <span class="error"><?php echo $error_captcha; ?></span>
-    <?php } ?>
-    </div>
-    <div class="buttons">
-      <div class="right"><input type="submit" value="<?php echo $button_continue; ?>" class="button" /></div>
+    <div class="contents cleafix">
+        <div class="left-contact">
+        <div class="clearfix row row1">
+            <div class="left">
+                <label><?php echo $entry_name; ?></label>
+                <input type="text" name="name" value="<?php echo $name; ?>" /> <br />
+                <?php if ($error_name) { ?>
+                <span class="error"><?php echo $error_name; ?></span>
+                <?php } ?>
+            </div>
+            <div class="right">
+                <label>Last Name</label>
+                <input type="text" name="name" value="<?php echo $name; ?>" /> <br />
+                <?php if ($error_name) { ?>
+                <span class="error"><?php echo $error_name; ?></span>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="clearfix row row2">
+            <label><?php echo $entry_email; ?></label>
+            <input type="text" name="email" value="<?php echo $email; ?>" />
+
+            <?php if ($error_email) { ?>
+            <span class="error"><?php echo $error_email; ?></span>
+            <?php } ?>
+        </div>
+        <div class="clearfix row row3">
+            <label><?php echo $entry_enquiry; ?></b><label />
+            <textarea name="enquiry" cols="40" rows="10" style="width: 99%;"><?php echo $enquiry; ?></textarea>
+            <br />
+            <?php if ($error_enquiry) { ?>
+            <span class="error"><?php echo $error_enquiry; ?></span>
+            <?php } ?>
+        </div>
+        <div class="buttons"><input type="submit" value="Send" class="button" /></div>
+     </div>
+     <div class="right-contact">
+         <h3>is there anything we can help with ?</h3>
+         <div class="accordion">
+            <div class="accordion-heading">
+                what brands do you stock ?
+            </div>
+            <div class="accordion-content">
+           Luu and lipstick's customer service is ready to assist you.please let us know as much information in your enquiry . you can also find answers to frequently asked questions in the online customer service section by click on the links to the right.
+            </div>
+        </div>
+         <div class="accordion">
+            <div class="accordion-heading">
+                what are your delivery options ?
+            </div>
+            <div class="accordion-content">
+            Luu and lipstick's customer service is ready to assist you.please let us know as much information in your enquiry . you can also find answers to frequently asked questions in the online customer service section by click on the links to the right.
+            </div>
+          </div>
+           <div class="accordion">
+                <div class="accordion-heading">
+                how long will it takefor my order to arrive ?
+                </div>
+                <div class="accordion-content">
+                this is content of answer
+                </div>
+           </div>
+              <div class="accordion">
+                <div class="accordion-heading">
+                    can i track my parcel ?
+                </div>
+                <div class="accordion-content">
+                this is content of answer
+                </div>
+            </div>
+            <div class="accordion">
+            <div class="accordion-heading">
+                what brands do you stock ?
+            </div>
+            <div class="accordion-content">
+            this is content of answer
+            </div>
+        </div>
+         <div class="accordion">
+            <div class="accordion-heading">
+                what are your delivery options ?
+            </div>
+            <div class="accordion-content">
+            this is content of answer
+            </div>
+          </div>
+           <div class="accordion">
+                <div class="accordion-heading">
+                how long will it takefor my order to arrive ?
+                </div>
+                <div class="accordion-content">
+                this is content of answer
+                </div>
+           </div>
+              <div class="accordion">
+                <div class="accordion-heading">
+                    can i track my parcel ?
+                </div>
+                <div class="accordion-content">
+                this is content of answer
+                </div>
+            </div>
+         
+         <div class="viewall">
+             <a href="<?php echo HTTP_SERVER ; ?>index.php?route=information/information&information_id=9">view all FAQ's</a>
+         </div>
+     </div>
     </div>
   </form>
   <?php echo $content_bottom; ?></div>

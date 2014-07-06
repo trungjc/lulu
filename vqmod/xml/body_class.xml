@@ -1,0 +1,66 @@
+<modification>
+	<id>Body Class</id>
+	<version>1.5.x</version>
+	<vqmver>1.0.0</vqmver>
+	<author>wishmedia.ca</author>
+
+	
+	<file name="catalog/view/theme/*/template/common/header.tpl">
+
+		<operation error="abort" info="Add Column to Search">
+			<search position="replace"><![CDATA[<body]]></search>
+			<add><![CDATA[<body<?php 
+					
+					//Preset ID && Class
+					$class 	 = 'home common-home';
+					$id 	 = 'phome';
+
+					//If Route Exists
+					if(isset($this->request->get['route'])){
+
+						//Get Route
+						$class 	 = explode('/',$this->request->get['route']);
+						$id 	 = 'p'.$class[1];
+						$class 	 = 'p'.implode(' ',array_splice($class,1));
+						$class 	.= ' class-'.str_replace('/','-',$this->request->get['route']);
+
+						//Load Models
+						$this->load->model('catalog/category');
+						$this->load->model('catalog/information');
+						$this->load->model('catalog/product');
+
+						//Category
+						if(isset($this->request->get['path'])){
+							$cats  	= explode('_',$this->request->get['path']);
+							$cats 	= !is_array($cats)? array($cats) : $cats;
+							foreach($cats as $cat){
+								$model 	= $this->model_catalog_category->getCategory($cat);
+								$class .= ' category-'.$cat;
+								$class .= ' category-'.str_replace(' ','-',preg_replace('/[^a-z0-9\s]/','',strtolower($model['name'])));
+							}
+						}
+
+						//Information
+						if(isset($this->request->get['information_id'])){
+							$info 	= $this->request->get['information_id'];
+							$model	= $this->model_catalog_information->getInformation($info);
+							$class .= ' information-'.$info;
+							$class .= ' information-'.str_replace(' ','-',preg_replace('/[^a-z0-9\s]/','',strtolower($model['title'])));
+						}
+
+
+						//Product
+						if(isset($this->request->get['product_id'])){
+							$prod   = $this->request->get['product_id'];
+							$model  = $this->model_catalog_product->getProduct($prod);
+							$class .= ' product-'.$prod;
+							$class .= ' product-'.str_replace(' ','-',preg_replace('/[^a-z0-9\s]/','',strtolower($model['name'])));
+
+						}
+
+					}
+					echo ' id="'.$id.'" class="'.$class.'" ';
+			?>]]></add>
+		</operation>
+	</file>
+</modification>

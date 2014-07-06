@@ -53,7 +53,10 @@ Please donate via PayPal to donate@opencart.com
 <script type="text/javascript">
     jQuery(document).ready(function(){ 
         jQuery('select').selectbox();
-        
+        jQuery('.accordion-heading').click(function(){
+        jQuery('.accordion-heading').removeClass('active');
+            jQuery(this).addClass('active');
+        });
     })
      
     

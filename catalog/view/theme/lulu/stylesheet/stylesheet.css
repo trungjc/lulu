@@ -886,7 +886,7 @@ hr {
     display: block;
     float:left;
     width: 166px;
-	min-height: 210px;
+	min-height: 270px;
 }
 img {
     max-width: 100%;
@@ -1366,10 +1366,6 @@ ul.box-filter > li ul {
 	height: 0;
 }
  
-.clearfix {
-	display: inline-block;
-}
- 
 html[xmlns] .clearfix {
 	display: block;
 }
@@ -1830,7 +1826,7 @@ html[xmlns] .clearfix {
 }
 /* checkout */
 .checkout-heading {
-	background: #F8F8F8;
+	background: #fdf3f7;
 	border: 1px solid #d60c8c;
 	padding: 8px;
 	font-family: "BrandonBold",Helvetica,sans-serif;
@@ -1874,7 +1870,7 @@ html[xmlns] .clearfix {
 .checkout-product thead td {
 	color: #4D4D4D;
 	font-family: "BrandonBold",Helvetica,sans-serif;
-	background-color: #F7F7F7;
+	background-color: #fdf3f7;
 	border-bottom: 1px solid #d60c8c;
 }
 .checkout-product thead .name, .checkout-product thead .model {
@@ -1983,4 +1979,71 @@ html[xmlns] .clearfix {
         float: left;
         width: 33.3333%;
         margin:20px 0;
+}
+.contents {
+    margin: 30px 0;
+}
+.contents label ,.right-contact h3,.viewall a {
+    display: block;
+    color:#d60c8c;
+    font-family: "BrandonLight";
+    margin: 0 0 10px 0;
+}
+.contents .buttons {
+    border:none;padding:0;
+}
+.contents .left {
+    float:left;
+    width: 48%;
+    margin-right: 20px;
+}
+.contents input[type="text"],.contents input[type="email"],.contents textarea {
+    width: 100%!important;
+    background: #FDF3F7;
+    border:1px solid #D4178B;
+}
+.contents .right {
+    float: right;
+    width: 48%;
+}
+.right-contact {
+        float: right;
+        width: 35%;
+        padding-left: 30px;
+}
+
+.left-contact {
+    float: left;
+   padding-right: 37px;
+    width: 58%;
+    border-right:1px solid #ddd;
+}
+.row {
+    margin: 0 0 20px 0;
+}
+
+.accordion-content {
+    display: none;
+}
+.accordion {
+    margin-bottom: 10px;
+    border-bottom:1px solid #ddd;
+    padding-bottom: 5px;
+    
+}
+.accordion-heading {
+    cursor: pointer;
+}
+.accordion-heading.active + .accordion-content {
+     display: block;
+     margin: 10px 0 10px 20px;
+}
+
+.class-checkout-success #content h1{
+    background: url(../image/thank-you.png) no-repeat left top;
+    min-height: 1200px;
+    text-indent: -9999px;
+}
+.class-checkout-success #content p ,.class-checkout-success #content .box ,.class-checkout-success #content .buttons{
+    display: none;
 }

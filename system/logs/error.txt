@@ -360,3 +360,7 @@
 2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
 2014-06-26 23:33:33 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
 2014-06-26 23:33:34 - PHP Notice:  Undefined index: manufacture_description in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 44
+2014-07-05 21:15:38 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
+2014-07-05 21:18:48 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
+2014-07-05 21:19:35 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
+2014-07-05 21:19:49 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
