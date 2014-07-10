@@ -69,12 +69,12 @@
               <?php } ?></td>
             <td class="model" style="display: none"><?php echo $product['model']; ?></td>
             <td class="quantity"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
-              &nbsp;
-              <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-              </td>
+                </td>
             <td class="price" style="display: none"><?php echo $product['price']; ?></td>
-            <td class="total"><?php echo $product['total']; ?>
-              <a style="color:#626264;display:block;margin-top:10px;" href="<?php echo $product['remove']; ?>">Remove</a>
+            <td class="total"><div><?php echo $product['total']; ?></div>
+                
+                 <a class="wl"   onclick="addToWishList(<?php echo $product['prid'] ?>);">Add to wish list</a>
+                 <a class="rm"  href="<?php echo $product['remove']; ?>">Remove</a>
             </td>
           </tr>
           <?php } ?>

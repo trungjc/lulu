@@ -1592,9 +1592,19 @@ html[xmlns] .clearfix {
 	vertical-align: top;
 	border-bottom: 1px solid #d60c8c;
 }
-.wishlist-info tbody .image img {
-	border: 1px solid #d60c8c;
+.wl {
+    border: 1px solid #6d6e71;
+    background: white;
+    display: inline-block;
+    font-size: 10px;
+    height: 20px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    text-align: center;
+    margin-right:10px;
+    width: 142px;
 }
+.wl,.rm {color:#6d6e71;margin-top:20px;font-size: 10px;letter-spacing: 1.5px;display: inline-block;}
 .wishlist-info tbody .image {
 	text-align: center;
 }
