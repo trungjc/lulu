@@ -1,4 +1,4 @@
----------- Date: 2014-06-26 21:33:08 ~ IP : ::1 ----------
+---------- Date: 2014-07-10 10:02:24 ~ IP : ::1 ----------
 REQUEST URI : /lulu/index.php?route=product/manufacturer/info&amp;manufacturer_id=8
 MOD DETAILS:
    modFile   : D:\xampp\htdocs\lulu\vqmod/xml/manufacturer_description.xml
@@ -13,52 +13,7 @@ VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading
 ----------------------------------------------------------------------
 
 
----------- Date: 2014-06-26 21:33:44 ~ IP : ::1 ----------
-REQUEST URI : /lulu/index.php?route=product/manufacturer/info&amp;manufacturer_id=9
-MOD DETAILS:
-   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/manufacturer_description.xml
-   id        : MANUFACTURER DESCRITION
-   version   : 1.4.x and 1.5.x
-   vqmver    : 
-   author    : Andrew Dacenko
-
-File Name    : catalog/view/theme/*/template/product/manufacturer_info.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading_title; ?></h1>
-
-----------------------------------------------------------------------
-
-
----------- Date: 2014-06-26 21:35:14 ~ IP : ::1 ----------
-REQUEST URI : /lulu/index.php?route=product/manufacturer/info&amp;manufacturer_id=9
-MOD DETAILS:
-   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/manufacturer_description.xml
-   id        : MANUFACTURER DESCRITION
-   version   : 1.4.x and 1.5.x
-   vqmver    : 
-   author    : Andrew Dacenko
-
-File Name    : catalog/view/theme/*/template/product/manufacturer_info.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading_title; ?></h1>
-
-----------------------------------------------------------------------
-
-
----------- Date: 2014-06-26 21:35:45 ~ IP : ::1 ----------
-REQUEST URI : /lulu/index.php?route=product/manufacturer/info&amp;manufacturer_id=9
-MOD DETAILS:
-   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/manufacturer_description.xml
-   id        : MANUFACTURER DESCRITION
-   version   : 1.4.x and 1.5.x
-   vqmver    : 
-   author    : Andrew Dacenko
-
-File Name    : catalog/view/theme/*/template/product/manufacturer_info.tpl(0)
-VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading_title; ?></h1>
-
-----------------------------------------------------------------------
-
-
----------- Date: 2014-06-26 21:42:31 ~ IP : ::1 ----------
+---------- Date: 2014-07-10 10:03:35 ~ IP : ::1 ----------
 REQUEST URI : /lulu/index.php?route=product/manufacturer/info&amp;manufacturer_id=8
 MOD DETAILS:
    modFile   : D:\xampp\htdocs\lulu\vqmod/xml/manufacturer_description.xml
