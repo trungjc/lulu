@@ -84,6 +84,8 @@ input[type='text'], input[type='password'], textarea {
 	border: 1px solid #CCCCCC;
 	padding: 3px;
 	margin-left: 0px;
+         background: none repeat scroll 0 0 #fdf3f7;
+    border: 1px solid #d4178b;
 	margin-right: 0px;
 }
 select {
@@ -343,7 +345,7 @@ b, strong,h1,h2,h3,h4,h5 {
 	  background: none repeat scroll 0 0 white;
     color: #000;
     height: 25px;
-    left: 632px;
+    right: 80px;
     line-height: 25px;
     position: absolute;
     text-align: center;
@@ -437,7 +439,7 @@ position: relative;
 .notice {
   color: #fdedf7;
     font-size: 12px;
-    left: 320px;
+    right: 244px;
     position: absolute;
     text-transform: uppercase;
     top: -21px;
@@ -523,15 +525,20 @@ position: relative;
 }
 .breadcrumb {
 	color:#6d6e71;
-	margin-bottom: 20px;
+	margin-bottom: 20px; font-size: 12px;
 }
 .addthis_button_compact {
     color:#d50c8c;
 }
 .breadcrumb a {
     color:#6d6e71;
+    font-size: 12px;
 }
-.success, .warning, .attention, .information {
+.breadcrumb a:last-child {
+    color:#000;
+}
+
+body .success,body  .warning,body .attention, body .information {
 	padding: 10px 10px 10px 33px;
 	margin-bottom: 15px;
 	color: #555555;
@@ -540,7 +547,7 @@ position: relative;
 	-khtml-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
 }
-.success {
+body .success {
 	background: #EAF7D9 url('image/success.png') 10px center no-repeat;
 	border: 1px solid #BBDF8D;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -548,7 +555,7 @@ position: relative;
 	-khtml-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
 }
-.warning {
+body .warning {
 	background: #FFD1D1 url('image/warning.png') 10px center no-repeat;
 	border: 1px solid #F8ACAC;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -556,7 +563,7 @@ position: relative;
 	-khtml-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
 }
-.attention {
+body .attention {
 	background: #FFF5CC url('image/attention.png') 10px center no-repeat;
 	border: 1px solid #F2DD8C;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -564,7 +571,7 @@ position: relative;
 	-khtml-border-radius: 5px 5px 5px 5px;
 	border-radius: 5px 5px 5px 5px;
 }
-.success .close, .warning .close, .attention .close, .information .close {
+body .success .close,body .warning .close,body .attention .close,body .information .close {
 	float: right;
 	padding-top: 4px;
 	padding-right: 4px;
@@ -688,9 +695,6 @@ table.radio tr.highlight:hover td {
 	padding-top: 3px;
 }
 /* button */
-.name {
-    min-height: 42px;
-}
 a.button, input.button,.quickview {
 	 background: none repeat scroll 0 0 #000;
     color: #dedede;
@@ -722,18 +726,20 @@ a.button, input.button,.quickview {
 .cart .wishlist a:visted {
      background: url('../image/heart.png') no-repeat;
 }
+
 .cart .button ,.tab-content .box-product .button {    
     display: inline-block;
-    text-indent: -9999px;
     height: 19px;
     padding: 0;
     vertical-align: middle;
+    text-align: center;
     margin: 0 2px;
-    width: 60px;
-    background: url('../image/button.png') no-repeat;
+    width: 60px; color: #f5c2e2;
+    background:#d50c8c url(../image/plus.jpg) no-repeat 90%  center;
 }
+
 .cart .button:hover ,.tab-content .box-product .button:hover{
-    background: url('../image/button.png') no-repeat;
+   background:#d50c8c url(../image/plus.jpg) no-repeat 90% center;
     
 }
 .left-form h1,.checkout-page .box-heading ,.heading-special{
@@ -779,9 +785,11 @@ input.button {
 a.button:hover, input.button:hover {
 	background-position: 0px -24px;
 }
+#content p {
+    letter-spacing: 1.5px;
+}
+.product-info > .right > .clearfix {display: inline-block;}
 .buttons {
-	background: #FFFFFF;
-	border: 1px solid #d60c8c;
 	overflow: auto;
 	padding: 6px;
 	margin-bottom: 20px;
@@ -907,7 +915,7 @@ img {
 .box-product .image img {
 }
 .box-product .name a {
-	color: #000;
+	color: #000; letter-spacing: 1.5px;
 	text-decoration: none;
 	display: block;
         font-family: "BrandonLight";
@@ -916,17 +924,17 @@ img {
 .manufacturer-name {
     font-family: "BrandonBold";
     text-decoration: none;
-    display: block;
+    display: block; letter-spacing: 1.5px;
 }
 .box-product .price {
 	display: block;
-	margin-bottom: 4px;
+	margin-bottom: 4px; letter-spacing: 1.5px;
 }
 .box-product .price-old {
-	color: #F00;
+	color: #F00; letter-spacing: 1.5px;
 	text-decoration: line-through;
 }
-.box-product .price-new {
+.box-product .price-new { letter-spacing: 1.5px;
 }
 .box-product .rating {
 	display: block;
@@ -963,7 +971,9 @@ ul.box-filter > li ul {
 }
 ul.box-category > li > a {
 	text-decoration: none;
-	color: #333;
+	color: #6d6e70;
+        font-size: 12px;
+        letter-spacing: 1.5px;
         font-family: "BrandonBold",Helvetica,sans-serif;
 }
 ul.box-category > li ul {
@@ -997,8 +1007,14 @@ ul.box-filter, ul.box-filter ul {
 	margin: 0;
 	padding: 0;
 }
+ul.box-filter li a {
+    
+    color: #6d6e70;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+}
 ul.box-filter li a ,.results,.backtotop{
-    font-family: "BrandonBold",Helvetica,sans-serif;
+        font-family: "BrandonBold",Helvetica,sans-serif;
 }
 #tab-related .box-product > div {
     display: block;
@@ -1219,10 +1235,10 @@ ul.box-filter > li ul {
 }
 .product-grid .name a {
 	text-decoration: none;
-	display: block;
+	display: block; letter-spacing: 1.5px;
 	margin-bottom: 4px;
 }
-.product-grid .brand {
+.product-grid .brand { letter-spacing: 1.5px;
 	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-grid .description {
@@ -1234,18 +1250,16 @@ ul.box-filter > li ul {
 }
 .product-grid .price {
 	display: block;
-	font-family: "BrandonBold",Helvetica,sans-serif;
-	margin-bottom: 4px;
+	margin-bottom: 4px; letter-spacing: 1.5px;
 }
-.product-grid .price-old {
+.product-grid .price-old { letter-spacing: 1.5px;
 	color: #F00;
 	text-decoration: line-through;
 }
 .product-grid .price-new {
-	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-grid .price .price-tax {
-	display: none;
+	display: none; letter-spacing: 1.5px;
 }
 .product-grid .cart {
 	margin-bottom: 3px;
@@ -1393,22 +1407,36 @@ html[xmlns] .clearfix {
         clear: both;
 }
 .button-container {text-align: right;}
-.button-container .button ,.button-container .button:hover{
-    background: url("../image/add-to-basket.png") no-repeat  rgba(0, 0, 0, 0);
+.button-container .button:hover{
+    background: #d50c8c;
     height: 22px;
     width: 142px;
     margin: 0 0 10px 0;
 }
+.quantity-container > input {
+    font-size: 12px;
+    width: 30px;
+}
+.button-container .button {
+    background:#d50c8c;text-indent: 0;  height: 22px;
+    width: 142px;font-size: 10px;letter-spacing: 1.5px;
+    margin: 0 0 10px 0;}
 .button-container .links a {
-    background: url("../image/add-to-love.png") no-repeat rgba(0, 0, 0, 0);
-    height: 22px;
-    text-indent: -9999px;
+            background: white url("../image/add-to-love-icon.png") no-repeat  4px center;
+    height: 22px;border:1px solid #d50c8c;
     width: 142px;    display: inline-block;
+    color:#d50c8c;letter-spacing: 1.5px;
+    font-size: 10px;line-height: 22px;
+    text-align: center;
 }
 
 .left-content {
     float: left;
 	width: 45%;
+}
+.left-content h1 {
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 .product-info .cart div > span {
 	color: #999;
@@ -1895,6 +1923,8 @@ html[xmlns] .clearfix {
 }
 .contact-info {
 	overflow: auto;
+        font-size: 11px;
+        letter-spacing: 1.5px;
 }
 .contact-info .left {
 	float: left;
@@ -1954,10 +1984,9 @@ html[xmlns] .clearfix {
 }
 #container {position: relative;}
 #powered {
-	bottom: -24px;
+	bottom: -22px;
     clear: both;
     color: white;
-    margin-top: 5px;
     position: absolute;
     font-size: 12px;
     right: 0;
@@ -1986,8 +2015,16 @@ html[xmlns] .clearfix {
 .contents label ,.right-contact h3,.viewall a {
     display: block;
     color:#d60c8c;
-    font-family: "BrandonLight";
+    font-family: "BrandonBold"; font-size: 11px;
+    letter-spacing: 1.5px;
     margin: 0 0 10px 0;
+}
+.viewall a,.contents label {
+   font-family: "BrandonBold"; font-size: 11px;
+}
+.viewall a { color:#d60c8c!important;}
+.contents  .right-contact label ,.right-contact h3{
+    font-size: 14px;
 }
 .contents .buttons {
     border:none;padding:0;
@@ -2029,13 +2066,14 @@ html[xmlns] .clearfix {
     margin-bottom: 10px;
     border-bottom:1px solid #ddd;
     padding-bottom: 5px;
-    
+    font-size: 11px;
+    letter-spacing: 1.5px;line-height: 22px;
 }
 .accordion-heading {
     cursor: pointer;
 }
 .accordion-heading.active + .accordion-content {
-     display: block;
+     display: block;line-height: 22px;
      margin: 10px 0 10px 20px;
 }
 

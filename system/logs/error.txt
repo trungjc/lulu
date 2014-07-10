@@ -292,6 +292,7 @@
 2014-06-25 10:28:40 - PHP Notice:  Undefined variable: text_sitemap in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 223
 2014-06-26 5:13:44 - PHP Notice:  unserialize(): Error at offset 333 of 7138 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
 2014-06-26 5:20:58 - PHP Notice:  unserialize(): Error at offset 4493 of 51927 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
+<<<<<<< Updated upstream
 2014-06-26 21:35:14 - PHP Notice:  Undefined variable: description in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\product\manufacturer_info.tpl on line 12
 2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
 2014-06-26 23:20:03 - PHP Unknown:  Object of class stdClass could not be converted to string in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_catalog_product.php on line 20
@@ -364,3 +365,14 @@
 2014-07-05 21:18:48 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
 2014-07-05 21:19:35 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
 2014-07-05 21:19:49 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
+=======
+2014-07-09 11:38:48 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-07-09 11:38:56 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-07-09 11:38:59 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-07-09 11:39:07 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+>>>>>>> Stashed changes
+2014-07-10 7:06:20 - PHP Notice:  Undefined index: title in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_view_theme_lulu_template_common_header.tpl on line 87
+2014-07-10 7:06:24 - PHP Notice:  Undefined index: title in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_view_theme_lulu_template_common_header.tpl on line 87
+2014-07-10 7:13:28 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
+2014-07-10 7:13:47 - PHP Notice:  Undefined index: captcha in D:\xampp\htdocs\lulu\catalog\controller\information\contact.php on line 188
+2014-07-10 9:15:52 - PHP Notice:  unserialize(): Error at offset 4493 of 51927 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11

@@ -22,8 +22,10 @@
         <?php } ?>
         <?php if ($product['rating']) { ?>
         <div class="rating"><img src="catalog/view/theme/lulu/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
+       <?php } else {?>
+        <div class="rating"> <img src="catalog/view/theme/lulu/image/stars-0.png" alt="Based on 0 reviews." /></div>
         <?php } ?>
-        <div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /><div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo "add to wishlist"; ?></a></div></div>
+        <div class="cart"><input type="button" value="ADD " onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /><div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo "add to wishlist"; ?></a></div></div>
 	
      
 	</div>

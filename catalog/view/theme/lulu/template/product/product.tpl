@@ -102,9 +102,9 @@
                       </td>
                       <?php } ?>
                       <td width="30%" class="button-container">
-                           <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
+                           <input type="button" value="Add to basket" id="button-cart" class="button" />
 
-                           <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');"><span style="display: none"><?php echo $button_wishlist; ?></span></a>
+                           <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');">Add to love list</a>
 
                       </td>
                    </tr>
@@ -377,8 +377,11 @@
               <?php } ?>
               <?php if ($product['rating']) { ?>
               <div class="rating"><img src="catalog/view/theme/lulu/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-              <?php } ?>
-              <a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a></div>
+              <?php } else { ?>
+              <div class="rating">  <img src="catalog/view/theme/lulu/image/stars-0.png" alt="0 review" /></div>
+               <?php }  ?>
+              <a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button">Add</a>
+            </div>
             <?php } ?>
           </div>
         </div>

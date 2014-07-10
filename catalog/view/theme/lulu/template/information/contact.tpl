@@ -43,6 +43,7 @@
             <span class="error"><?php echo $error_enquiry; ?></span>
             <?php } ?>
         </div>
+            <div style="margin:-10px 0 20px;color:#000">alternatively please contact us on xxxxxxxxxxxxxxx</div>
         <div class="buttons"><input type="submit" value="Send" class="button" /></div>
      </div>
      <div class="right-contact">

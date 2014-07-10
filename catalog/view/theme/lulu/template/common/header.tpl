@@ -52,7 +52,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <div id="container">
 <div id="header">
     <div class="notice">Complimentary shipping on orders over $75</div>
-    <div class="livechat">
+    <div class="livechat" style="display: none">
         <a href="#">live chat</a>
     </div>
   <?php if ($logo) { ?>

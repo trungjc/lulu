@@ -71,9 +71,11 @@
             <td class="quantity"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
               &nbsp;
               <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-              &nbsp;<a href="<?php echo $product['remove']; ?>">Remove</a></td>
+              </td>
             <td class="price" style="display: none"><?php echo $product['price']; ?></td>
-            <td class="total"><?php echo $product['total']; ?></td>
+            <td class="total"><?php echo $product['total']; ?>
+              <a style="color:#626264;display:block;margin-top:10px;" href="<?php echo $product['remove']; ?>">Remove</a>
+            </td>
           </tr>
           <?php } ?>
           <?php foreach ($vouchers as $vouchers) { ?>
@@ -92,8 +94,8 @@
     </div>
   </form>
   <?php if ($coupon_status || $voucher_status || $reward_status || $shipping_status) { ?>
-  <h2><?php echo $text_next; ?></h2>
-  <div class="content">
+  <h2 style="display: none"><?php echo $text_next; ?></h2>
+  <div class="content" style="display: none">
     <p><?php echo $text_next_choice; ?></p>
     <table class="radio">
       <?php if ($coupon_status) { ?>
@@ -138,16 +140,37 @@
       <?php } ?>
     </table>
   </div>
-  <div class="cart-module">
-    <div id="coupon" class="content" style="display: <?php echo ($next == 'coupon' ? 'block' : 'none'); ?>;">
+  <div class="cart-module clearfix">
+    <div id="coupon" class="content" style="float:left;display: <?php echo ($next == 'coupon' ? 'block' : 'block'); ?>;">
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <?php echo $entry_coupon; ?>&nbsp;
+        Promotion code &nbsp;
         <input type="text" name="coupon" value="<?php echo $coupon; ?>" />
         <input type="hidden" name="next" value="coupon" />
         &nbsp;
-        <input type="submit" value="<?php echo $button_coupon; ?>" class="button" />
+        <input type="submit" value="Apply" class="button" />
       </form>
     </div>
+      <div class="share" style="display: block;float: left;"><!-- AddThis Button BEGIN -->
+              <div class="addthis_default_style">
+                  <a class="addthis_button_compact">Share this product</a> 
+                  
+                  <a class="addthis_button_facebook"></a>
+                  <a class="addthis_button_twitter"></a>
+                  <a class="addthis_button_instagram"></a>
+                 
+				  <a class="addthis_button_printest"> </a>
+				  <a href="http://www.pinterest.com/pin/create/button/
+					?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F
+					&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg
+					&description=Next%20stop%3A%20Pinterest"
+					data-pin-do="buttonPin"
+					data-pin-config="above">
+				 
+					</a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
+              <!-- AddThis Button END --> 
+            </div>
     <div id="voucher" class="content" style="display: <?php echo ($next == 'voucher' ? 'block' : 'none'); ?>;">
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
         <?php echo $entry_voucher; ?>&nbsp;

@@ -257,7 +257,7 @@
           <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" style=" height: 20px; vertical-align: middle;" />
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
           &nbsp;
-          <input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
+          <input type="button" value="Add" id="button-cart" class="button" />
         </div>
         
         
@@ -268,8 +268,7 @@
       <?php if ($review_status) { ?>
       <div class="review">
         <div><img src="catalog/view/theme/lulu/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;
-		<!--<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>
-		 &nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a>-->
+		
 		</div>
         <div class="share" style="display:none"><!-- AddThis Button BEGIN -->
           <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
@@ -333,8 +332,12 @@
         <?php } ?>
         <?php if ($product['rating']) { ?>
         <div class="rating"><img src="catalog/view/theme/lulu/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-        <?php } ?>
-        <a href="<?php echo $product['href']; ?>" class="button"><?php echo $text_title_view;?></a></div>
+       <?php } else {?>
+        <div class="rating"><img src="catalog/view/theme/lulu/image/stars-0.png" alt="0 review" />
+		
+		</div>
+      <?php } ?>
+        <a href="<?php echo $product['href']; ?>" class="button">add</a></div>
       <?php } ?>
     </div>
   </div>
@@ -347,6 +350,9 @@ $('.colorbox').colorbox({
 	overlayClose: true,
 	opacity: 0.5
 });
+$(document).ready(function(){ 
+        $('select').selectbox();
+    })
 //--></script> 
 
 <?php if(count($images) > 3){ ?>

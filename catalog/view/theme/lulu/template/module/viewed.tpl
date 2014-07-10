@@ -24,8 +24,10 @@ $product['href'] .= "&locByLocId=" . $_REQUEST['locByLocId'];
 <?php } ?>
 <?php if ($product['rating']) { ?>
 <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-<?php } ?>
-<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button button-cart"><?php echo $button_cart; ?></a></div>
+<?php } else { ?>
+              <div class="rating">  <img src="catalog/view/theme/lulu/image/stars-0.png" alt="0 review" /></div>
+               <?php }  ?>
+<a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button button-cart">add</a></div>
 <?php } ?>
 </div>
 </div>

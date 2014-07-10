@@ -13,7 +13,7 @@
   <?php echo $text_description; ?>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <h2><?php echo $text_order; ?></h2>
-    <div class="content">
+    <div class="content clearfix">
       <div class="left"><span class="required">*</span> <?php echo $entry_firstname; ?><br />
         <input type="text" name="firstname" value="<?php echo $firstname; ?>" class="large-field" />
         <br />
@@ -57,7 +57,7 @@
     </div>
     <h2><?php echo $text_product; ?></h2>
     <div id="return-product">
-      <div class="content">
+      <div class="content clearfix">
         <div class="return-product">
           <div class="return-name"><span class="required">*</span> <b><?php echo $entry_product; ?></b><br />
             <input type="text" name="product" value="<?php echo $product; ?>" />
