@@ -1,0 +1,63 @@
+<modification>
+	<id>News edit in admin page</id>
+	<version>1.5.x</version>
+	<vqmver>2.2.0</vqmver>
+	<author>Fanha Giang</author>
+	<!-- begin SEF -->
+	<file name="catalog/controller/common/seo_url.php">
+		<operation>
+			<search position="before"><![CDATA[if ($url[0] == 'category_id') {]]></search>
+				<add><![CDATA[
+					if ($url[0] == 'news_id') {
+						$this->request->get['news_id'] = $url[1];
+					}
+					if ($url[0] == 'news_category_id') {
+						if (!isset($this->request->get['npath'])) {
+							$this->request->get['npath'] = $url[1];
+						} else {
+							$this->request->get['npath'] .= '_' . $url[1];
+						}
+					}      
+				]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[} elseif ($key == 'path') {]]></search>
+			<add><![CDATA[ 
+				} elseif ($data['route'] == 'news/news' && $key == 'news_id') {
+					$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = '" . $this->db->escape($key . '=' . (int)$value) . "'");
+				
+					if ($query->num_rows) {
+						$url .= '/' . $query->row['keyword'];
+						
+						unset($data[$key]);
+					}									
+				} elseif (($data['route'] == 'news/news' || $data['route'] == 'news/category') && $key == 'npath') {
+					$categories = explode('_', $value);
+					
+					foreach ($categories as $category) {
+						$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` = 'news_category_id=" . (int)$category . "'");
+				
+						if ($query->num_rows) {
+							$url .= '/' . $query->row['keyword'];
+						}							
+					}
+					
+					unset($data[$key]);
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[} elseif (isset($this->request->get['path'])) {]]></search>
+			<add><![CDATA[
+				}elseif (isset($this->request->get['npath'])) {
+					if (isset($this->request->get['news_id'])) {
+						$this->request->get['route'] = 'news/news';
+					} else {
+						$this->request->get['route'] = 'news/category';
+					}
+				}elseif (isset($this->request->get['news_id'])) {
+					$this->request->get['route'] = 'news/news';
+			]]></add>
+		</operation>
+	<!-- end SEF -->
+	</file>
+</modification>

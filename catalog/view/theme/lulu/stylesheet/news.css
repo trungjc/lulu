@@ -1,0 +1,184 @@
+#menu .menu-news .menu-news-article {
+	display: table;
+}
+#menu .menu-news .menu-news-article {
+	display: table-row;
+}
+
+#menu .menu-news .menu-news-article ul {
+	display: table-cell;
+}
+
+#menu .menu-news .menu-news-article a {
+	color: #FFFF00;
+}
+
+#menu .menu-news .menu-news-subcategory {
+	display: table-row;
+}
+
+#menu .menu-news .menu-news-subcategory ul {
+	display: table-cell;
+}
+
+#menu .menu-news .menu-news-subcategory ul .menu-news-subarticle a{
+	color: #00FFFF;
+}
+
+/* for news module, category view, search view */
+h1 > a {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+}
+
+.tags_share {
+	border-bottom: 1px solid #EEEEEE;
+    overflow: auto;
+    padding-bottom: 5px;
+}
+
+.tags_share .share {
+	float: right;
+}
+
+.tags_share .tags {
+	float: left;
+}
+
+.article-list {
+	margin: 20px 0px;
+}
+
+.article-list > .box-article {
+	margin-bottom: 20px;
+	max-width: 980px;
+	overflow: auto;
+}
+
+.article-list > .box-article  + .box-article {
+	padding-top: 20px;
+	border-top: 1px solid #EEEEEE;
+}
+
+.article-2col {
+	margin: 20px auto;
+}
+
+.article-2col .box-row + .box-row{
+	margin-top: 20px;
+}
+
+.article-2col .box-row .box-article{
+	display: table-cell;
+	width: 480px;
+}
+
+#column-left + #content >
+.article-2col .box-row .box-article, 
+#column-right + #content >
+.article-2col .box-row .box-article  {
+	width: 380px;
+}
+
+#column-left + #column-right + #content >
+.article-2col .box-row .box-article {
+	width: 280px;
+}
+
+.article-2col .box-row > .box-article + .box-article{
+	padding-left: 20px;
+}
+
+.box-article .news-image {
+	float: left;
+	margin-right: 10px !important;
+}
+
+.article-2col .box-article .news-image {
+	margin: 5px auto;
+	text-align: center;
+	float:none;
+}
+
+.box-article .news-date {
+	font-size: 11px; 
+	color: #aaaaaa;
+}
+
+.box-article .news-date span + span {
+    border-left: 1px solid #CCCCCC;
+    margin-left: 5px;
+    padding-left: 5px;	
+}
+
+.box-article .news-read-comment {
+	font-size: 11px; 
+	color: #aaaaaa;
+}
+
+.box-article .news-read-comment span + span {
+    border-left: 1px solid #CCCCCC;
+    margin-left: 5px;
+    padding-left: 5px;	
+}
+
+.box-article .news-read-comment a {
+	font-size: 11px; 
+	color: #aaaaaa;
+}
+
+.box-article .news-title a {
+	font-size: 16px; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.box-article .news-intro {
+	text-align: justify; padding: 10px 0;
+}
+
+/* side box */
+.box-article-small {
+	margin: 10px 0;
+}
+
+.box-article-small .news-image  {
+	float: left;
+	margin-right: 10px;
+}
+
+.box-article-small .clear {
+	clear:both;
+}
+
+/* for article view*/
+.news-info .news-properties {
+	font-size: 11px; 
+	color: #aaaaaa;
+}
+
+.news-info .news-intro, .news-info .news-content {
+	text-align: justify;
+}
+
+.news-info .news-image {
+	text-align: center;
+}
+
+.news-info .related ul {
+	margin-top: 0px;
+}
+
+#tab-comment .comment-head {}
+
+.comment-author { 
+	font-weight: bold;
+}
+
+.comment-date {
+	font-size: 11px; 
+	color: #aaaaaa;
+}

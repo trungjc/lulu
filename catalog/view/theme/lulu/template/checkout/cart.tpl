@@ -144,8 +144,8 @@
     <div id="coupon" class="content" style="float:left;display: <?php echo ($next == 'coupon' ? 'block' : 'block'); ?>;">
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
         Promotion code &nbsp;
-        <input type="text" name="coupon" value="<?php echo $coupon; ?>" />
-        <input type="hidden" name="next" value="coupon" />
+        <input type="text" style="width: 100px" name="coupon" value="<?php echo $coupon; ?>" />
+        <input type="hidden" name="next" value="coupon"  />
         &nbsp;
         <input type="submit" value="Apply" class="button" />
       </form>
@@ -245,7 +245,7 @@
             </div>
     </div>
 </div>
-  <?php echo $content_bottom; ?></div>
+  <?php echo $content_bottom; ?></div><script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <script type="text/javascript"><!--
 $('input[name=\'next\']').bind('change', function() {
 	$('.cart-module > div').hide();

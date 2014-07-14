@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS `oc_news`;
+DROP TABLE IF EXISTS `oc_news_category`;
+DROP TABLE IF EXISTS `oc_news_category_description`;
+DROP TABLE IF EXISTS `oc_news_category_to_layout`;
+DROP TABLE IF EXISTS `oc_news_category_to_store`;
+DROP TABLE IF EXISTS `oc_news_comment`;
+DROP TABLE IF EXISTS `oc_news_description`;
+DROP TABLE IF EXISTS `oc_news_related`;
+DROP TABLE IF EXISTS `oc_news_to_category`;
+DROP TABLE IF EXISTS `oc_news_to_store`;
+DROP TABLE IF EXISTS `oc_news_tag`;
+DROP TABLE IF EXISTS `oc_news_category_permission`;

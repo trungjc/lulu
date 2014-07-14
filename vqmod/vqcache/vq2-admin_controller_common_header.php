@@ -19,6 +19,16 @@ class ControllerCommonHeader extends Controller {
 
 		$this->language->load('common/header');
 
+
+				$this->language->load('common/news_header');
+				
+				$this->data['text_news_title'] = $this->language->get('text_news_title');
+				$this->data['text_news_category'] = $this->language->get('text_news_category');
+				$this->data['text_news_article'] = $this->language->get('text_news_article');
+				$this->data['text_news_comment'] = $this->language->get('text_news_comment');
+				$this->data['text_news_setting'] = $this->language->get('text_news_setting');
+				$this->data['text_news_feed'] = $this->language->get('text_news_feed');
+			
 		$this->data['heading_title'] = $this->language->get('heading_title');
 
 		$this->data['text_affiliate'] = $this->language->get('text_affiliate');
@@ -129,6 +139,13 @@ $this->data['text_product_tab'] = $this->language->get('text_product_tab');
 			$this->data['pp_express_status'] = $this->config->get('pp_express_status');
 
 			$this->data['home'] = $this->url->link('common/home', 'token=' . $this->session->data['token'], 'SSL');
+
+				$this->data['news_article'] = $this->url->link('news/article', 'token=' . $this->session->data['token'], 'SSL');
+				$this->data['news_category'] = $this->url->link('news/category', 'token=' . $this->session->data['token'], 'SSL');
+				$this->data['news_comment'] = $this->url->link('news/comment', 'token=' . $this->session->data['token'], 'SSL');
+				$this->data['news_setting'] = $this->url->link('news/setting', 'token=' . $this->session->data['token'], 'SSL');
+				$this->data['news_feed'] = $this->url->link('news/feed', 'token=' . $this->session->data['token'], 'SSL');
+			
 			$this->data['affiliate'] = $this->url->link('sale/affiliate', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['attribute'] = $this->url->link('catalog/attribute', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['attribute_group'] = $this->url->link('catalog/attribute_group', 'token=' . $this->session->data['token'], 'SSL');

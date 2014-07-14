@@ -811,6 +811,9 @@ a.button:hover, input.button:hover {
 	height: 32px;
 	line-height: 16px;
 }
+body .at16nc.at16t_compact {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
 .htabs a {
 	border: 1px solid #e049a9;
 	background:#e049a9;
@@ -1415,7 +1418,7 @@ html[xmlns] .clearfix {
 }
 .quantity-container > input {
     font-size: 12px;
-    width: 30px;
+    width: 20px;
 }
 .button-container .button {
     background:#d50c8c;text-indent: 0;  height: 22px;

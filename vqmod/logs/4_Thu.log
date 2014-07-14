@@ -28,3 +28,18 @@ VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading
 ----------------------------------------------------------------------
 
 
+---------- Date: 2014-07-10 09:11:40 ~ IP : ::1 ----------
+REQUEST URI : /lulu/index.php?route=product/manufacturer/info&amp;manufacturer_id=9
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/manufacturer_description.xml
+   id        : MANUFACTURER DESCRITION
+   version   : 1.4.x and 1.5.x
+   vqmver    : 
+   author    : Andrew Dacenko
+
+File Name    : catalog/view/theme/*/template/product/manufacturer_info.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <h1><?php echo $heading_title; ?></h1>
+
+----------------------------------------------------------------------
+
+

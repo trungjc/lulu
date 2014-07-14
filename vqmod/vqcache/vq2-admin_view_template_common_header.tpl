@@ -83,6 +83,17 @@ $(document).ready(function(){
 <li><a href="<?php echo $product_tab; ?>"><?php echo $text_product_tab; ?></a></li>
         </ul>
       </li>
+
+				<li id="news"><a class="top"><?php echo $text_news_title; ?></a>
+				<ul>
+					<li><a href="<?php echo $news_category; ?>"><?php echo $text_news_category; ?></a></li>
+					<li><a href="<?php echo $news_article; ?>"><?php echo $text_news_article; ?></a></li>
+					<li><a href="<?php echo $news_comment; ?>"><?php echo $text_news_comment; ?></a></li>
+					<li><a href="<?php echo $news_setting; ?>"><?php echo $text_news_setting; ?></a></li>
+					<li><a href="<?php echo $news_feed; ?>"><?php echo $text_news_feed; ?></a></li>
+				</ul>
+				</li>
+			
       <li id="extension"><a class="top"><?php echo $text_extension; ?></a>
         <ul>
           <li><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>

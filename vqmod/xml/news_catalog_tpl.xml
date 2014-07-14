@@ -1,0 +1,125 @@
+<modification>
+	<id>News edit in admin page</id>
+	<version>1.5.x</version>
+	<vqmver>2.2.0</vqmver>
+	<author>Fanha Giang</author>
+	<!-- begin human site map -->
+	<file name="catalog/view/theme/*/template/information/sitemap.tpl">
+		<operation>
+			<search position="before" offset="1"><![CDATA[
+  <?php echo $content_bottom; ?></div>
+			]]></search>
+			<add><![CDATA[
+	<?php if ($news_categories) { ?>
+    <div class="right">
+      <ul>
+        <?php foreach ($news_categories as $category_1) { ?>
+        <li><a href="<?php echo $category_1['href']; ?>"><?php echo $category_1['name']; ?></a>
+          <?php if ($category_1['children']) { ?>
+          <ul>
+            <?php foreach ($category_1['children'] as $category_2) { ?>
+            <li><a href="<?php echo $category_2['href']; ?>"><?php echo $category_2['name']; ?></a>
+              <?php if ($category_2['children']) { ?>
+              <ul>
+                <?php foreach ($category_2['children'] as $category_3) { ?>
+                <li><a href="<?php echo $category_3['href']; ?>"><?php echo $category_3['name']; ?></a></li>
+                <?php } ?>
+              </ul>
+              <?php } ?>
+            </li>
+            <?php } ?>
+          </ul>
+          <?php } ?>
+        </li>
+        <?php } ?>
+      </ul>
+    </div>	
+	<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	<!-- end human site map -->
+	<file name="catalog/view/theme/*/template/common/header.tpl">
+		<!-- begin load CSS -->
+		<operation error="skip">
+			<search position="before"><![CDATA[</head>]]></search>
+			<add><![CDATA[
+			<?php
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/stylesheet/news.css')) {
+				$news_css = $this->config->get('config_template') . '/stylesheet/news.css';
+			} else {
+				$news_css = 'default/stylesheet/news.css';
+			}
+			?>
+          <link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $news_css;?>" />
+			]]></add>
+		</operation>
+		<!-- end load CSS -->
+		<!-- begin top menu for article category -->
+		<operation error="skip">
+			<search position="after" offset="16"><![CDATA[
+          <?php //foreach ($categories as $category) { ?>
+			]]></search>
+			<add><![CDATA[
+	<?php } ?>
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="after"><![CDATA[
+          <?php //foreach ($categories as $category) { ?>
+			]]></search>
+			<add><![CDATA[
+	<?php if (isset($category['is_news'])) { ?>
+    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+      <?php if ($category['children'] || $category['article']) { ?>
+      <div class="menu-news">
+		<?php if (count($category['article'])) {?>
+		<div class="menu-news-article">
+        <?php for ($i = 0; $i < count($category['article']);) { ?>
+        <ul>
+          <?php $j = $i + ceil(count($category['article']) / $category['column']); ?>
+          <?php for (; $i < $j; $i++) { ?>
+          <?php if (isset($category['article'][$i])) { ?>
+			<li>
+			  <a href="<?php echo $category['article'][$i]['href']; ?>"><?php echo $category['article'][$i]['name']; ?></a>
+			</li>
+          <?php } ?>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+		</div>
+		<?php } ?>
+		<div class="menu-news-subcategory">
+        <?php for ($i = 0; $i < count($category['children']);) { ?>
+        <ul>
+          <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
+          <?php for (; $i < $j; $i++) { ?>
+          <?php if (isset($category['children'][$i])) { ?>
+			<li>
+			  <a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a>
+			  <div class="menu-news-subarticle">
+			  <?php if (isset($category['children'][$i]['article']) && $category['children'][$i]['article']) { ?>
+				<ul>
+				<?php for ($k = 0; $k < count($category['children'][$i]['article']); $k++) { ?>
+				  <?php if (isset($category['children'][$i]['article'][$k])) { ?>
+				  <li><a href="<?php echo $category['children'][$i]['article'][$k]['href']; ?>"><?php echo $category['children'][$i]['article'][$k]['name']; ?></a></li>
+				  <?php } ?>
+				<?php } ?>
+				</ul>
+			  <?php } ?>
+			  </div>
+			</li>
+          <?php } ?>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+		</div>
+      </div>
+      <?php } ?>
+    </li>
+    <?php } else { ?>
+			]]></add>
+		</operation>
+	<!-- end top menu for article category -->
+	</file>
+</modification>
