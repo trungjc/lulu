@@ -26,10 +26,8 @@
               <?php } ?>
 			   <ul>
 				<?php foreach ($child['children'] as $child_child) { ?>
-				<li>
-				 
-				  <a href="<?php echo $child_child['href']; ?>"> <?php echo $child_child['name']; ?></a>
-						  
+				<li>				 
+				  <a href="<?php echo $child_child['href']; ?>"> <?php echo $child_child['name']; ?></a>						  
 				</li>
 				<?php } ?>
 			  </ul>

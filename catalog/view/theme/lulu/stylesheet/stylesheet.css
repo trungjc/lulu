@@ -2110,10 +2110,11 @@ html[xmlns] .clearfix {
 .category-new {
 	padding: 0;margin: 0;
 }
-.category-new > li > a {
+.category-new > li > a ,.category-lists{
 	display: none;
 }
-
+.news-content p {text-align: center;}
+.category-lists {}
 .category-new > li  > ul > li > a {
 	color:#d64599;
 	font-weight: bold;
