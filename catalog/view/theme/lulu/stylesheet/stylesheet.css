@@ -2097,3 +2097,13 @@ html[xmlns] .clearfix {
 .class-checkout-success #content p ,.class-checkout-success #content .box ,.class-checkout-success #content .buttons{
     display: none;
 }
+
+.last-new .box-article {
+    float: left;
+    width: 215px;
+}
+
+.last-new .box-article  + .box-article{
+    margin-left: 15px;
+    padding-left: 15px;
+}

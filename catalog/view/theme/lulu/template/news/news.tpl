@@ -5,14 +5,16 @@
 //Email (PayPal Account): fanha99@gmail.com
 //License: Commercial
 ?>
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
-	<div class="breadcrumb">
+<?php echo $header; ?><?php echo $content_top; ?>
+<div class="breadcrumb">
 		<?php foreach ($breadcrumbs as $breadcrumb) { ?>
 		<?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
 		<?php } ?>
 	</div>
 	<h1><?php echo $heading_title; ?></h1>
+<?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content">
+	
 	<div class="news-info">
 		<span class="news-properties">
 		<?php if($show_create_date){ ?>
@@ -28,7 +30,7 @@
 		<b><?php echo $comment_total; ?></b> <?php echo $text_comments; ?>
 		<?php } ?>			
 		</span><br /><br />
-		<div class="news-intro"><?php echo $short_description; ?></div><br />
+                <div class="news-intro" style="display: none"><?php echo $short_description; ?></div><br />
 		<?php if($image){ ?><div class="news-image"><img src="<?php echo $image; ?>" border="0"/></div><br /><?php } ?>
 		<div class="news-content"><?php echo $description; ?></div><br />  		
   		<?php if ($related_newss) { ?>
@@ -43,47 +45,7 @@
   		<?php } ?>
 		
 	</div>
-	<div class="tags_share">	
-        <div class="share"><!-- AddThis Button BEGIN -->
-          <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
-          <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script> 
-          <!-- AddThis Button END --> 
-        </div>
-	</div>
-	
-  	<?php if($allow_comment) { ?>
-	<div id="tab-comment">
-		<a name="comment_area"></a> 
-		<h2 id="comments-text"><?php echo $text_comments; ?></h2>
-		<div id="comments">
-		</div>
-				
-  		<?php if ($comment_permission == 0 || ($comment_permission == 1 && $logged)) { ?>
-		<br /><h2 id="comment-title"><?php echo $text_write_comment; ?></h2>
-		<b><?php echo $entry_name; ?></b><br />
-		<input type="text" name="name" value="<?php echo $name; ?>" />
-	    <br /><br />
-
-        <b><?php echo $entry_email; ?></b><br />
-        <input type="text" name="email" value="<?php echo $email; ?>" />
-        <br /><br />
-		
-		<b><?php echo $entry_comment; ?></b>
-		<textarea name="comment" cols="40" rows="8" style="width: 98%;"></textarea>
-		<span><?php echo $text_note; ?></span><br />
-
-		<br />
-		<b><?php echo $entry_captcha; ?></b><br />
-        	<input type="text" name="captcha" value=""/>
-		<br />
-	        <img src="index.php?route=news/news/captcha" id="captcha" alt=""/>
-		<br />
-		<div class="buttons">
-		  <div class="right"><a id="button-comment" class="button"><span><?php echo $button_comment; ?></span></a></div>
-		</div>
-		<?php } ?>
-	</div>
-	<?php } ?>
+  	
 	<div class="tags_share">	
 		  <?php if ($tags) { ?>
 		  <div class="tags"><b><?php echo $text_tags; ?></b>
@@ -94,7 +56,9 @@
 		  <?php } ?>	  
     </div>
 
-  <?php echo $content_bottom; ?></div>
+ </div>
+<div style="clear: both"></div>
+<?php echo $content_bottom; ?>
 <script type="text/javascript"><!--
 $('#comments .pagination a').live('click', function() {
 	$('#comments').slideUp('slow');

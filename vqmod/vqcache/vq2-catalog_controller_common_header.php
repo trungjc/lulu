@@ -1,5 +1,49 @@
 <?php   
 class ControllerCommonHeader extends Controller {
+
+	private function getposts($news_category_id, $limit, $father = "") {
+		$children_data = array();
+		
+		// get the post
+		$postdata = array(
+			'filter_news_category_id' => $news_category_id,
+			'start' => 0,
+			'limit' => $limit, 
+		);
+		
+		$posts = $this->model_catalog_news->getArticles($postdata);
+		
+		foreach ($posts as $post) {								
+			$children_data[] = array(
+				'name'  => $post['title'] ,
+				'href'  => $this->url->link('news/news', 'npath=' . $father . $news_category_id . '&news_id=' . $post['news_id']),
+			);					
+		}						
+		return $children_data;
+	}
+	
+	private function sortByOneKey(array $array, $key, $asc = true) {
+		$result = array();
+		   
+		$values = array();
+		foreach ($array as $id => $value) {
+			$values[$id] = isset($value[$key]) ? $value[$key] : '';
+		}
+		   
+		if ($asc) {
+			asort($values);
+		}
+		else {
+			arsort($values);
+		}
+		   
+		foreach ($values as $key => $value) {
+			$result[$key] = $array[$key];
+		}
+		   
+		return $result;
+	}
+			
 private static function sortCatCmenu($a, $b)
                 {
                     $val = $a['sort_order'] - $b['sort_order'];
@@ -155,6 +199,9 @@ private static function sortCatCmenu($a, $b)
 
 				// Level 1
 				$this->data['categories'][] = array(
+
+				'sort_order'     => $category['sort_order'],
+			
 					'name'     => $category['name'],
 					'children' => $children_data,
 					'column'   => $category['column'] ? $category['column'] : 1,
@@ -169,6 +216,70 @@ private static function sortCatCmenu($a, $b)
 			'module/cart'
 		);
 
+
+				$this->load->model('catalog/news');
+		
+				$categories = $this->model_catalog_news->getCategories(0);				
+				foreach ($categories as $category) {
+					if ($category['top']) {
+						$children_data = array();		
+						$children_articles = array();
+						if ($category['top_article']) { $children_articles = $this->getposts($category['news_category_id'], $category['top_article'], ""); }
+						
+						// get subCategories						
+						$children = $this->model_catalog_news->getCategories($category['news_category_id']);				
+						foreach ($children as $child) {
+							// for the sub of sub
+							$grand_data = array();
+							$grand_articles = array();
+							if ($child['top_article']) { $grand_articles = $this->getposts($child['news_category_id'], $child['top_article'], $category['news_category_id'] . "_"); }
+							
+							if ($this->config->get('news_setting_article_count')) {									
+								$data = array(
+									'filter_news_category_id'  => $child['news_category_id'],
+									'filter_sub_category' => true	
+								);		
+							
+								$total = $this->model_catalog_news->getTotalArticles($data);
+							}
+									
+							$children_data[] = array(
+								'name'  => ($this->config->get('news_setting_article_count')) ? $child['name'] . ' (' . $total . ')' : $child['name'],
+								'href'  => $this->url->link('news/category', 'npath=' . $category['news_category_id'] . '_' . $child['news_category_id']),
+								'children' => $grand_data,
+								'column'   => $category['column'] ? $category['column'] : 1,
+								'article' => $grand_articles,
+							);					
+						}
+						
+						// Level 1
+						$this->data['categories'][] = array(
+							'name'     => $category['name'],
+							'sort_order'     => $category['sort_order'],
+							'children' => $children_data,
+							'column'   => $category['column'] ? $category['column'] : 1,
+							'href'     => $this->url->link('news/category', 'npath=' . $category['news_category_id']),
+							'is_news'  => true,
+							'article' => $children_articles,
+						);
+					}
+				}
+				
+				// for the all category page
+				if ($this->config->get('news_setting_all_articles_to_top_menu')) {
+					$titles = $this->config->get('news_setting_all_articles_top_title');
+					$this->data['categories'][] = array(
+						'sort_order'     => $this->config->get('news_setting_all_articles_top_order'),
+						'name'     => $titles[$this->config->get('config_language_id')],
+						'children' => array(),
+						'href'     => $this->url->link('news/all', ''),
+						'is_news'  => true,
+						'article' => null,
+					);
+				}
+									
+				$this->data['categories'] = $this->sortByOneKey($this->data['categories'], 'sort_order');
+			
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/header.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/common/header.tpl';
 		} else {

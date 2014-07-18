@@ -188,7 +188,8 @@ class ModelCatalogNews extends Model {
 	
 	public function getCategories($parent_id = 0) {
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "news_category c LEFT JOIN " . DB_PREFIX . "news_category_description cd ON (c.news_category_id = cd.news_category_id) LEFT JOIN " . DB_PREFIX . "news_category_to_store c2s ON (c.news_category_id = c2s.news_category_id) WHERE c.parent_id = '" . (int)$parent_id . "' AND cd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND c2s.store_id = '" . (int)$this->config->get('config_store_id') . "'  AND c.status = '1' ORDER BY c.sort_order, LCASE(cd.name)");
-
+            //echo "<pre>";
+              //  var_dump($query);
 		if  ($this->config->get('news_setting_category_permission')) {
 			$allowed = $this->getPermissionCategories();
 		

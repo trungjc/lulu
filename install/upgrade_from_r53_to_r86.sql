@@ -1,1 +1,0 @@
-ALTER TABLE `oc_news_category` ADD `top_article` INT( 3 ) NOT NULL DEFAULT '0' AFTER `column`;

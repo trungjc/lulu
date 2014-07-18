@@ -403,3 +403,290 @@
 2014-07-10 9:56:57 - PHP Notice:  Undefined variable: product_id in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 76
 2014-07-10 9:56:57 - PHP Notice:  Undefined variable: product_id in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 76
 2014-07-10 9:56:57 - PHP Notice:  Undefined variable: product_id in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\checkout\cart.tpl on line 76
+2014-07-15 9:03:02 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:04:01 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:04:44 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:05:07 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 499
+2014-07-15 9:05:32 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:05:54 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:06:22 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:07:11 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:07:33 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-15 9:13:54 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-15 9:14:02 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-15 9:14:02 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-15 9:14:52 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-15 9:14:58 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-15 9:15:09 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-15 9:25:13 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-15 9:25:31 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-15 9:25:35 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-15 9:25:39 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 9:08:39 - PHP Warning:  Missing argument 1 for DB::query(), called in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 190 and defined in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-system_library_db.php on line 19
+2014-07-17 9:08:39 - PHP Notice:  Undefined variable: sql in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-system_library_db.php on line 20
+2014-07-17 9:08:39 - PHP Warning:  mysqli::query(): Empty query in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 17
+2014-07-17 9:08:39 - PHP Notice:  Trying to get property of non-object in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 205
+2014-07-17 9:08:39 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\catalog\controller\news\category.php on line 123
+2014-07-17 9:08:39 - PHP Warning:  Missing argument 1 for DB::query(), called in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 190 and defined in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-system_library_db.php on line 19
+2014-07-17 9:08:39 - PHP Notice:  Undefined variable: sql in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-system_library_db.php on line 20
+2014-07-17 9:08:39 - PHP Warning:  mysqli::query(): Empty query in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 17
+2014-07-17 9:08:39 - PHP Notice:  Trying to get property of non-object in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 205
+2014-07-17 9:08:39 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 46
+2014-07-17 9:08:39 - PHP Warning:  Missing argument 1 for DB::query(), called in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 190 and defined in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-system_library_db.php on line 19
+2014-07-17 9:08:39 - PHP Notice:  Undefined variable: sql in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-system_library_db.php on line 20
+2014-07-17 9:08:39 - PHP Warning:  mysqli::query(): Empty query in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 17
+2014-07-17 9:08:39 - PHP Notice:  Trying to get property of non-object in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 205
+2014-07-17 9:08:39 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 223
+2014-07-17 9:08:40 - PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 317
+2014-07-17 9:08:40 - PHP Warning:  usort() expects parameter 1 to be array, null given in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 319
+2014-07-17 9:08:40 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 321
+2014-07-17 9:08:52 - PHP Notice:  Trying to get property of non-object in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 205
+2014-07-17 9:08:52 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\catalog\controller\news\category.php on line 123
+2014-07-17 9:08:52 - PHP Notice:  Trying to get property of non-object in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 205
+2014-07-17 9:08:52 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 46
+2014-07-17 9:08:52 - PHP Notice:  Trying to get property of non-object in D:\xampp\htdocs\lulu\catalog\model\catalog\news.php on line 205
+2014-07-17 9:08:52 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 223
+2014-07-17 9:08:52 - PHP Warning:  array_merge(): Argument #2 is not an array in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 317
+2014-07-17 9:08:52 - PHP Warning:  usort() expects parameter 1 to be array, null given in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 319
+2014-07-17 9:08:52 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_common_header.php on line 321
+2014-07-17 9:31:38 - PHP Notice:  Undefined variable: child_ids in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\module\news_categories.tpl on line 30
+2014-07-17 9:31:38 - PHP Notice:  Undefined variable: child_ids in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\module\news_categories.tpl on line 30
+2014-07-17 9:31:38 - PHP Notice:  Undefined variable: child_ids in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\module\news_categories.tpl on line 30
+2014-07-17 9:31:38 - PHP Notice:  Undefined variable: child_ids in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\module\news_categories.tpl on line 30
+2014-07-17 9:31:38 - PHP Notice:  Undefined variable: child_ids in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\module\news_categories.tpl on line 30
+2014-07-17 9:44:19 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 451
+2014-07-17 9:45:12 - PHP Notice:  Undefined index: read_permission in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 499
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:30 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:58:31 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Undefined index: news_category_id in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Undefined index: news_category_id in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Undefined index: news_category_id in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:01 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Undefined index: news_category_id in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Uninitialized string offset: 0 in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Warning:  Illegal string offset 'news_category_id' in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 70
+2014-07-17 9:59:02 - PHP Notice:  Undefined index: news_category_id in D:\xampp\htdocs\lulu\catalog\controller\module\news_categories.php on line 77
+2014-07-17 10:02:38 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:02:47 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:02:53 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:03:01 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:49:50 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:50:02 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:17 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:17 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:50:25 - PHP Warning:  mysqli::real_escape_string() expects parameter 1 to be string, array given in D:\xampp\htdocs\lulu\system\database\mysqli.php on line 47
+2014-07-17 10:51:01 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:51:07 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:51:16 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:51:25 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:51:31 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:51:37 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:51:48 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:51:55 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60
+2014-07-17 10:52:02 - PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in D:\xampp\htdocs\lulu\admin\model\news\news.php on line 60

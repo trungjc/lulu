@@ -472,6 +472,13 @@ class ModelCatalogProduct extends Model {
 		return $product_data;
 	}
 
+
+	public function getProductTags2($product_id) {
+		$query = $this->db->query("SELECT tag FROM " . DB_PREFIX . "product_description WHERE product_id = '" . (int)$product_id . "' AND language_id = '" . (int)$this->config->get('config_language_id') . "'");
+
+		return $query->rows;
+	}	
+			
 	public function getProductLayoutId($product_id) {
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "product_to_layout WHERE product_id = '" . (int)$product_id . "' AND store_id = '" . (int)$this->config->get('config_store_id') . "'");
 

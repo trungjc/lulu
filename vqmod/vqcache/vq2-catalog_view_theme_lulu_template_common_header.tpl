@@ -47,6 +47,16 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 //--></script>
 <?php } ?>
 <?php echo $google_analytics; ?>
+
+			<?php
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/stylesheet/news.css')) {
+				$news_css = $this->config->get('config_template') . '/stylesheet/news.css';
+			} else {
+				$news_css = 'default/stylesheet/news.css';
+			}
+			?>
+          <link rel="stylesheet" type="text/css" href="catalog/view/theme/<?php echo $news_css;?>" />
+			
 </head>
 <body<?php 
 					

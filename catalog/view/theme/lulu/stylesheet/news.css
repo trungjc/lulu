@@ -54,13 +54,7 @@ h1 > a {
 
 .article-list > .box-article {
 	margin-bottom: 20px;
-	max-width: 980px;
 	overflow: auto;
-}
-
-.article-list > .box-article  + .box-article {
-	padding-top: 20px;
-	border-top: 1px solid #EEEEEE;
 }
 
 .article-2col {
@@ -72,29 +66,35 @@ h1 > a {
 }
 
 .article-2col .box-row .box-article{
-	display: table-cell;
-	width: 480px;
+	display: block;float: left;
 }
 
 #column-left + #content >
 .article-2col .box-row .box-article, 
 #column-right + #content >
 .article-2col .box-row .box-article  {
-	width: 380px;
+	width: 220px;
 }
 
 #column-left + #column-right + #content >
 .article-2col .box-row .box-article {
 	width: 280px;
 }
-
+.heading-new {
+     border-bottom: 1px solid #eee;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+}
 .article-2col .box-row > .box-article + .box-article{
-	padding-left: 20px;
+	 margin-left: 20px;
+    padding-left: 20px;
 }
 
 .box-article .news-image {
-	float: left;
-	margin-right: 10px !important;
+	
+	margin-bottom: 10px !important;
 }
 
 .article-2col .box-article .news-image {
@@ -137,8 +137,9 @@ h1 > a {
 }
 
 .box-article .news-intro {
-	text-align: justify; padding: 10px 0;
+	 padding: 10px 0;
 }
+.pagination .results {display: none;}
 
 /* side box */
 .box-article-small {
@@ -181,4 +182,10 @@ h1 > a {
 .comment-date {
 	font-size: 11px; 
 	color: #aaaaaa;
+}
+
+.category-new * {
+    list-style: none;
+    padding: 0;
+    margin:0;
 }
