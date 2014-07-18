@@ -25,7 +25,7 @@
   <?php } ?>
   <?php if ($categories) { ?>
   <h2><?php echo $text_sub_category; ?></h2>
-  <div class="category-list">
+  <div class="category-lists">
     <?php if (count($categories) <= 5) { ?>
     <ul>
       <?php foreach ($categories as $category) { ?>

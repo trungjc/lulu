@@ -16,23 +16,10 @@
 <div id="content">
 	
 	<div class="news-info">
-		<span class="news-properties">
-		<?php if($show_create_date){ ?>
-		<b><?php echo $text_posted_on; ?></b> <?php echo $date_added; ?>&nbsp;|&nbsp;
-		<?php } ?>
-		<?php if($show_modify_date){ ?>
-		<b><?php echo $text_updated_on; ?></b> <?php echo $date_modified; ?>&nbsp;|&nbsp;
-		<?php } ?>	
-		<?php if($show_read_times){ ?>
-		<?php echo $text_read; ?> <b><?php echo $count_read; ?></b> <?php echo $text_times; ?>&nbsp;|&nbsp;
-		<?php } ?>	
-		<?php if($show_comment_count){ ?>		
-		<b><?php echo $comment_total; ?></b> <?php echo $text_comments; ?>
-		<?php } ?>			
-		</span><br /><br />
-                <div class="news-intro" style="display: none"><?php echo $short_description; ?></div><br />
+	
+                <div class="news-intro" style="display: none"><?php echo $short_description; ?></div>
 		<?php if($image){ ?><div class="news-image"><img src="<?php echo $image; ?>" border="0"/></div><br /><?php } ?>
-		<div class="news-content"><?php echo $description; ?></div><br />  		
+		<div class="news-content"><?php echo $description; ?></div> 		
   		<?php if ($related_newss) { ?>
 		<div class="news-related">
   		<h2><?php echo $text_related_news; ?></h2>
@@ -46,7 +33,7 @@
 		
 	</div>
   	
-	<div class="tags_share">	
+	<div class="tags_share" style="display: none;">	
 		  <?php if ($tags) { ?>
 		  <div class="tags"><b><?php echo $text_tags; ?></b>
 			<?php foreach ($tags as $tag) { ?>

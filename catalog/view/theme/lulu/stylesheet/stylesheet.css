@@ -2107,3 +2107,26 @@ html[xmlns] .clearfix {
     margin-left: 15px;
     padding-left: 15px;
 }
+.category-new {
+	padding: 0;margin: 0;
+}
+.category-new > li > a {
+	display: none;
+}
+
+.category-new > li  > ul > li > a {
+	color:#d64599;
+	font-weight: bold;
+}
+.category-new  a{
+	color:#626264;
+	display: block;
+	margin: 0 0 10px 0;
+}
+
+.pnews #column-left ,.pcategory   #column-left{
+	border: none;
+}
+.pnews .breadcrumb + h1,.pcategory .breadcrumb + h1  {
+	margin-bottom: 40px;
+}

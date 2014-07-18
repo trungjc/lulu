@@ -67,7 +67,7 @@ class ControllerModuleNewsCategories extends Controller {
 						'href'        => $this->url->link('news/category', 'npath=' . $child['news_category_id'] . '_' . $grand['news_category_id'])	
 					);					
 				}
-				
+				//echo "<pre>";var_dump($grandchild_data);
 				if ($this->config->get('news_setting_article_count')) {
 					$data = array(
 						'filter_news_category_id'  => $child['news_category_id'],
