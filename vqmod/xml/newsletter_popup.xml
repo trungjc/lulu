@@ -1,0 +1,209 @@
+<modification>
+	<id><![CDATA[newsletter_popup]]></id>
+	<version><![CDATA[2.0]]></version>
+	<vqmver><![CDATA[2.1.0]]></vqmver>
+	<author><![CDATA[info@kodecube.com]]></author>
+	<file name="admin/controller/common/header.php">
+		<operation>
+			<search position="before"><![CDATA[$this->data['text_zone']]]></search>
+			<add><![CDATA[$this->data['text_newssubscribe'] = $this->language->get('text_newssubscribe');]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[$this->data['zone']]]></search>
+			<add><![CDATA[$this->data['newssubscribe'] = $this->url->link('sale/newssubscribers', 'token=' . $this->session->data['token'], 'SSL');]]></add>
+		</operation>
+	</file>
+	<file name="admin/language/english/common/header.php">
+		<operation>
+			<search position="before"><![CDATA[$_['text_zone']]]></search>
+			<add><![CDATA[$_['text_newssubscribe']     = 'Newsletter Subscribers';]]></add>
+		</operation>
+	</file>
+	<file name="admin/view/template/common/header.tpl">
+		<operation>
+			<search position="before"><![CDATA[<li><a href="<?php echo $contact; ?>">]]></search>
+			<add><![CDATA[<li><a href="<?php echo $newssubscribe; ?>"><?php echo $text_newssubscribe; ?></a></li>]]></add>
+		</operation>
+	</file>
+	<file name="admin/model/sale/customer.php">
+		<operation>
+			<search position="before"><![CDATA[public function getTotalCustomersAwaitingApproval()]]></search>
+			<add><![CDATA[
+		
+			
+			
+			public function getNewsletterSubscribers($data = array()) {
+		$sql = "SELECT * FROM " . DB_PREFIX . "subscribe WHERE store_id='".(int)$data['store_id']."' ";
+
+
+	
+		
+		if (isset($data['start']) || isset($data['limit'])) {
+			if ($data['start'] < 0) {
+				$data['start'] = 0;
+			}			
+
+			if ($data['limit'] < 1) {
+				$data['limit'] = 20;
+			}	
+			
+			$sql .= " LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
+		}		
+		
+		$query = $this->db->query($sql);
+		
+		return $query->rows;	
+	}
+			
+
+			
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[public function getTotalAddressesByCustomerId]]></search>
+			<add><![CDATA[
+			
+				public function getTotalNewsletterSubscribers($data = array()) {
+      	$sql = "SELECT COUNT(*) AS total FROM " . DB_PREFIX . "subscribe WHERE store_id='".(int)$data['store_id']."' ";
+		
+		$query = $this->db->query($sql);
+				
+		return $query->row['total'];
+	}
+			
+		
+			
+			]]></add>
+		</operation>
+	</file>
+	<file name="admin/view/template/sale/contact.tpl">
+		<operation>
+			<search position="before"><![CDATA[<option value="newsletter">]]></search>
+			<add><![CDATA[<option value="newslettermodule"><?php echo $text_newslettermodule; ?></option>]]></add>
+		</operation>
+		<operation>
+   <search position="before"><![CDATA[<tbody id="to-customer-group" class="to">]]></search>
+   <add><![CDATA[
+             <tbody id="to-newslettermodule" class="to">
+
+            <tr>
+
+              <td><?php echo $entry_customer_store; ?></td>
+
+              <td><select name="store_id_mail">
+                <option value="0"><?php echo $text_default; ?></option>
+                <?php foreach ($stores as $store) { ?>
+                <option value="<?php echo $store['store_id']; ?>"><?php echo $store['name']; ?></option>
+                <?php } ?>
+              </select></td>
+
+            </tr>
+			]]></add>
+  </operation>
+	</file>
+	<file name="admin/language/*/sale/contact.php">
+		<operation>
+			<search position="after"><![CDATA[php]]></search>
+			<add><![CDATA[$_['text_newslettermodule']     = 'Newsletter Module Subscribers';
+			$_['entry_customer_store']     = 'Store Subscriber';
+			
+			
+		]]></add>
+		</operation>
+	</file>
+	<file name="admin/controller/sale/contact.php">
+		<operation>
+			<search position="before"><![CDATA[$this->data['text_newsletter']]]></search>
+			<add><![CDATA[$this->data['text_newslettermodule'] = $this->language->get('text_newslettermodule');
+					$this->data['entry_customer_store'] = $this->language->get('entry_customer_store');
+			]]></add>
+		</operation>
+		<operation>
+			<search position="before"><![CDATA[case 'newsletter':]]></search>
+			<add><![CDATA[
+							
+							case 'newslettermodule':
+						$customer_data = array(
+							'store_id'			=> (isset($this->request->post['store_id'])?$this->request->post['store_id']:0),
+							'start'             => ($page - 1) * 10,
+							'limit'             => 10
+						);
+						
+						$email_total = $this->model_sale_customer->getTotalNewsletterSubscribers($customer_data);
+									
+						$results = $this->model_sale_customer->getNewsletterSubscribers($customer_data);	
+					
+						foreach ($results as $result) {
+							$emails[] = $result['email_id'];
+						}
+						break;
+		
+						
+			]]></add>
+		</operation>
+	</file>
+		<file name="catalog/model/account/customer.php">
+		<operation>
+			<search position="after"><![CDATA[$customer_id = $this->db->getLastId();]]></search>
+			<add><![CDATA[
+			$this->load->model('account/newslettersubscribe');
+				
+				$data2 = array(
+					'subscribe_email' => $data['email'],
+					'subscribe_name' => $data['firstname'].' '.$data['lastname'],
+				);
+			if(isset($data['newsletter']) && $data['newsletter'] == 1){
+				
+				
+				 $this->model_account_newslettersubscribe->subscribe($data2);	 
+			}
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after"><![CDATA[$this->db->query("UPDATE " . DB_PREFIX . "customer SET newsletter = '" . (int)$newsletter . "' WHERE customer_id = '" . (int)$this->customer->getId() . "'");]]></search>
+			<add><![CDATA[
+			$data = $this->getCustomer((int)$this->customer->getId());
+			 $this->load->model('account/newslettersubscribe');
+				 
+				
+				$data2 = array(
+					'subscribe_email' => $data['email'],
+					'subscribe_name' => $data['firstname'].' '.$data['lastname'],
+				);
+			$checkmail = $this->model_account_newslettersubscribe->checkmailid($data2);
+			if($newsletter == 1 && (!$checkmail)){
+				 $this->model_account_newslettersubscribe->subscribe($data2);	 
+			} 
+			
+			if($newsletter == 0 && ($checkmail)){
+				$this->model_account_newslettersubscribe->unsubscribe($data2);
+			}
+			]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/account/newsletter.php">
+		<operation>
+			<search position="replace"><![CDATA[$this->data['newsletter'] = $this->customer->getNewsletter();]]></search>
+			<add><![CDATA[
+				$this->load->model('account/newslettersubscribe');
+		
+		$data['subscribe_email'] = $this->customer->getEmail();
+		
+				if($this->model_account_newslettersubscribe->checkmailid($data)){
+			$this->data['newsletter'] = 1;
+		}
+		else {
+			$this->data['newsletter'] = 0;
+		}
+		]]></add>
+		</operation>
+	</file>
+	<file name="admin/view/template/sale/customer_form.tpl">
+		<operation>
+			<search position="replace" index="8"><![CDATA[<tr>]]></search>
+			<add><![CDATA[
+				<tr style="display:none">
+		]]></add>
+		</operation>
+	</file>
+</modification>

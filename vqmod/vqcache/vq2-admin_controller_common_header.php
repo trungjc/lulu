@@ -113,6 +113,7 @@ $this->data['text_product_tab'] = $this->language->get('text_product_tab');
 		$this->data['text_voucher_theme'] = $this->language->get('text_voucher_theme');
 		$this->data['text_weight_class'] = $this->language->get('text_weight_class');
 		$this->data['text_length_class'] = $this->language->get('text_length_class');
+$this->data['text_newssubscribe'] = $this->language->get('text_newssubscribe');
 		$this->data['text_zone'] = $this->language->get('text_zone');
 		$this->data['text_openbay_extension'] = $this->language->get('text_openbay_extension');
 		$this->data['text_openbay_dashboard'] = $this->language->get('text_openbay_dashboard');
@@ -210,6 +211,7 @@ $this->data['product_tab'] = $this->url->link('catalog/tab', 'token=' . $this->s
 			$this->data['voucher_theme'] = $this->url->link('sale/voucher_theme', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['weight_class'] = $this->url->link('localisation/weight_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['length_class'] = $this->url->link('localisation/length_class', 'token=' . $this->session->data['token'], 'SSL');
+$this->data['newssubscribe'] = $this->url->link('sale/newssubscribers', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['zone'] = $this->url->link('localisation/zone', 'token=' . $this->session->data['token'], 'SSL');
 
 			$this->data['openbay_show_menu'] = $this->config->get('openbaymanager_show_menu');

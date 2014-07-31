@@ -1,0 +1,40 @@
+
+
+
+Installation: just unzip the files at your local computer, use a ftp software to upload all the files.
+
+After all files uploaded, just login your admin backend, find the News Letter extension under Extensions--->Modules--->Click install, set and enable it. 
+
+in admin user group give all permission to Top administrator.
+
+if you have vqcache enabled, delete all files under vqmod/vqcache.
+
+This has normal newsletter subscribe as module and as autopopup/Thickbox/footer/embed footer/slidebox/normal.
+
+
+
+
+in admin show popup always-means show popup on configured layouts page until the user subscribe, after subscribe it wont show"
+onetime means show only one time , doesnot matter if user subscribed or closed"
+
+
+*************Mailchimp settings**************
+1. enable chimp if you want to add subscriber to mailchimp
+2. If you are using double-opyin , design it in mailchimp wesbite
+3. if you are using welcome mail, design it in mailchimp website
+4. Merge vars for mailchimp list as eg attached in screenshot. It Should be exactly like this.
+
+********below*****only for users who already had very old free newsleter extesnion installed*********
+runthis querry on db
+ALTER TABLE `subscribe`  ADD COLUMN `store_id` int(11) NOT NULL;
+
+if using db prefix use `dbprefix_subscribe"
+
+
+****Kodecube.com******
+
+
+
+
+
+

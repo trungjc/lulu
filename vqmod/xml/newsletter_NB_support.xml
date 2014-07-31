@@ -1,0 +1,66 @@
+<modification>
+	<id><![CDATA[newsletter_popup-NB fix]]></id>
+	<version><![CDATA[2.0]]></version>
+	<vqmver><![CDATA[2.1.0]]></vqmver>
+	<author><![CDATA[info@kodecube.com]]></author>
+	<file name="catalog/controller/account/cron_newsletter_builder.php">
+		<operation>
+			<search position="after" offset="1"><![CDATA[if ($newsletter_info['news_to'] == -1) {]]></search>
+			<add><![CDATA[} elseif ($newsletter_info['news_to'] == -3) {
+		$subscribers2 = $this->model_module_newsletter_builder->getnesubscribers2();
+		
+	
+	
+			foreach($subscribers2 as $subscriber){
+			
+		echo	$subscriber['name'];
+		$subscribers[] =array(
+		'firstname' => $subscriber['name'],
+		'lastname' => '',
+		'email' => $subscriber['email_id'],
+		'fullname' => $subscriber['name'],
+		'store_id' => $subscriber['store_id']
+		
+		);
+		}
+	
+		
+		
+			
+	
+		]]></add>
+		</operation>
+	</file>
+	<file name="catalog/model/module/newsletter_builder.php">
+		<operation>
+			<search position="before"><![CDATA[public function getCurrentNewsletterId(){]]></search>
+			<add><![CDATA[public function getnesubscribers2() {
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "subscribe");
+		
+		
+		return $query->rows;
+	}]]></add>
+		</operation>
+	</file>
+	<file name="admin/view/template/module/newsletter_builder_list.tpl">
+		<operation>
+			<search position="after"><![CDATA[<option value="2" <?php echo (($filter_to== 2)? 'selected="selected"' : ''); ?>><?php echo $text_newsletter_subscribers; ?></option>]]></search>
+			<add><![CDATA[<option value="3" <?php echo (($filter_to== 3)? 'selected="selected"' : ''); ?>><?php echo "Newsletter Module Subscribers"; ?></option>]]></add>
+		</operation>
+	</file>
+		<file name="admin/view/template/module/newsletter_builder_form.tpl">
+		<operation>
+			<search position="after"><![CDATA[<option value="-2" <?php echo (($to == -2)? 'selected="selected"' : ''); ?>><?php echo $text_newsletter_subscribers; ?></option>]]></search>
+			<add><![CDATA[<option value="-3" <?php echo (($to == -3)? 'selected="selected"' : ''); ?>><?php echo "Newsletter Module Subscribers"; ?></option>]]></add>
+		</operation>
+	</file>	
+	<file name="admin/controller/module/newsletter_builder.php">
+		<operation>
+			<search position="after" offset="1"><![CDATA[} elseif ($result['news_to'] == -2) {]]></search>
+			<add><![CDATA[} elseif ($result['news_to'] == -3) {
+				$news_to = "Newsletter Module Subscribers";
+				
+			]]></add>
+		</operation>
+	</file>
+</modification>

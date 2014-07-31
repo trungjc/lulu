@@ -169,6 +169,7 @@ $(document).ready(function(){
            </li>
           <?php } ?>
           <!-- PAYPAL MANAGE NAVIGATION LINK END -->
+<li><a href="<?php echo $newssubscribe; ?>"><?php echo $text_newssubscribe; ?></a></li>
           <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
         </ul>
       </li>
