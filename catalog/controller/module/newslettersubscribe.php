@@ -10,7 +10,7 @@ class ControllerModuleNewslettersubscribe extends Controller {
       	$this->data['heading_title'] = $this->config->get('newslettersubscribe_fheading_title_'.$language_id.'_line');
 		      	
 		$this->data['entry_name'] = $this->config->get('newslettersubscribe_fentry_name_'.$language_id.'_line');
-      	$this->data['entry_email'] = $this->config->get('newslettersubscribe_fentry_email_'.$language_id.'_line');
+                $this->data['entry_email'] = $this->config->get('newslettersubscribe_fentry_email_'.$language_id.'_line');
 	   	$this->data['entry_button'] = $this->config->get('newslettersubscribe_fentry_button_'.$language_id.'_line');
 		$this->data['entry_unbutton'] = $this->config->get('newslettersubscribe_fentry_unbutton_'.$language_id.'_line');
 		$this->data['subscribebutton'] = $this->config->get('newslettersubscribe_fentry_unbutton_'.$language_id.'_line');
@@ -22,7 +22,7 @@ class ControllerModuleNewslettersubscribe extends Controller {
 		
 		$this->data['popupheaderimage'] = "image/".$this->config->get('newslettersubscribe_'.$language_id.'_popupheaderimage');	
 
-      	$this->data['option_unsubscribe'] = $this->config->get('option_unsubscribe');		
+                $this->data['option_unsubscribe'] = $this->config->get('option_unsubscribe');		
 		$this->data['option_fields'] = $this->config->get('newslettersubscribe_option_field');	
 		for($l=1;$l<=6;$l++){
       			

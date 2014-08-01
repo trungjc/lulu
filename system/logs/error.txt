@@ -734,3 +734,29 @@
 2014-07-31 8:45:30 - PHP Notice:  Undefined variable: languages in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 836
 2014-07-31 8:45:30 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 836
 2014-07-31 8:45:30 - PHP Notice:  Undefined variable: module_row in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 710
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: heading_title2 in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 4
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: button_save in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 10
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: cancel in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 11
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: button_cancel in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 11
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: error_warning in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 16
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: action in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 43
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: module_row in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 710
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: layouts in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 727
+2014-08-01 7:12:58 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 727
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: text_content_top in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 732
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: text_content_bottom in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 733
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: text_column_left in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 734
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: text_column_right in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 735
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: text_enabled in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 738
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: text_disabled in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 739
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: button_remove in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 742
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: token in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 766
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: text_image_manager in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 769
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: token in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 773
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: languages in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 836
+2014-08-01 7:12:58 - PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 836
+2014-08-01 7:12:58 - PHP Notice:  Undefined variable: module_row in D:\xampp\htdocs\lulu\admin\view\template\module\newslettersubscribe.tpl on line 710
+2014-08-01 9:27:15 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-08-01 9:36:43 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-08-01 9:37:11 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-08-01 9:38:43 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
