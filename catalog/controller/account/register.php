@@ -3,10 +3,13 @@ class ControllerAccountRegister extends Controller {
 	private $error = array();
 
 	public function index() {
+
 		if ($this->customer->isLogged()) {
 			$this->redirect($this->url->link('account/account', '', 'SSL'));
 		}
-
+		// redirect to new sign up page
+		$this->redirect($this->url->link('account/signup', '', 'SSL')); 
+		
 		$this->language->load('account/register');
 
 		$this->document->setTitle($this->language->get('heading_title'));

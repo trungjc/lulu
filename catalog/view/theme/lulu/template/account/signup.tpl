@@ -5,7 +5,7 @@
 <?php if ($error_warning) { ?>
 <div class="warning"><?php echo $error_warning; ?></div>
 <?php } ?>
-<?php echo $column_left; ?><?php echo $column_right; ?>
+<?php //echo $column_left; ?><?php //echo $column_right; ?>
 <div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -15,16 +15,12 @@
   <h1><?php echo $heading_title; ?></h1>
   <div class="login-content">
     <div class="left">
-      <h2><?php echo $text_new_customer; ?></h2>
-      <div class="content">
-        <p><b><?php echo $text_register; ?></b></p>
-        <p><?php echo $text_register_account; ?></p>
-        <a href="<?php echo $register; ?>" class="button"><?php echo $button_continue; ?></a></div>
+        Welcome  ! 
     </div>
     <div class="right">
       <h2><?php echo $text_returning_customer; ?></h2>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-        <input type="hidden" name="submitFrom" value="login" />
+        <input type="hidden" name="submitForm" value="login" />
         <div class="content">
           <p><?php echo $text_i_am_returning_customer; ?></p>
           <b><?php echo $entry_email; ?></b><br />
@@ -36,7 +32,7 @@
           <br />
           <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
           <br />
-          <input type="submit" value="<?php echo $button_login; ?>" class="button" name="submitForm" />
+          <input type="submit" value="<?php echo $button_login; ?>" class="button"/>
           <?php if ($redirect) { ?>
           <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
           <?php } ?>
@@ -46,7 +42,7 @@
       <div class="register-content">
         <p><?php echo $text_account_already; ?></p>
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-          <input type="hidden" name="submitFrom" value="register" />
+          <input type="hidden" name="submitForm" value="register" />
           <h2><?php echo $text_your_details; ?></h2>
           <div class="content">
             <table class="form">
@@ -78,6 +74,11 @@
                   <span class="error"><?php echo $error_telephone; ?></span>
                   <?php } ?></td>
               </tr>
+              <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="text" name="dateofbirth" value="<?php echo $dateofbirth; ?>" /></td>
+              </tr>
+
               <tr style="display:none;">
                 <td><?php echo $entry_fax; ?></td>
                 <td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>

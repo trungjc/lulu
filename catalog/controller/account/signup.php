@@ -3,6 +3,11 @@ class ControllerAccountSignup extends Controller {
 	private $error = array();
 
 	public function index() {
+
+		if ($this->customer->isLogged()) {
+			$this->redirect($this->url->link('account/account', '', 'SSL'));
+		}
+
 		$this->load->model('account/customer');
 
 		// Login override for admin users
@@ -195,7 +200,7 @@ class ControllerAccountSignup extends Controller {
 
 		$this->load->model('account/customer');
 
-		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateRegister()) {
 			$this->model_account_customer->addCustomer($this->request->post);
 
 			$this->customer->login($this->request->post['email'], $this->request->post['password']);
@@ -259,7 +264,7 @@ class ControllerAccountSignup extends Controller {
 		$this->data['entry_customer_group'] = $this->language->get('entry_customer_group');
 		$this->data['entry_company_id'] = $this->language->get('entry_company_id');
 		$this->data['entry_tax_id'] = $this->language->get('entry_tax_id');
-		$this->data['entry_address_1'] = $this->language->get('entry_address_1');
+		$this->data['entry_address_1'] = 'ADDRESS';//$this->language->get('entry_address_1');
 		$this->data['entry_address_2'] = $this->language->get('entry_address_2');
 		$this->data['entry_postcode'] = $this->language->get('entry_postcode');
 		$this->data['entry_city'] = $this->language->get('entry_city');
@@ -378,6 +383,13 @@ class ControllerAccountSignup extends Controller {
 		} else {
 			$this->data['telephone'] = '';
 		}
+
+		if (isset($this->request->post['dateofbirth'])) {
+			$this->data['dateofbirth'] = $this->request->post['dateofbirth'];
+		} else {
+			$this->data['dateofbirth'] = '';
+		}
+
 
 		if (isset($this->request->post['fax'])) {
 			$this->data['fax'] = $this->request->post['fax'];
@@ -519,8 +531,8 @@ class ControllerAccountSignup extends Controller {
 		}
 
 		$this->children = array(
-			'common/column_left',
-			'common/column_right',
+		//	'common/column_left',
+		//	'common/column_right',
 			'common/content_top',
 			'common/content_bottom',
 			'common/footer',
@@ -553,6 +565,11 @@ class ControllerAccountSignup extends Controller {
 	protected function validateRegister() {
 		if($this->request->post['submitForm'] != 'register')
 			return false;
+		/*
+		hardcode for hidden fields
+		*/
+		$this->request->post['country_id'] = 13; // australia
+
 		if ((utf8_strlen($this->request->post['firstname']) < 1) || (utf8_strlen($this->request->post['firstname']) > 32)) {
 			$this->error['firstname'] = $this->language->get('error_firstname');
 		}
@@ -599,11 +616,11 @@ class ControllerAccountSignup extends Controller {
 		if ((utf8_strlen($this->request->post['address_1']) < 3) || (utf8_strlen($this->request->post['address_1']) > 128)) {
 			$this->error['address_1'] = $this->language->get('error_address_1');
 		}
-
+		/*
 		if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {
 			$this->error['city'] = $this->language->get('error_city');
 		}
-
+		*/
 		$this->load->model('localisation/country');
 
 		$country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
@@ -646,7 +663,7 @@ class ControllerAccountSignup extends Controller {
 				$this->error['warning'] = sprintf($this->language->get('error_agree'), $information_info['title']);
 			}
 		}
-
+		var_dump($this->error);
 		if (!$this->error) {
 			return true;
 		} else {
