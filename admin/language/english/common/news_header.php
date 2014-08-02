@@ -6,7 +6,7 @@
 //License: Commercial
 ?>
 <?php
-$_['text_news_title']                    = 'News';
+$_['text_news_title']                    = "How to's page";
 
 // Text
 $_['text_news_category']                   = 'Categories';
