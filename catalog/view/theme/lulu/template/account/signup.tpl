@@ -76,7 +76,7 @@
               </tr>
               <tr>
                 <td>DATE OF BIRTH</td>
-                <td><input type="text" name="dateofbirth" value="<?php echo $dateofbirth; ?>" /></td>
+                <td><input type="text" name="banca" value="<?php echo $banca; ?>" /></td>
               </tr>
 
               <tr style="display:none;">
@@ -160,6 +160,7 @@
               <tr>
                 <td><span class="required">*</span> <?php echo $entry_zone; ?></td>
                 <td><select name="zone_id">
+                <option value=""> --- Please Select --- </option>
                 <option value="191">Australian Capital Territory</option>
                 <option value="192">New South Wales</option>
                 <option value="193">Northern Territory</option>

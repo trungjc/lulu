@@ -383,11 +383,11 @@ class ControllerAccountSignup extends Controller {
 		} else {
 			$this->data['telephone'] = '';
 		}
-
-		if (isset($this->request->post['dateofbirth'])) {
-			$this->data['dateofbirth'] = $this->request->post['dateofbirth'];
+		// using extension so date of birth day => banca
+		if (isset($this->request->post['banca'])) {
+			$this->data['banca'] = $this->request->post['banca'];
 		} else {
-			$this->data['dateofbirth'] = '';
+			$this->data['banca'] = '';
 		}
 
 
@@ -663,7 +663,6 @@ class ControllerAccountSignup extends Controller {
 				$this->error['warning'] = sprintf($this->language->get('error_agree'), $information_info['title']);
 			}
 		}
-		var_dump($this->error);
 		if (!$this->error) {
 			return true;
 		} else {
