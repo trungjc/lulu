@@ -24,6 +24,7 @@
     <div class="right">
       <h2><?php echo $text_returning_customer; ?></h2>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="submitFrom" value="login" />
         <div class="content">
           <p><?php echo $text_i_am_returning_customer; ?></p>
           <b><?php echo $entry_email; ?></b><br />
@@ -35,7 +36,7 @@
           <br />
           <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
           <br />
-          <input type="submit" value="<?php echo $button_login; ?>" class="button" />
+          <input type="submit" value="<?php echo $button_login; ?>" class="button" name="submitForm" />
           <?php if ($redirect) { ?>
           <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
           <?php } ?>
@@ -43,7 +44,9 @@
       </form>
 
       <div class="register-content">
+        <p><?php echo $text_account_already; ?></p>
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="submitFrom" value="register" />
           <h2><?php echo $text_your_details; ?></h2>
           <div class="content">
             <table class="form">
@@ -75,20 +78,16 @@
                   <span class="error"><?php echo $error_telephone; ?></span>
                   <?php } ?></td>
               </tr>
-              <tr>
+              <tr style="display:none;">
                 <td><?php echo $entry_fax; ?></td>
                 <td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
               </tr>
-            </table>
-          </div>
-          <h2><?php echo $text_your_address; ?></h2>
-          <div class="content">
-            <table class="form">
-              <tr>
+
+              <tr  style="display:none;">
                 <td><?php echo $entry_company; ?></td>
                 <td><input type="text" name="company" value="<?php echo $company; ?>" /></td>
               </tr>        
-              <tr style="display: <?php echo (count($customer_groups) > 1 ? 'table-row' : 'none'); ?>;">
+              <tr style="display: <?php echo (count($customer_groups) > 1 ? 'table-row' : 'none'); ?>;"  style="display:none">
                 <td><?php echo $entry_customer_group; ?></td>
                 <td><?php foreach ($customer_groups as $customer_group) { ?>
                   <?php if ($customer_group['customer_group_id'] == $customer_group_id) { ?>
@@ -123,11 +122,11 @@
                   <span class="error"><?php echo $error_address_1; ?></span>
                   <?php } ?></td>
               </tr>
-              <tr>
+              <tr  style="display:none">
                 <td><?php echo $entry_address_2; ?></td>
                 <td><input type="text" name="address_2" value="<?php echo $address_2; ?>" /></td>
               </tr>
-              <tr>
+              <tr  style="display:none">
                 <td><span class="required">*</span> <?php echo $entry_city; ?></td>
                 <td><input type="text" name="city" value="<?php echo $city; ?>" />
                   <?php if ($error_city) { ?>
@@ -141,7 +140,7 @@
                   <span class="error"><?php echo $error_postcode; ?></span>
                   <?php } ?></td>
               </tr>
-              <tr>
+              <tr style="display:none;">
                 <td><span class="required">*</span> <?php echo $entry_country; ?></td>
                 <td><select name="country_id">
                     <option value=""><?php echo $text_select; ?></option>
@@ -160,16 +159,20 @@
               <tr>
                 <td><span class="required">*</span> <?php echo $entry_zone; ?></td>
                 <td><select name="zone_id">
-                  </select>
+                <option value="191">Australian Capital Territory</option>
+                <option value="192">New South Wales</option>
+                <option value="193">Northern Territory</option>
+                <option value="194">Queensland</option>
+                <option value="195">South Australia</option>
+                <option value="196">Tasmania</option>
+                <option value="197">Victoria</option>
+                <option value="198">Western Australia</option>
+                </select>
                   <?php if ($error_zone) { ?>
                   <span class="error"><?php echo $error_zone; ?></span>
                   <?php } ?></td>
               </tr>
-            </table>
-          </div>
-          <h2><?php echo $text_your_password; ?></h2>
-          <div class="content">
-            <table class="form">
+
               <tr>
                 <td><span class="required">*</span> <?php echo $entry_password; ?></td>
                 <td><input type="password" name="password" value="<?php echo $password; ?>" />
@@ -184,10 +187,10 @@
                   <span class="error"><?php echo $error_confirm; ?></span>
                   <?php } ?></td>
               </tr>
+
             </table>
           </div>
-          <h2><?php echo $text_newsletter; ?></h2>
-          <div class="content">
+          <div class="content" style="display:none">
             <table class="form">
               <tr>
                 <td><?php echo $entry_newsletter; ?></td>
@@ -213,7 +216,7 @@
               <?php } else { ?>
               <input type="checkbox" name="agree" value="1" />
               <?php } ?>
-              <input type="submit" value="<?php echo $button_continue; ?>" class="button" />
+              <input type="submit" value="<?php echo $button_continue; ?>" class="button"/>
             </div>
           </div>
           <?php } else { ?>
@@ -235,14 +238,19 @@
         customer_group[<?php echo $customer_group['customer_group_id']; ?>]['tax_id_display'] = '<?php echo $customer_group['tax_id_display']; ?>';
         customer_group[<?php echo $customer_group['customer_group_id']; ?>]['tax_id_required'] = '<?php echo $customer_group['tax_id_required']; ?>';
       <?php } ?>  
-
+        /*
+        hardcode for hidden fields
+        */
+        customer_group[this.value]['company_id_display'] = 0;
+        customer_group[this.value]['company_id_required'] = 0;
+        customer_group[this.value]['tax_id_display'] = 0;
+        customer_group[this.value]['tax_id_required'] = 0;
         if (customer_group[this.value]) {
           if (customer_group[this.value]['company_id_display'] == '1') {
             $('#company-id-display').show();
           } else {
             $('#company-id-display').hide();
           }
-          
           if (customer_group[this.value]['company_id_required'] == '1') {
             $('#company-id-required').show();
           } else {
