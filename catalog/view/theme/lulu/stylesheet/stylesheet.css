@@ -2180,3 +2180,11 @@ body  #fancybox-close {
     width: 12px;
 }
 #fancybox-content body {border:none;}
+.information-4 #content h1 {
+    display: none;
+}
+.social-infor  a {
+    display:block;
+    text-align: right;
+    margin-bottom: 20px;
+}

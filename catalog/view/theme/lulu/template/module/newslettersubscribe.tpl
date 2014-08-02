@@ -54,10 +54,10 @@
 
 <script language="javascript">
     $(document).ready(function(){
-        var form-newletter=$("#frm_subscribe").html();
-        $("#frm_subscribe").remove();
+         var newletter = $("#frm_subscribe").html();
+    $("#frm_subscribe").remove();
     $('a[href="#frm_subscribe"]').click(function(){
-            $.fancybox(form-newletter);
+            $.fancybox(newletter);
         });
         
       
