@@ -112,7 +112,10 @@
                 </td>
               </tr>
               
-
+              <tr  style="display:none;">
+                <td>entry_iban</td>
+                <td><input type="text" name="iban" value="<?php echo $iban; ?>" /></td>
+              </tr>
               <tr style="display:none;">
                 <td><?php echo $entry_fax; ?></td>
                 <td><input type="text" name="fax" value="<?php echo $fax; ?>" /></td>
