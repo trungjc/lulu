@@ -48,7 +48,7 @@ body, td, th, input, textarea, select, a {
 h1, .welcome {
 	color: #231f20;
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	font-size: 32px;
 	font-weight: normal;
 	text-shadow: 0 0 1px rgba(0, 0, 0, .01);
@@ -57,7 +57,7 @@ h2 {
 	color: #000000;
 	font-size: 16px;
 	margin-top: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 p {
 	margin-top: 0px;
@@ -579,11 +579,20 @@ body .success .close,body .warning .close,body .attention .close,body .informati
 }
 .required {
 	color: #FF0000;
-	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .error {
 	display: block;
 	color: #FF0000;
+        
+}
+
+.error {
+    color: #ff0000;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 0;
+    text-transform: capitalize;
 }
 .help {
 	color: #999;
@@ -595,8 +604,25 @@ body .success .close,body .warning .close,body .attention .close,body .informati
 table.form {
 	width: 100%;
 	border-collapse: collapse;
-	margin-bottom: 20px;
+	margin: 0 0;
 }
+table.form input[type="text"],table.form input[type="password"],table.form textarea {
+    background: white;width:100%;margin: 10px 0;
+} 
+.reset-select .sbHolder {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #d4178b;
+    border-radius: 0;
+    color: #808284;
+    height: 19px;
+    margin: 5px 0;
+    min-width: 90px;
+    padding: 2px 2px;
+    position: relative;
+    max-width: none;
+    width: 100%;
+}
+.reset-select .sbToggle {display: none}
 table.form tr td:first-child {
 	width: 150px;
 }
@@ -604,7 +630,8 @@ table.form > * > * > td {
 	color: #000000;
 }
 table.form td {
-	padding: 4px;
+	padding: 4px 10px;
+        vertical-align: top;
 }
 input.large-field, select.large-field {
 	width: 300px;
@@ -1044,10 +1071,12 @@ ul.box-filter > li ul {
 }
 /* content */
 #content .content {
-	padding: 10px;
+	padding: 20px;
 	margin-bottom: 20px;
 	border:1px solid #d60c8c
 }
+
+
 #content .content .left {
 	float: left;
 	width: 49%;
@@ -1077,17 +1106,19 @@ ul.box-filter > li ul {
 }
 /* manufacturer */
 .manufacturer-list {
-	border: 1px solid #DBDEE1;
-	padding: 5px;
-	overflow: auto;
-	margin-bottom: 20px;
+	 border-top: 1px solid #dbdee1;
+    float: left;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 5px;
+    width: 15.6%;
 }
 .manufacturer-heading {
-	background: #F8F8F8;
-	font-size: 15px;
-	font-family: "BrandonBold",Helvetica,sans-serif;
-	padding: 5px 8px;
-	margin-bottom: 6px;
+    font-family: times new roman,Helvetica,sans-serif;
+    font-size: 15px;
+    margin-bottom: 6px;
+    padding: 5px 8px;
+    color:#b7995b;
 }
 .manufacturer-content {
 	padding: 8px;
@@ -2141,7 +2172,7 @@ html[xmlns] .clearfix {
 }
 .newletter h1 {
     color:#b7995b;
-    margin: 0 0 20px;
+    margin: 0 0 20px;font-family: times new roman;
 }
 .newletter p {
     line-height: 26px;

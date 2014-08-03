@@ -760,3 +760,6 @@
 2014-08-01 9:36:43 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
 2014-08-01 9:37:11 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
 2014-08-01 9:38:43 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_manufacturer.php on line 128
+2014-08-02 23:53:26 - PHP Notice:  Undefined index: iban in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_account_customer.php on line 32
+2014-08-03 0:02:18 - PHP Notice:  Undefined index: iban in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_account_customer.php on line 32
+2014-08-03 0:10:24 - PHP Notice:  Undefined index: iban in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_account_customer.php on line 32

@@ -267,82 +267,15 @@
       </div>
       <?php if ($review_status) { ?>
       <div class="review">
-        <div><img src="catalog/view/theme/lulu/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;
-		
-		</div>
-        <div class="share" style="display:none"><!-- AddThis Button BEGIN -->
-          <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
-          <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
-          <!-- AddThis Button END --> 
-        </div>
+           <img src="catalog/view/theme/lulu/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />
+        
       </div>
       <?php } ?>
     </div>
   </div>
   
-  
-  <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
-    <?php if ($attribute_groups) { ?>
-    <a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
-    <?php } ?>
-    <?php if ($products) { ?>
-    <a href="#tab-related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
-    <?php } ?>
-  </div>
-  <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
-  <?php if ($attribute_groups) { ?>
-  <div id="tab-attribute" class="tab-content">
-    <table class="attribute">
-      <?php foreach ($attribute_groups as $attribute_group) { ?>
-      <thead>
-        <tr>
-          <td colspan="2"><?php echo $attribute_group['name']; ?></td>
-        </tr>
-      </thead>
-      <tbody>
-        <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
-        <tr>
-          <td><?php echo $attribute['name']; ?></td>
-          <td><?php echo $attribute['text']; ?></td>
-        </tr>
-        <?php } ?>
-      </tbody>
-      <?php } ?>
-    </table>
-  </div>
-  <?php } ?>
 
-  <?php if ($products) { ?>
-  <div id="tab-related" class="tab-content">
-    <div class="box-product">
-      <?php foreach ($products as $product) { ?>
-      <div>
-        <?php if ($product['thumb']) { ?>
-        <div class="image"><a id="<?php echo $product['product_id']; ?>" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
-        <?php } ?>
-        <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-        <?php if ($product['price']) { ?>
-        <div class="price">
-          <?php if (!$product['special']) { ?>
-          <?php echo $product['price']; ?>
-          <?php } else { ?>
-          <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
-          <?php } ?>
-        </div>
-        <?php } ?>
-        <?php if ($product['rating']) { ?>
-        <div class="rating"><img src="catalog/view/theme/lulu/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-       <?php } else {?>
-        <div class="rating"><img src="catalog/view/theme/lulu/image/stars-0.png" alt="0 review" />
-		
-		</div>
-      <?php } ?>
-        <a href="<?php echo $product['href']; ?>" class="button">add</a></div>
-      <?php } ?>
-    </div>
-  </div>
-  <?php } ?>
-  
+
  
 
 <script type="text/javascript"><!--

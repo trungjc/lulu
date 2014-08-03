@@ -12,30 +12,62 @@
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?></h1>
+  
   <div class="login-content">
     <div class="left">
-        Welcome  ! 
+      <h1>  Welcome  !</h1> 
+      <p>
+      Lulu and lipstick's customer service is ready to assist you. please let us knows as much information in your enquiry . You can also find answer to frequently asked question in the online customer service section by click on the links to the right.
+      </p>
+      <p>Benefits: </p>
+      <ul>
+          <li>Benefits  1</li>
+           <li>Benefits  2</li>
+            <li>Benefits  3</li>
+             <li>Benefits  4</li>
+              <li>Benefits 5 </li>
+      </ul>
+      <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the order you have previously made.</p>
+      
     </div>
     <div class="right">
-      <h2><?php echo $text_returning_customer; ?></h2>
+      <h2 style="color: #d64599">already a loyal lulu ?</h2>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
         <input type="hidden" name="submitForm" value="login" />
         <div class="content">
-          <p><?php echo $text_i_am_returning_customer; ?></p>
-          <b><?php echo $entry_email; ?></b><br />
-          <input type="text" name="email" value="<?php echo $email; ?>" />
-          <br />
-          <br />
-          <b><?php echo $entry_password; ?></b><br />
-          <input type="password" name="password" value="<?php echo $password; ?>" />
-          <br />
-          <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
-          <br />
-          <input type="submit" value="<?php echo $button_login; ?>" class="button"/>
-          <?php if ($redirect) { ?>
-          <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
-          <?php } ?>
+            <table class="form">
+                <tr>
+                    <td colspan="2">
+                   <?php echo $entry_email; ?><br />
+                    <input type="text" name="email" value="<?php echo $email; ?>" />
+                    </td>
+                  
+                </tr>
+                 <tr>
+                    <td colspan="2">
+                  <?php echo $entry_password; ?><br />
+                   <input type="password" name="password" value="<?php echo $password; ?>" />
+                    </td>
+                  
+                </tr>
+                  <tr>
+                      <td align="left">
+                            <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a>
+                    
+                    </td>
+                   <td class="buttons" align="right" style="width:50%">
+                    
+                    <input type="submit" value="<?php echo $button_login; ?>" class="button"/>
+                        <?php if ($redirect) { ?>
+                        <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
+                        <?php } ?>
+                    </td>
+                </tr>
+            </table>
+          
+         
+         
+          
         </div>
       </form>
 
@@ -43,41 +75,43 @@
         <p><?php echo $text_account_already; ?></p>
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
           <input type="hidden" name="submitForm" value="register" />
-          <h2><?php echo $text_your_details; ?></h2>
+          <h2 style="color: #d64599"><?php echo $text_your_details; ?></h2>
           <div class="content">
             <table class="form">
               <tr>
-                <td><span class="required">*</span> <?php echo $entry_firstname; ?></td>
-                <td><input type="text" name="firstname" value="<?php echo $firstname; ?>" />
+                <td style="width: 50%;"><span class="required">*</span> <?php echo $entry_firstname; ?><br/>
+                <input type="text" name="firstname" value="<?php echo $firstname; ?>" />
                   <?php if ($error_firstname) { ?>
                   <span class="error"><?php echo $error_firstname; ?></span>
-                  <?php } ?></td>
-              </tr>
-              <tr>
-                <td><span class="required">*</span> <?php echo $entry_lastname; ?></td>
-                <td><input type="text" name="lastname" value="<?php echo $lastname; ?>" />
+                  <?php } ?>
+                </td>
+                <td><span class="required">*</span> <?php echo $entry_lastname; ?><br/>
+                <input type="text" name="lastname" value="<?php echo $lastname; ?>" />
                   <?php if ($error_lastname) { ?>
                   <span class="error"><?php echo $error_lastname; ?></span>
-                  <?php } ?></td>
+                  <?php } ?>
+                </td>
               </tr>
               <tr>
-                <td><span class="required">*</span> <?php echo $entry_email; ?></td>
-                <td><input type="text" name="email" value="<?php echo $email; ?>" />
+                  <td colspan="2"><span class="required">*</span> <?php echo $entry_email; ?><br/>
+                  <input type="text" name="email" value="<?php echo $email; ?>" />
                   <?php if ($error_email) { ?>
                   <span class="error"><?php echo $error_email; ?></span>
-                  <?php } ?></td>
+                  <?php } ?>
+                  </td>
               </tr>
               <tr>
-                <td><span class="required">*</span> <?php echo $entry_telephone; ?></td>
-                <td><input type="text" name="telephone" value="<?php echo $telephone; ?>" />
+                <td><span class="required">*</span> <?php echo $entry_telephone; ?><br/>
+                <input type="text" name="telephone" value="<?php echo $telephone; ?>" />
                   <?php if ($error_telephone) { ?>
                   <span class="error"><?php echo $error_telephone; ?></span>
-                  <?php } ?></td>
+                  <?php } ?>
+                </td>
+                <td>DATE OF BIRTH<br/>
+                <input type="text" name="banca" value="<?php echo $banca; ?>" />
+                </td>
               </tr>
-              <tr>
-                <td>DATE OF BIRTH</td>
-                <td><input type="text" name="banca" value="<?php echo $banca; ?>" /></td>
-              </tr>
+              
 
               <tr style="display:none;">
                 <td><?php echo $entry_fax; ?></td>
@@ -117,11 +151,12 @@
                   <?php } ?></td>
               </tr>
               <tr>
-                <td><span class="required">*</span> <?php echo $entry_address_1; ?></td>
-                <td><input type="text" name="address_1" value="<?php echo $address_1; ?>" />
+                  <td colspan="2"><span class="required">*</span> <?php echo $entry_address_1; ?><br/>
+                  <input type="text" name="address_1" value="<?php echo $address_1; ?>" />
                   <?php if ($error_address_1) { ?>
                   <span class="error"><?php echo $error_address_1; ?></span>
-                  <?php } ?></td>
+                  <?php } ?>
+                  </td>
               </tr>
               <tr  style="display:none">
                 <td><?php echo $entry_address_2; ?></td>
@@ -135,8 +170,28 @@
                   <?php } ?></td>
               </tr>
               <tr>
-                <td><span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></td>
-                <td><input type="text" name="postcode" value="<?php echo $postcode; ?>" />
+                  <td class="reset-select">
+                    <span class="required">*</span> <?php echo $entry_zone; ?><br/>
+                <select name="zone_id">
+                <option value=""> --- Please Select --- </option>
+                <option value="191">Australian Capital Territory</option>
+                <option value="192">New South Wales</option>
+                <option value="193">Northern Territory</option>
+                <option value="194">Queensland</option>
+                <option value="195">South Australia</option>
+                <option value="196">Tasmania</option>
+                <option value="197">Victoria</option>
+                <option value="198">Western Australia</option>
+                </select>
+                  <?php if ($error_zone) { ?>
+                  <span class="error"><?php echo $error_zone; ?></span>
+                  <?php } ?>
+                  
+                    
+                   </td>
+                <td>
+                     <span id="postcode-required" class="required">*</span> <?php echo $entry_postcode; ?><br/>
+                    <input type="text" name="postcode" value="<?php echo $postcode; ?>" />
                   <?php if ($error_postcode) { ?>
                   <span class="error"><?php echo $error_postcode; ?></span>
                   <?php } ?></td>
@@ -157,37 +212,46 @@
                   <span class="error"><?php echo $error_country; ?></span>
                   <?php } ?></td>
               </tr>
-              <tr>
-                <td><span class="required">*</span> <?php echo $entry_zone; ?></td>
-                <td><select name="zone_id">
-                <option value=""> --- Please Select --- </option>
-                <option value="191">Australian Capital Territory</option>
-                <option value="192">New South Wales</option>
-                <option value="193">Northern Territory</option>
-                <option value="194">Queensland</option>
-                <option value="195">South Australia</option>
-                <option value="196">Tasmania</option>
-                <option value="197">Victoria</option>
-                <option value="198">Western Australia</option>
-                </select>
-                  <?php if ($error_zone) { ?>
-                  <span class="error"><?php echo $error_zone; ?></span>
-                  <?php } ?></td>
-              </tr>
 
               <tr>
-                <td><span class="required">*</span> <?php echo $entry_password; ?></td>
-                <td><input type="password" name="password" value="<?php echo $password; ?>" />
+                <td><span class="required">*</span> <?php echo $entry_password; ?><br/>
+                <input type="password" name="password" value="<?php echo $password; ?>" />
                   <?php if ($error_password) { ?>
                   <span class="error"><?php echo $error_password; ?></span>
-                  <?php } ?></td>
-              </tr>
-              <tr>
-                <td><span class="required">*</span> <?php echo $entry_confirm; ?></td>
-                <td><input type="password" name="confirm" value="<?php echo $confirm; ?>" />
+                  <?php } ?>
+                </td>
+                <td>
+                <span class="required">*</span> <?php echo $entry_confirm; ?><br/>
+                <input type="password" name="confirm" value="<?php echo $confirm; ?>" />
                   <?php if ($error_confirm) { ?>
                   <span class="error"><?php echo $error_confirm; ?></span>
-                  <?php } ?></td>
+                  <?php } ?>
+                </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                   <?php if ($text_agree) { ?>
+          <div class="buttons">
+              <div class="rights">
+              <?php if ($agree) { ?>
+              <input  type="checkbox" name="agree" value="1" checked="checked" />
+              <?php } else { ?>
+              <input  type="checkbox" name="agree" value="1" checked="checked" />
+              <?php } ?>
+              <span style="font-size: 13px"><?php echo $text_agree; ?></span>
+              <div class="cleafix" style="margin-top:15px;">
+                  <input type="submit" value="Sign Up" class="button" style="float: right"/>
+              </div>
+            </div>
+          </div>
+          <?php } else { ?>
+          <div class="buttons">
+            <div class="rights">
+              <input type="submit" value="<?php echo $button_continue; ?>" class="button" />
+            </div>
+          </div>
+          <?php } ?>
+                  </td>
               </tr>
 
             </table>
@@ -210,24 +274,7 @@
               </tr>
             </table>
           </div>
-          <?php if ($text_agree) { ?>
-          <div class="buttons">
-            <div class="right"><?php echo $text_agree; ?>
-              <?php if ($agree) { ?>
-              <input type="checkbox" name="agree" value="1" checked="checked" />
-              <?php } else { ?>
-              <input type="checkbox" name="agree" value="1" />
-              <?php } ?>
-              <input type="submit" value="<?php echo $button_continue; ?>" class="button"/>
-            </div>
-          </div>
-          <?php } else { ?>
-          <div class="buttons">
-            <div class="right">
-              <input type="submit" value="<?php echo $button_continue; ?>" class="button" />
-            </div>
-          </div>
-          <?php } ?>
+         
         </form>
       <script type="text/javascript"><!--
       $('input[name=\'customer_group_id\']:checked').live('change', function() {
