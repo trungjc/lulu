@@ -21,7 +21,7 @@
   <?php } ?>
   <div class="pagination"><?php echo $pagination; ?></div>
   <?php } else { ?>
-  <div class="content"><?php echo $text_empty; ?></div>
+  <div class="content-account"><?php echo $text_empty; ?></div>
   <?php } ?>
   <div class="buttons">
     <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>

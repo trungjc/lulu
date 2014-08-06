@@ -763,3 +763,14 @@
 2014-08-02 23:53:26 - PHP Notice:  Undefined index: iban in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_account_customer.php on line 32
 2014-08-03 0:02:18 - PHP Notice:  Undefined index: iban in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_account_customer.php on line 32
 2014-08-03 0:10:24 - PHP Notice:  Undefined index: iban in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_model_account_customer.php on line 32
+2014-08-06 4:27:23 - PHP Notice:  unserialize(): Error at offset 9550 of 27743 bytes in D:\xampp\htdocs\lulu\system\library\cache.php on line 11
+2014-08-06 4:28:55 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 4:29:29 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 4:30:03 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 5:59:38 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 6:25:06 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 6:25:44 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 6:26:11 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 6:28:26 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 6:30:26 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 6:38:27 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117

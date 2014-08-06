@@ -41,9 +41,10 @@ body {
         font-family: "BrandonLight",Helvetica, sans-serif;;
 	margin: 0px;
 	padding: 0px;
+        letter-spacing: 2px;
 }
 body, td, th, input, textarea, select, a {
-	font-size: 14px;
+	font-size: 12px;
 }
 h1, .welcome {
 	color: #231f20;
@@ -350,7 +351,7 @@ b, strong,h1,h2,h3,h4,h5 {
     position: absolute;
     text-align: center;
     top: -25px;
-    width: 145px;
+    width: 175px;
     z-index: 5;
 }
 #header #welcome  a {
@@ -439,7 +440,7 @@ position: relative;
 .notice {
   color: #fdedf7;
     font-size: 12px;
-    right: 244px;
+    right: 277px;
     position: absolute;
     text-transform: uppercase;
     top: -21px;
@@ -471,7 +472,7 @@ position: relative;
 	position: relative;
 	float: left;
 	z-index: 20;
-	padding: 6px 10px 5px;
+	padding: 6px 9px 5px;
 }
 #menu > ul > li:hover {
 }
@@ -480,6 +481,7 @@ position: relative;
 	line-height: 14px;
 	text-decoration: none;
 	display: block;
+        font-size: 11px;
 	padding: 6px 10px 6px 10px;
         text-transform: uppercase;
 	z-index: 6;
@@ -728,7 +730,7 @@ a.button, input.button,.quickview {
     cursor: pointer;
     display: inline-block;
     font-family: Brandon,Helvetica,sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     height: 19px;
     line-height: 19px;
     padding: 0 5px;
@@ -812,9 +814,7 @@ input.button {
 a.button:hover, input.button:hover {
 	background-position: 0px -24px;
 }
-#content p {
-    letter-spacing: 1.5px;
-}
+
 .product-info > .right > .clearfix {display: inline-block;}
 .buttons {
 	overflow: auto;
@@ -2218,4 +2218,25 @@ body  #fancybox-close {
     display:block;
     text-align: right;
     margin-bottom: 20px;
+}
+.account-list ul {
+    list-style: none;
+    padding:0;
+    margin:0 20px 0 0;
+}
+
+.account-list ul li + li{
+   margin-top:10px;
+   border-top: 1px solid #ccc;
+   padding-top:10px;
+}
+
+[class*="class-account"] #column-left{
+    border: none;
+}
+.class-account-success #content .buttons {
+    display: none;
+}
+.class-account-account h2 {
+    color:#d64599;
 }

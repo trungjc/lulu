@@ -2,16 +2,16 @@
 <?php if ($success) { ?>
 <div class="success"><?php echo $success; ?></div>
 <?php } ?>
-<?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content">
-  <div class="breadcrumb">
+<div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?></h1>
+<?php echo $column_left; ?><?php echo $column_right; ?>
+<div id="content">
+  
   <h2><?php echo $text_my_account; ?></h2>
-  <div class="content">
+  <div class="content-account">
     <ul>
       <li><a href="<?php echo $edit; ?>"><?php echo $text_edit; ?></a></li>
       <li><a href="<?php echo $password; ?>"><?php echo $text_password; ?></a></li>
@@ -20,7 +20,7 @@
     </ul>
   </div>
   <h2><?php echo $text_my_orders; ?></h2>
-  <div class="content">
+  <div class="content-account">
     <ul>
       <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
       <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
@@ -33,7 +33,7 @@
     </ul>
   </div>
   <h2><?php echo $text_my_newsletter; ?></h2>
-  <div class="content">
+  <div class="content-account">
     <ul>
       <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
     </ul>

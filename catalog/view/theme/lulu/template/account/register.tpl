@@ -1,19 +1,19 @@
-<?php echo $header; ?><?php echo $content_top; ?>
+<?php echo $header; ?><?php echo $content_top; ?><div class="breadcrumb">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php } ?>
+  </div>
 <?php if ($error_warning) { ?>
 <div class="warning"><?php echo $error_warning; ?></div>
 <?php } ?>
 <?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="content">
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
+  
   <h1><?php echo $heading_title; ?></h1>
   <p><?php echo $text_account_already; ?></p>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <h2><?php echo $text_your_details; ?></h2>
-    <div class="content">
+    <div class="content-account">
       <table class="form">
         <tr>
           <td><span class="required">*</span> <?php echo $entry_firstname; ?></td>
@@ -50,7 +50,7 @@
       </table>
     </div>
     <h2><?php echo $text_your_address; ?></h2>
-    <div class="content">
+    <div class="content-account">
       <table class="form">
         <tr>
           <td><?php echo $entry_company; ?></td>
@@ -136,7 +136,7 @@
       </table>
     </div>
     <h2><?php echo $text_your_password; ?></h2>
-    <div class="content">
+    <div class="content-account">
       <table class="form">
         <tr>
           <td><span class="required">*</span> <?php echo $entry_password; ?></td>
@@ -155,7 +155,7 @@
       </table>
     </div>
     <h2><?php echo $text_newsletter; ?></h2>
-    <div class="content">
+    <div class="content-account">
       <table class="form">
         <tr>
           <td><?php echo $entry_newsletter; ?></td>

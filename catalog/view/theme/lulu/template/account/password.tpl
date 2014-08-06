@@ -8,7 +8,7 @@
   <h1><?php echo $heading_title; ?></h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <h2><?php echo $text_password; ?></h2>
-    <div class="content">
+    <div class="content-account">
       <table class="form">
         <tr>
           <td><span class="required">*</span> <?php echo $entry_password; ?></td>
