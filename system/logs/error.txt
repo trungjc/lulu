@@ -774,3 +774,5 @@
 2014-08-06 6:28:26 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
 2014-08-06 6:30:26 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
 2014-08-06 6:38:27 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-06 6:47:04 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-07 5:44:44 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117

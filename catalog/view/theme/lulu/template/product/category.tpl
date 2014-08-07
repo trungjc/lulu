@@ -81,11 +81,9 @@
   <?php } ?>
   <?php if (!$categories && !$products) { ?>
   <div class="content"><?php echo $text_empty; ?></div>
-  <div class="buttons">
-    <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
-  </div>
+ <?php echo $content_bottom; ?></div>
   <?php } ?>
-  <?php echo $content_bottom; ?></div>
+  
  <script type="text/javascript">
 $(document).ready(function(){ 
 $('.backtotop').click(function(){

@@ -443,7 +443,7 @@ position: relative;
     right: 277px;
     position: absolute;
     text-transform: uppercase;
-    top: -21px;
+    top: -21px;    letter-spacing: 1px;
 }
 .livechat {
        background: #0d1035;
@@ -731,11 +731,12 @@ a.button, input.button,.quickview {
     display: inline-block;
     font-family: Brandon,Helvetica,sans-serif;
     font-size: 10px;
-    height: 19px;
-    line-height: 19px;
-    padding: 0 5px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    vertical-align: middle; letter-spacing: 1px;
+    vertical-align: middle; 
 }
 .buttons .button {
     background: #d50c8c;
@@ -746,11 +747,12 @@ a.button, input.button,.quickview {
     display:inline-block;
 }
 .cart .wishlist a {
-     display: inline-block;
-      vertical-align: middle;
-      text-indent: -9999px;
-      height: 21px;width: 25px;
-      background: url('../image/wishlist.png') no-repeat;
+      background: url("../image/wishlist.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 18px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    width: 20px;
 }
 .cart .wishlist a:visted {
      background: url('../image/heart.png') no-repeat;
@@ -758,13 +760,17 @@ a.button, input.button,.quickview {
 
 .cart .button ,.tab-content .box-product .button {    
     display: inline-block;
-    height: 19px;
+    height: 16px;
     padding: 0;
     vertical-align: middle;
     text-align: center;
     margin: 0 2px;
-    width: 60px; color: #f5c2e2;
+    width: 50px; color: #f5c2e2;letter-spacing: 4px;
     background:#d50c8c url(../image/plus.jpg) no-repeat 90%  center;
+}
+
+.cart > * {
+    float: left;
 }
 
 .cart .button:hover ,.tab-content .box-product .button:hover{
@@ -886,6 +892,7 @@ body .at16nc.at16t_compact {
 	font-size: 14px;
 	line-height: 14px;
         position: relative;
+        color:#000;
         z-index: 1;
         margin: 0 auto 20px;
         width: 190px;background: white;
@@ -895,11 +902,9 @@ body .at16nc.at16t_compact {
     top: -36px;
 }
 hr {
-      background: none repeat scroll 0 0 #818285;
-    border-bottom: 1px solid #e8e8e9;
-    border-right:none;border-left:none;
-    border-top: 1px solid #e8e8e9;
-    height: 3px;
+      background: #818285;
+ border: none;
+    height: 1px;
 }
 .box .box-content {
 	
@@ -913,12 +918,10 @@ hr {
 }
 .box-product > div {
     display: block;
-    margin-bottom: 16px;
-    margin-left: 4px;
-    margin-right: 4px;
+    padding: 16px 11px;
     text-align: left;
     vertical-align: top;
-    width: 180px; float:left;
+    width: 170px; float:left;
 }
 .tab-content  .box-product > div {
     display: block;
@@ -934,7 +937,7 @@ img {
 }
 .box-product .image {
 	display: block;
-	margin-bottom: 0px;
+	margin-bottom: 15px;
 }
 .tab-content .box-product .image {
 	margin-bottom: 10px;
@@ -945,7 +948,7 @@ img {
 .box-product .image img {
 }
 .box-product .name a {
-	color: #000; letter-spacing: 1.5px;
+	color: #000; 
 	text-decoration: none;
 	display: block;
         font-family: "BrandonLight";
@@ -954,17 +957,17 @@ img {
 .manufacturer-name {
     font-family: "BrandonBold";
     text-decoration: none;
-    display: block; letter-spacing: 1.5px;
+    display: block; 
 }
 .box-product .price {
 	display: block;
-	margin-bottom: 4px; letter-spacing: 1.5px;
+	margin: 5px 0; 
 }
 .box-product .price-old {
-	color: #F00; letter-spacing: 1.5px;
+	color: #d50c8c; 
 	text-decoration: line-through;
 }
-.box-product .price-new { letter-spacing: 1.5px;
+.box-product .price-new { 
 }
 .box-product .rating {
 	display: block;
@@ -1003,7 +1006,7 @@ ul.box-category > li > a {
 	text-decoration: none;
 	color: #6d6e70;
         font-size: 12px;
-        letter-spacing: 1.5px;
+        
         font-family: "BrandonBold",Helvetica,sans-serif;
 }
 ul.box-category > li ul {
@@ -1041,7 +1044,7 @@ ul.box-filter li a {
     
     color: #6d6e70;
         font-size: 12px;
-        letter-spacing: 1.5px;
+        
 }
 ul.box-filter li a ,.results,.backtotop{
         font-family: "BrandonBold",Helvetica,sans-serif;
@@ -1269,10 +1272,10 @@ ul.box-filter > li ul {
 }
 .product-grid .name a {
 	text-decoration: none;
-	display: block; letter-spacing: 1.5px;
+	display: block; 
 	margin-bottom: 4px;
 }
-.product-grid .brand { letter-spacing: 1.5px;
+.product-grid .brand { 
 	font-family: "BrandonBold",Helvetica,sans-serif;
 }
 .product-grid .description {
@@ -1284,16 +1287,16 @@ ul.box-filter > li ul {
 }
 .product-grid .price {
 	display: block;
-	margin-bottom: 4px; letter-spacing: 1.5px;
+	margin-bottom: 4px; 
 }
-.product-grid .price-old { letter-spacing: 1.5px;
+.product-grid .price-old { 
 	color: #F00;
 	text-decoration: line-through;
 }
 .product-grid .price-new {
 }
 .product-grid .price .price-tax {
-	display: none; letter-spacing: 1.5px;
+	display: none; 
 }
 .product-grid .cart {
 	margin-bottom: 3px;
@@ -1453,13 +1456,13 @@ html[xmlns] .clearfix {
 }
 .button-container .button {
     background:#d50c8c;text-indent: 0;  height: 22px;
-    width: 142px;font-size: 10px;letter-spacing: 1.5px;
+    width: 142px;font-size: 10px;
     margin: 0 0 10px 0;}
 .button-container .links a {
             background: white url("../image/add-to-love-icon.png") no-repeat  4px center;
     height: 22px;border:1px solid #d50c8c;
     width: 142px;    display: inline-block;
-    color:#d50c8c;letter-spacing: 1.5px;
+    color:#d50c8c;
     font-size: 10px;line-height: 22px;
     text-align: center;
 }
@@ -1599,9 +1602,9 @@ html[xmlns] .clearfix {
 .wishlist-info table {
 	width: 100%;
 	border-collapse: collapse;
-	border-top: 1px solid #d60c8c;
-	border-left: 1px solid #d60c8c;
-	border-right: 1px solid #d60c8c;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 	margin-bottom: 20px;
 }
 .wishlist-info td {
@@ -1610,7 +1613,7 @@ html[xmlns] .clearfix {
 .wishlist-info thead td {
 	color: #4D4D4D;
 	font-family: "BrandonBold",Helvetica,sans-serif;
-	border-bottom: 1px solid #d60c8c;
+	border-bottom: 1px solid #ccc;
 }
 .wishlist-info thead .image {
 	text-align: center;
@@ -1623,7 +1626,7 @@ html[xmlns] .clearfix {
 }
 .wishlist-info tbody td {
 	vertical-align: top;
-	border-bottom: 1px solid #d60c8c;
+	border-bottom: 1px solid #ccc;
 }
 .wl {
     border: 1px solid #6d6e71;
@@ -1631,13 +1634,13 @@ html[xmlns] .clearfix {
     display: inline-block;
     font-size: 10px;
     height: 20px;
-    letter-spacing: 1.5px;
+    
     line-height: 20px;
     text-align: center;
     margin-right:10px;
     width: 142px;
 }
-.wl,.rm {color:#6d6e71;margin-top:20px;font-size: 10px;letter-spacing: 1.5px;display: inline-block;}
+.wl,.rm {color:#6d6e71;margin-top:20px;font-size: 10px;display: inline-block;}
 .wishlist-info tbody .image {
 	text-align: center;
 }
@@ -1967,7 +1970,7 @@ html[xmlns] .clearfix {
 .contact-info {
 	overflow: auto;
         font-size: 11px;
-        letter-spacing: 1.5px;
+        
 }
 .contact-info .left {
 	float: left;
@@ -2059,7 +2062,7 @@ html[xmlns] .clearfix {
     display: block;
     color:#d60c8c;
     font-family: "BrandonBold"; font-size: 11px;
-    letter-spacing: 1.5px;
+    
     margin: 0 0 10px 0;
 }
 .viewall a,.contents label {
@@ -2110,7 +2113,7 @@ html[xmlns] .clearfix {
     border-bottom:1px solid #ddd;
     padding-bottom: 5px;
     font-size: 11px;
-    letter-spacing: 1.5px;line-height: 22px;
+    line-height: 22px;
 }
 .accordion-heading {
     cursor: pointer;
