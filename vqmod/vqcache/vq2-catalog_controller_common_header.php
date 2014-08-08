@@ -174,7 +174,7 @@ private static function sortCatCmenu($a, $b)
 
 		$this->data['categories'] = array();
 
-		$categories = $this->model_catalog_category->getCategories(0);
+		$categories = array();
 
 		foreach ($categories as $category) {
 			if ($category['top']) {
@@ -212,6 +212,8 @@ private static function sortCatCmenu($a, $b)
 
 		$this->children = array(
 			'module/language',
+'module/supermenu',
+			'module/supermenu_settings',
 			'module/currency',
 			'module/cart'
 		);
@@ -280,6 +282,7 @@ private static function sortCatCmenu($a, $b)
 									
 				$this->data['categories'] = $this->sortByOneKey($this->data['categories'], 'sort_order');
 			
+$this->data['categories'] = array();
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/header.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/common/header.tpl';
 		} else {
@@ -307,7 +310,7 @@ $this->load->model('setting/extension');
 
                 $this->data['categories'] = array();
                             
-                //$categories = $this->model_catalog_category->getCategories(0);
+                //$categories = array();
 
                 $data = array(
                     'parent_cmenu_id' => 0,

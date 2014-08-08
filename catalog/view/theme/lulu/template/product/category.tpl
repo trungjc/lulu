@@ -2,7 +2,7 @@
  <?php if ($thumb) { ?>
     <div class="category-image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
     <?php } ?>
-<div class="breadcrumb">
+    <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
@@ -81,9 +81,9 @@
   <?php } ?>
   <?php if (!$categories && !$products) { ?>
   <div class="content"><?php echo $text_empty; ?></div>
- <?php echo $content_bottom; ?></div>
+ <?php echo $content_bottom; ?>
   <?php } ?>
-  
+  </div>
  <script type="text/javascript">
 $(document).ready(function(){ 
 $('.backtotop').click(function(){

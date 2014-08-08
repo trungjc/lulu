@@ -1,0 +1,32 @@
+---------- Date: 2014-08-08 08:59:53 ~ IP : ::1 ----------
+REQUEST URI : /lulu/index.php?route=news/category&amp;npath=2
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/newsletter_NB_support.xml
+   id        : newsletter_popup-NB fix
+   version   : 2.0
+   vqmver    : 2.1.0
+   author    : info@kodecube.com
+VQModObject::parseMods - Could not resolve path for [catalog/controller/account/cron_newsletter_builder.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/model/module/newsletter_builder.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/module/newsletter_builder_list.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/view/template/module/newsletter_builder_form.tpl] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/controller/module/newsletter_builder.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2014-08-08 09:04:06 ~ IP : ::1 ----------
+REQUEST URI : /lulu/index.php?route=common/home
+MOD DETAILS:
+   modFile   : D:\xampp\htdocs\lulu\vqmod/xml/supermenu.xml
+   id        : Supermenu Integration Vqmod
+   version   : 1.0
+   vqmver    : Latest
+   author    : Flo - shopencart.com
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <?php if ($categories) { ?>
+
+----------------------------------------------------------------------
+
+

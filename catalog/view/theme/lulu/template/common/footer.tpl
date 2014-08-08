@@ -57,7 +57,54 @@ Please donate via PayPal to donate@opencart.com
         jQuery('.accordion-heading').removeClass('active');
             jQuery(this).addClass('active');
         });
-    })
+        //alert(1);
+        
+             jQuery('#supermenu ul li div.bigdiv').each(function(index, elem){
+                 var test = jQuery(elem);
+                 test.css('position', 'static');
+                test.css('visibility', 'hidden').show();
+                
+        
+        /*
+                var  width =  0;
+                test.find('.supermenu-left .withchild,.supermenu-left .withimage').each(function(idx, e) {
+                    width += jQuery(e).width();
+                });
+*/
+                  test.css("width",test.width()); 
+                  test.css('position', 'absolute');
+                  test.hide().css('visibility', 'visible');
+              });
+     
+       
+       
+            
+function getUnvisibleDimensions(obj) {
+    //alert(3);
+    if (jQuery(obj).length == 0) {
+        return false;
+    }
+    var clone = jQuery(obj).clone();
+    clone.css({
+        visibility:'hidden',
+        width : '',
+        height: '',
+        display:'block',
+        maxWidth : '',
+        maxHeight: ''
+    });
+   // alert(5);
+    jQuery('body').append(clone);
+    var width = clone.outerWidth();
+//        height = clone.outerHeight();
+    clone.remove();
+  alert(width);
+    return width;
+    
+     
+     
+    }
+});
      
     
 </script>

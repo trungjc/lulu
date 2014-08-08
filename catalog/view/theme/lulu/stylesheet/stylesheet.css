@@ -458,39 +458,39 @@ position: relative;
 }
 .livechat a {color: white;text-decoration: none; font-size: 12px;}
 /* menu */
-#menu {
+#supermenu {
 	 min-height: 35px;
 	margin-bottom: 15px;	
 	padding: 0px 5px;
 }
-#menu ul {
+#supermenu  ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-#menu > ul > li {
+#supermenu  > ul > li {
 	position: relative;
 	float: left;
 	z-index: 20;
-	padding: 6px 9px 5px;
 }
-#menu > ul > li:hover {
+#supermenu  > ul > li:hover {
 }
-#menu > ul > li > a {
+#supermenu  > ul > li > a {
 	color: #000000;
 	line-height: 14px;
 	text-decoration: none;
 	display: block;
         font-size: 11px;
+        
 	padding: 6px 10px 6px 10px;
         text-transform: uppercase;
 	z-index: 6;
 	position: relative;
 }
-#menu > ul > li:hover > a {
+#supermenu  > ul > li:hover > a {
     color:#da3189;
 }
-#menu > ul > li > div {
+#supermenu  > ul > li > div {
 	display: none;
 	background: #da3189;
 	position: absolute;
@@ -502,16 +502,16 @@ position: relative;
 	-khtml-border-radius: 0px 0px 5px 5px;
 	border-radius: 0px 0px 5px 5px;
 }
-#menu > ul > li:hover > div {
+#supermenu  > ul > li:hover > div {
 	display: table;
 }
-#menu > ul > li > div > ul {
+#supermenu  > ul > li > div > ul {
 	display: table-cell;
 }
-#menu > ul > li ul + ul {
+#supermenu  > ul > li ul + ul {
 	padding-left: 20px;
 }
-#menu > ul > li ul > li > a {
+#supermenu  > ul > li ul > li > a {
 	text-decoration: none;
 	padding: 4px;
 	color: #FFFFFF;
@@ -519,10 +519,8 @@ position: relative;
 	white-space: nowrap;
 	min-width: 120px;
 }
-#menu > ul > li ul > li > a:hover {
-	background: #000000;
-}
-#menu > ul > li > div > ul > li > a {
+
+#supermenu  > ul > li > div > ul > li > a {
 	color: #FFFFFF;
 }
 .breadcrumb {
@@ -2042,15 +2040,15 @@ html[xmlns] .clearfix {
     color: white;
 }
 /* banner */
-.banner div {
+.home .banner div {
 	text-align: center;
 	width: 100%;
 	display: none; 
 }
-.banner div img {
+.home  .banner div img {
 	margin-bottom: 20px;
 }
-#banner1,#banner2,#banner3 {
+.home  .banner {
         float: left;
         width: 33.3333%;
         margin:20px 0;
