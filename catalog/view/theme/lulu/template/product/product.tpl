@@ -33,8 +33,9 @@
       <div class='brand-name'>
           <h3><?php echo $manufacturer; ?></h3>
       </div>
+      <?php echo $manufacturer_description; ?>
         <?php } ?>
-       <?php echo $manufacturer_description; ?>
+       
     <?php if ($manufacturer) { ?>
       <div class='brand-name-all'>
           <a  href="<?php echo $manufacturers; ?>">show all <?php echo $manufacturer; ?></a>

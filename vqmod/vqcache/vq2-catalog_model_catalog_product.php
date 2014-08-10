@@ -708,7 +708,7 @@ class ModelCatalogProduct extends Model {
                     $product_category_data[] = $result['category_id'];
             }
             return $product_category_data;
-        }public function getProductTabs($product_id) {
+        }public function getProductTabs($product_id) {
 
 					$product_tab_data = array();
 

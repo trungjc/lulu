@@ -141,7 +141,7 @@ label {
 }
 #header #logo {
 	 left: 50%;
-    margin-left: -185px;
+    margin-left: -145px;
     position: absolute;
      top: 62px;
 }
@@ -384,7 +384,7 @@ b, strong,h1,h2,h3,h4,h5 {
     margin: 2px;
     width: 25px;
     height: 25px;text-indent: -9999px;
-    background-size: 100%!important;
+   /* background-size: 100%!important;*/
 }
 .addthis_button_printest + a {
 	   display: block !important;
@@ -463,14 +463,16 @@ position: relative;
 	margin-bottom: 15px;	
 	padding: 0px 5px;
 }
-#supermenu  ul {
+#supermenu > ul {
 	list-style: none;
 	margin: 0;
+        text-align: center!important;
 	padding: 0;
 }
+#supermenu > ul div {text-align: left!important;}
 #supermenu  > ul > li {
 	position: relative;
-	float: left;
+	display: inline-block;
 	z-index: 20;
 }
 #supermenu  > ul > li:hover {
@@ -480,7 +482,7 @@ position: relative;
 	line-height: 14px;
 	text-decoration: none;
 	display: block;
-        font-size: 11px;
+        font-size: 12px;
         
 	padding: 6px 10px 6px 10px;
         text-transform: uppercase;
@@ -711,11 +713,11 @@ table.radio tr.highlight:hover td {
 .pagination .links b {
 	display: inline-block;
 	border: 1px solid #d50c8c;
-	padding: 4px 10px;
+	padding: 3px 9px;
 	font-weight: normal;
 	text-decoration: none;
-	color: #A3A3A3;
-	background: #fff;
+	color: #fff;
+	background:#d50c8c
 }
 .pagination .results {
 	float: left;
@@ -842,9 +844,12 @@ a.button:hover, input.button:hover {
 	height: 32px;
 	line-height: 16px;
 }
+#coupon input[type="text"] {width: 68px!important;}
 body .at16nc.at16t_compact {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+   
 }
+.box-article .news-title,.box-article .news-intro {text-align: left!important;}
 .htabs a {
 	border: 1px solid #e049a9;
 	background:#e049a9;
@@ -1350,6 +1355,7 @@ ul.box-filter > li ul {
 	font-family: "BrandonBold",Helvetica,sans-serif;
 	color: #231f20;
 }
+.product-info .cart .price .minimum,.product-info .cart .price .price-tax,.product-info .cart .price .reward,.product-info .cart .price br{display:none}
 .viewlarge ,.brand-name-all a{
     color:#e049a9;
     margin: 20px 0 15px;
@@ -1439,27 +1445,32 @@ html[xmlns] .clearfix {
 .product-info .right-content .cart {
 	border: 1px solid #d50c8c;
         padding: 5px 10px;
+        overflow: hidden;
         clear: both;
 }
 .button-container {text-align: right;}
 .button-container .button:hover{
     background: #d50c8c;
     height: 22px;
-    width: 142px;
+    width: 160px;
     margin: 0 0 10px 0;
 }
 .quantity-container > input {
     font-size: 12px;
     width: 20px;
 }
+.tab2,.tab1 {
+    margin: 20px 0;
+}
+.supermenu-left {max-width: 390px;}
 .button-container .button {
     background:#d50c8c;text-indent: 0;  height: 22px;
-    width: 142px;font-size: 10px;
+    width: 160px;font-size: 10px;
     margin: 0 0 10px 0;}
 .button-container .links a {
-            background: white url("../image/add-to-love-icon.png") no-repeat  4px center;
+            background: white url("../image/add-to-love-icon.png") no-repeat  6px center;
     height: 22px;border:1px solid #d50c8c;
-    width: 142px;    display: inline-block;
+    width: 160px;    display: inline-block;
     color:#d50c8c;
     font-size: 10px;line-height: 22px;
     text-align: center;
@@ -2040,15 +2051,15 @@ html[xmlns] .clearfix {
     color: white;
 }
 /* banner */
-.home .banner div {
+.phome .banner div {
 	text-align: center;
 	width: 100%;
 	display: none; 
 }
-.home  .banner div img {
+.phome  .banner div img {
 	margin-bottom: 20px;
 }
-.home  .banner {
+.phome  .banner {
         float: left;
         width: 33.3333%;
         margin:20px 0;
@@ -2145,7 +2156,7 @@ html[xmlns] .clearfix {
 .category-new > li > a ,.category-lists{
 	display: none;
 }
-.news-content p {text-align: center;}
+.news-content p {text-align: center;display: none}
 .category-lists {}
 .category-new > li  > ul > li > a {
 	color:#d64599;

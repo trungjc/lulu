@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4.1
+-- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 08, 2014 at 12:58 PM
--- Server version: 5.5.32
--- PHP Version: 5.4.19
+-- Generation Time: Aug 10, 2014 at 06:53 AM
+-- Server version: 5.5.27
+-- PHP Version: 5.4.7
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `lulu`
 --
-CREATE DATABASE IF NOT EXISTS `lulu` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `lulu`;
 
 -- --------------------------------------------------------
 
@@ -847,9 +845,9 @@ CREATE TABLE IF NOT EXISTS `jc_coupon` (
 --
 
 INSERT INTO `jc_coupon` (`coupon_id`, `name`, `code`, `type`, `discount`, `logged`, `shipping`, `total`, `date_start`, `date_end`, `uses_total`, `uses_customer`, `status`, `date_added`) VALUES
-(4, '-10% Discount', '2222', 'P', '10.0000', 0, 0, '0.0000', '2011-01-01', '2012-01-01', 10, '10', 1, '2009-01-27 13:55:03'),
-(5, 'Free Shipping', '3333', 'P', '0.0000', 0, 1, '100.0000', '2009-03-01', '2009-08-31', 10, '10', 1, '2009-03-14 21:13:53'),
-(6, '-10.00 Discount', '1111', 'F', '10.0000', 0, 0, '10.0000', '1970-11-01', '2020-11-01', 100000, '10000', 1, '2009-03-14 21:15:18');
+(4, '-10% Discount', '2222', 'P', 10.0000, 0, 0, 0.0000, '2011-01-01', '2012-01-01', 10, '10', 1, '2009-01-27 13:55:03'),
+(5, 'Free Shipping', '3333', 'P', 0.0000, 0, 1, 100.0000, '2009-03-01', '2009-08-31', 10, '10', 1, '2009-03-14 21:13:53'),
+(6, '-10.00 Discount', '1111', 'F', 10.0000, 0, 0, 10.0000, '1970-11-01', '2020-11-01', 100000, '10000', 1, '2009-03-14 21:15:18');
 
 -- --------------------------------------------------------
 
@@ -916,9 +914,9 @@ CREATE TABLE IF NOT EXISTS `jc_currency` (
 --
 
 INSERT INTO `jc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.59320003, 1, '2014-08-07 06:52:24'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2014-08-08 04:12:38'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.74690002, 1, '2014-08-07 06:52:24');
+(1, 'Pound Sterling', 'GBP', '£', '', '2', 0.59609997, 1, '2014-08-09 18:15:56'),
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2014-08-09 18:15:56'),
+(3, 'Euro', 'EUR', '', '€', '2', 0.74559999, 1, '2014-08-09 18:15:56');
 
 -- --------------------------------------------------------
 
@@ -1630,9 +1628,9 @@ CREATE TABLE IF NOT EXISTS `jc_length_class` (
 --
 
 INSERT INTO `jc_length_class` (`length_class_id`, `value`) VALUES
-(1, '1.00000000'),
-(2, '10.00000000'),
-(3, '0.39370000');
+(1, 1.00000000),
+(2, 10.00000000),
+(3, 0.39370000);
 
 -- --------------------------------------------------------
 
@@ -1755,18 +1753,18 @@ CREATE TABLE IF NOT EXISTS `jc_myoc_cmenu` (
 --
 
 INSERT INTO `jc_myoc_cmenu` (`cmenu_id`, `link`, `popup`, `parent_cmenu_id`, `parent_category_id`, `top`, `in_module`, `column`, `login`, `customer_group`, `store`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(1, 'http://localhost/lulu/index.php?route=product/category&amp;path=20', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 1, 1, '2014-06-21 23:49:35', '2014-06-23 11:26:49'),
-(2, 'http://localhost/lulu/index.php?route=product/category&amp;path=18', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 4, 1, '2014-06-21 23:50:22', '2014-06-23 22:11:47'),
-(3, 'http://localhost/lulu/index.php?route=product/category&amp;path=25', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 3, 1, '2014-06-21 23:50:32', '2014-06-23 22:11:07'),
-(4, 'http://localhost/lulu/index.php?route=product/category&amp;path=33', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 2, 1, '2014-06-21 23:50:32', '2014-06-23 22:14:10'),
-(5, 'http://localhost/lulu/index.php?route=product/manufacturer', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 6, 1, '2014-06-23 11:23:00', '2014-06-23 22:14:40'),
-(6, 'http://localhost/lulu/index.php?route=product/category&amp;path=59', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 5, 1, '2014-06-23 11:23:00', '2014-08-07 13:47:47'),
-(7, 'http://localhost/lulu/index.php?route=information/information&amp;information_id=8', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 7, 1, '2014-06-23 11:23:00', '2014-06-23 22:13:43'),
-(8, 'http://localhost/lulu/index.php?route=information/information&amp;information_id=4', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 8, 1, '2014-06-23 11:23:00', '2014-06-23 22:01:10'),
-(9, 'http://localhost/lulu/index.php?route=information/information&amp;information_id=7', 0, 0, 0, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 9, 1, '2014-06-23 11:25:51', '2014-06-23 22:01:24'),
-(10, 'http://localhost/lulu/index.php?route=product/category&amp;path=59_60', 0, 6, 59, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 0, 1, '2014-08-07 13:48:24', '2014-08-07 13:48:24'),
-(11, 'http://localhost/lulu/index.php?route=product/category&amp;path=59_61', 0, 6, 59, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 0, 1, '2014-08-07 13:49:20', '2014-08-07 13:49:20'),
-(12, 'http://localhost/lulu/index.php?route=product/category&amp;path=59_62', 0, 6, 59, 1, 0, 1, 0, 'a:0:{}', 'a:1:{i:0;s:1:"0";}', 0, 1, '2014-08-07 13:50:24', '2014-08-07 13:50:24');
+(1, 'http://localhost/lulu/index.php?route=product/category&amp;path=20', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 1, 1, '2014-06-21 23:49:35', '2014-06-23 11:26:49'),
+(2, 'http://localhost/lulu/index.php?route=product/category&amp;path=18', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 4, 1, '2014-06-21 23:50:22', '2014-06-23 22:11:47'),
+(3, 'http://localhost/lulu/index.php?route=product/category&amp;path=25', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 3, 1, '2014-06-21 23:50:32', '2014-06-23 22:11:07'),
+(4, 'http://localhost/lulu/index.php?route=product/category&amp;path=33', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 2, 1, '2014-06-21 23:50:32', '2014-06-23 22:14:10'),
+(5, 'http://localhost/lulu/index.php?route=product/manufacturer', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 6, 1, '2014-06-23 11:23:00', '2014-06-23 22:14:40'),
+(6, 'http://localhost/lulu/index.php?route=product/category&amp;path=59', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 5, 1, '2014-06-23 11:23:00', '2014-08-07 13:47:47'),
+(7, 'http://localhost/lulu/index.php?route=information/information&amp;information_id=8', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 7, 1, '2014-06-23 11:23:00', '2014-06-23 22:13:43'),
+(8, 'http://localhost/lulu/index.php?route=information/information&amp;information_id=4', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 8, 1, '2014-06-23 11:23:00', '2014-06-23 22:01:10'),
+(9, 'http://localhost/lulu/index.php?route=information/information&amp;information_id=7', 0, 0, 0, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 9, 1, '2014-06-23 11:25:51', '2014-06-23 22:01:24'),
+(10, 'http://localhost/lulu/index.php?route=product/category&amp;path=59_60', 0, 6, 59, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 0, 1, '2014-08-07 13:48:24', '2014-08-07 13:48:24'),
+(11, 'http://localhost/lulu/index.php?route=product/category&amp;path=59_61', 0, 6, 59, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 0, 1, '2014-08-07 13:49:20', '2014-08-07 13:49:20'),
+(12, 'http://localhost/lulu/index.php?route=product/category&amp;path=59_62', 0, 6, 59, 1, 0, 1, 0, 0x613a303a7b7d, 0x613a313a7b693a303b733a313a2230223b7d, 0, 1, '2014-08-07 13:50:24', '2014-08-07 13:50:24');
 
 -- --------------------------------------------------------
 
@@ -1822,7 +1820,7 @@ CREATE TABLE IF NOT EXISTS `jc_news` (
 --
 
 INSERT INTO `jc_news` (`news_id`, `image`, `count_read`, `allow_comment`, `comment_permission`, `comment_need_approval`, `sort_order`, `status`) VALUES
-(1, 'data/darphin.png', 16, 1, 0, 0, 0, 1),
+(1, 'data/darphin.png', 19, 1, 0, 0, 0, 1),
 (2, 'data/darphin.png', 23, 1, 0, 0, 0, 1),
 (3, 'data/darphin.png', 2, 1, 0, 0, 0, 1),
 (4, 'data/darphin.png', 0, 1, 0, 0, 0, 1),
@@ -2356,13 +2354,13 @@ CREATE TABLE IF NOT EXISTS `jc_order` (
 --
 
 INSERT INTO `jc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, `store_name`, `store_url`, `customer_id`, `customer_group_id`, `firstname`, `lastname`, `email`, `telephone`, `fax`, `payment_firstname`, `payment_lastname`, `payment_company`, `payment_company_id`, `payment_banca`, `payment_iban`, `payment_tax_id`, `payment_address_1`, `payment_address_2`, `payment_city`, `payment_postcode`, `payment_country`, `payment_country_id`, `payment_zone`, `payment_zone_id`, `payment_address_format`, `payment_method`, `payment_code`, `shipping_firstname`, `shipping_lastname`, `shipping_company`, `shipping_address_1`, `shipping_address_2`, `shipping_city`, `shipping_postcode`, `shipping_country`, `shipping_country_id`, `shipping_zone`, `shipping_zone_id`, `shipping_address_format`, `shipping_method`, `shipping_code`, `comment`, `total`, `order_status_id`, `affiliate_id`, `commission`, `language_id`, `currency_id`, `currency_code`, `currency_value`, `ip`, `forwarded_ip`, `user_agent`, `accept_language`, `date_added`, `date_modified`) VALUES
-(1, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', '1606.0000', 1, 0, '0.0000', 1, 2, 'USD', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-20 22:35:34', '2014-06-20 22:35:43'),
-(2, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 2, 1, 'trung', 'nguyen', 'trungnguyenthanh@gmail.com', '0983987498', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '10000', 'United Kingdom', 222, 'Vale of Glamorgan', 3602, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '10000', 'United Kingdom', 222, 'Vale of Glamorgan', 3602, '', 'Flat Shipping Rate', 'flat.flat', '', '399.2750', 1, 0, '0.0000', 1, 2, 'USD', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-23 16:22:10', '2014-06-23 16:22:13'),
-(3, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', '465.0000', 1, 0, '0.0000', 1, 2, 'USD', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-24 23:55:14', '2014-06-24 23:55:20'),
-(4, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', '305.0000', 1, 0, '0.0000', 1, 2, 'USD', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-24 23:58:07', '2014-06-24 23:58:11'),
-(5, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', '205.0000', 1, 0, '0.0000', 1, 2, 'USD', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-25 12:17:24', '2014-06-25 12:17:27'),
-(6, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', '1405.0000', 1, 0, '0.0000', 1, 2, 'USD', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-07-06 12:11:45', '2014-07-06 12:13:30'),
-(7, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', '105.0000', 0, 0, '0.0000', 1, 2, 'USD', '1.00000000', '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-07-10 23:10:54', '2014-07-10 23:10:54');
+(1, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', 1606.0000, 1, 0, 0.0000, 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-20 22:35:34', '2014-06-20 22:35:43'),
+(2, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 2, 1, 'trung', 'nguyen', 'trungnguyenthanh@gmail.com', '0983987498', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '10000', 'United Kingdom', 222, 'Vale of Glamorgan', 3602, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '10000', 'United Kingdom', 222, 'Vale of Glamorgan', 3602, '', 'Flat Shipping Rate', 'flat.flat', '', 399.2750, 1, 0, 0.0000, 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-23 16:22:10', '2014-06-23 16:22:13'),
+(3, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', 465.0000, 1, 0, 0.0000, 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-24 23:55:14', '2014-06-24 23:55:20'),
+(4, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', 305.0000, 1, 0, 0.0000, 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-24 23:58:07', '2014-06-24 23:58:11'),
+(5, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', 205.0000, 1, 0, 0.0000, 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-06-25 12:17:24', '2014-06-25 12:17:27'),
+(6, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', 1405.0000, 1, 0, 0.0000, 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-07-06 12:11:45', '2014-07-06 12:13:30'),
+(7, 0, 'INV-2013-00', 0, 'Your Store', 'http://localhost/lulu/', 1, 1, 'trung', 'nguyen', 'trungnguyenthanh70@gmail.com', '09090909', '', 'trung', 'nguyen', '', '', '', '', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Cash On Delivery', 'cod', 'trung', 'nguyen', '', 'tu ky', '', 'ha noi', '1000', 'Viet Nam', 230, 'Ba Ria-Vung Tau', 3756, '', 'Flat Shipping Rate', 'flat.flat', '', 105.0000, 0, 0, 0.0000, 1, 2, 'USD', 1.00000000, '::1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0', 'en-US,en;q=0.5', '2014-07-10 23:10:54', '2014-07-10 23:10:54');
 
 -- --------------------------------------------------------
 
@@ -2549,21 +2547,21 @@ CREATE TABLE IF NOT EXISTS `jc_order_product` (
 --
 
 INSERT INTO `jc_order_product` (`order_product_id`, `order_id`, `product_id`, `name`, `model`, `quantity`, `price`, `total`, `tax`, `reward`) VALUES
-(1, 1, 40, 'iPhone', 'product 11', 1, '101.0000', '101.0000', '0.0000', 0),
-(2, 1, 46, 'Sony VAIO', 'Product 19', 1, '1000.0000', '1000.0000', '0.0000', 0),
-(3, 1, 43, 'MacBook', 'Product 16', 1, '500.0000', '500.0000', '0.0000', 600),
-(4, 2, 42, 'Apple Cinema 50', 'Product 15', 2, '114.0000', '228.0000', '21.9500', 200),
-(5, 2, 48, 'iPod Classic', 'product 20', 1, '100.0000', '100.0000', '19.5000', 0),
-(6, 3, 60, 'darphin22', 'Product 4', 1, '80.0000', '80.0000', '0.0000', 0),
-(7, 3, 62, 'nars lipstick 33', 'Product 3', 1, '80.0000', '80.0000', '0.0000', 200),
-(8, 3, 42, 'nars lipstick demo', 'Product 15', 2, '100.0000', '200.0000', '0.0000', 200),
-(9, 3, 59, 'darphin 4', 'Product 3', 1, '100.0000', '100.0000', '0.0000', 200),
-(10, 4, 61, 'nars lipstick 4', 'Product 15', 3, '100.0000', '300.0000', '0.0000', 300),
-(11, 5, 47, 'cargo', 'Product 21', 2, '100.0000', '200.0000', '0.0000', 600),
-(12, 6, 50, 'nars lipstick', 'Product 15', 6, '100.0000', '600.0000', '0.0000', 600),
-(13, 6, 47, 'cargo', 'Product 21', 4, '100.0000', '400.0000', '0.0000', 1200),
-(14, 6, 61, 'nars lipstick 4', 'Product 15', 4, '100.0000', '400.0000', '0.0000', 400),
-(15, 7, 51, 'darphin', 'Product 3', 1, '100.0000', '100.0000', '0.0000', 200);
+(1, 1, 40, 'iPhone', 'product 11', 1, 101.0000, 101.0000, 0.0000, 0),
+(2, 1, 46, 'Sony VAIO', 'Product 19', 1, 1000.0000, 1000.0000, 0.0000, 0),
+(3, 1, 43, 'MacBook', 'Product 16', 1, 500.0000, 500.0000, 0.0000, 600),
+(4, 2, 42, 'Apple Cinema 50', 'Product 15', 2, 114.0000, 228.0000, 21.9500, 200),
+(5, 2, 48, 'iPod Classic', 'product 20', 1, 100.0000, 100.0000, 19.5000, 0),
+(6, 3, 60, 'darphin22', 'Product 4', 1, 80.0000, 80.0000, 0.0000, 0),
+(7, 3, 62, 'nars lipstick 33', 'Product 3', 1, 80.0000, 80.0000, 0.0000, 200),
+(8, 3, 42, 'nars lipstick demo', 'Product 15', 2, 100.0000, 200.0000, 0.0000, 200),
+(9, 3, 59, 'darphin 4', 'Product 3', 1, 100.0000, 100.0000, 0.0000, 200),
+(10, 4, 61, 'nars lipstick 4', 'Product 15', 3, 100.0000, 300.0000, 0.0000, 300),
+(11, 5, 47, 'cargo', 'Product 21', 2, 100.0000, 200.0000, 0.0000, 600),
+(12, 6, 50, 'nars lipstick', 'Product 15', 6, 100.0000, 600.0000, 0.0000, 600),
+(13, 6, 47, 'cargo', 'Product 21', 4, 100.0000, 400.0000, 0.0000, 1200),
+(14, 6, 61, 'nars lipstick 4', 'Product 15', 4, 100.0000, 400.0000, 0.0000, 400),
+(15, 7, 51, 'darphin', 'Product 3', 1, 100.0000, 100.0000, 0.0000, 200);
 
 -- --------------------------------------------------------
 
@@ -2666,29 +2664,29 @@ CREATE TABLE IF NOT EXISTS `jc_order_total` (
 --
 
 INSERT INTO `jc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `text`, `value`, `sort_order`) VALUES
-(1, 1, 'sub_total', 'Sub-Total', '$1,601.00', '1601.0000', 1),
-(2, 1, 'shipping', 'Flat Shipping Rate', '$5.00', '5.0000', 3),
-(3, 1, 'total', 'Total', '$1,606.00', '1606.0000', 9),
-(4, 2, 'sub_total', 'Sub-Total', '$328.00', '328.0000', 1),
-(5, 2, 'shipping', 'Flat Shipping Rate', '$5.00', '5.0000', 3),
-(6, 2, 'tax', 'Eco Tax (-2.00)', '$8.00', '8.0000', 5),
-(7, 2, 'tax', 'VAT (17.5%)', '$58.28', '58.2750', 5),
-(8, 2, 'total', 'Total', '$399.28', '399.2750', 9),
-(9, 3, 'sub_total', 'Sub-Total', '$460.00', '460.0000', 1),
-(10, 3, 'shipping', 'Flat Shipping Rate', '$5.00', '5.0000', 3),
-(11, 3, 'total', 'Total', '$465.00', '465.0000', 9),
-(12, 4, 'sub_total', 'Sub-Total', '$300.00', '300.0000', 1),
-(13, 4, 'shipping', 'Flat Shipping Rate', '$5.00', '5.0000', 3),
-(14, 4, 'total', 'Total', '$305.00', '305.0000', 9),
-(15, 5, 'sub_total', 'Sub-Total', '$200.00', '200.0000', 1),
-(16, 5, 'shipping', 'Flat Shipping Rate', '$5.00', '5.0000', 3),
-(17, 5, 'total', 'Total', '$205.00', '205.0000', 9),
-(18, 6, 'sub_total', 'Sub-Total', '$1,400.00', '1400.0000', 1),
-(19, 6, 'shipping', 'Flat Shipping Rate', '$5.00', '5.0000', 3),
-(20, 6, 'total', 'Total', '$1,405.00', '1405.0000', 9),
-(21, 7, 'sub_total', 'Sub-Total', '$100.00', '100.0000', 1),
-(22, 7, 'shipping', 'Flat Shipping Rate', '$5.00', '5.0000', 3),
-(23, 7, 'total', 'Total', '$105.00', '105.0000', 9);
+(1, 1, 'sub_total', 'Sub-Total', '$1,601.00', 1601.0000, 1),
+(2, 1, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
+(3, 1, 'total', 'Total', '$1,606.00', 1606.0000, 9),
+(4, 2, 'sub_total', 'Sub-Total', '$328.00', 328.0000, 1),
+(5, 2, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
+(6, 2, 'tax', 'Eco Tax (-2.00)', '$8.00', 8.0000, 5),
+(7, 2, 'tax', 'VAT (17.5%)', '$58.28', 58.2750, 5),
+(8, 2, 'total', 'Total', '$399.28', 399.2750, 9),
+(9, 3, 'sub_total', 'Sub-Total', '$460.00', 460.0000, 1),
+(10, 3, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
+(11, 3, 'total', 'Total', '$465.00', 465.0000, 9),
+(12, 4, 'sub_total', 'Sub-Total', '$300.00', 300.0000, 1),
+(13, 4, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
+(14, 4, 'total', 'Total', '$305.00', 305.0000, 9),
+(15, 5, 'sub_total', 'Sub-Total', '$200.00', 200.0000, 1),
+(16, 5, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
+(17, 5, 'total', 'Total', '$205.00', 205.0000, 9),
+(18, 6, 'sub_total', 'Sub-Total', '$1,400.00', 1400.0000, 1),
+(19, 6, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
+(20, 6, 'total', 'Total', '$1,405.00', 1405.0000, 9),
+(21, 7, 'sub_total', 'Sub-Total', '$100.00', 100.0000, 1),
+(22, 7, 'shipping', 'Flat Shipping Rate', '$5.00', 5.0000, 3),
+(23, 7, 'total', 'Total', '$105.00', 105.0000, 9);
 
 -- --------------------------------------------------------
 
@@ -2758,18 +2756,18 @@ CREATE TABLE IF NOT EXISTS `jc_product` (
 --
 
 INSERT INTO `jc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `date_added`, `date_modified`, `viewed`) VALUES
-(30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'data/lips.png', 8, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, '2009-02-03 16:59:00', '2014-06-24 23:42:10', 11),
-(31, 'Product 4', '', '', '', '', '', '', '', 1000, 6, 'data/darphin.png', 9, 1, '80.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, '2009-02-03 17:00:10', '2014-06-24 23:40:49', 0),
-(61, 'Product 15', '', '', '', '', '', '', '', 983, 7, 'data/lips.png', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:50:06', 10),
-(62, 'Product 3', '', '', '', '', '', '', '', 6, 6, 'data/lips.png', 8, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:50:14', 26),
-(63, 'Product 15', '', '', '', '', '', '', '', 988, 7, 'data/lips.png', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:50:26', 5),
-(42, 'Product 15', '', '', '', '', '', '', '', 986, 7, 'data/lips.png', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, '2009-02-03 21:07:37', '2014-06-24 23:46:33', 42),
-(58, 'Product 21', '', '', '', '', '', '', '', 1000, 7, 'data/cargo.png', 10, 1, '100.0000', 400, 9, '2009-02-03', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:49:31', 6),
-(59, 'Product 3', '', '', '', '', '', '', '', 6, 6, 'data/darphin.png', 9, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:49:43', 16),
-(47, 'Product 21', '', '', '', '', '', '', '', 1000, 7, 'data/cargo.png', 10, 1, '100.0000', 400, 9, '2009-02-03', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2014-06-27 14:01:26', 254),
-(60, 'Product 4', '', '', '', '', '', '', '', 999, 6, 'data/darphin.png', 9, 1, '80.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:49:55', 14),
-(50, 'Product 15', '', '', '', '', '', '', '', 984, 7, 'data/lips.png', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 2, 0, 1, '2014-06-20 23:16:16', '2014-06-24 23:29:42', 114),
-(51, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'data/darphin.png', 9, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, '2014-06-20 23:16:16', '2014-06-24 23:48:11', 14);
+(30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'data/lips.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2009-02-03 16:59:00', '2014-06-24 23:42:10', 11),
+(31, 'Product 4', '', '', '', '', '', '', '', 1000, 6, 'data/darphin.png', 9, 1, 80.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2009-02-03 17:00:10', '2014-06-24 23:40:49', 0),
+(61, 'Product 15', '', '', '', '', '', '', '', 983, 7, 'data/lips.png', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:50:06', 15),
+(62, 'Product 3', '', '', '', '', '', '', '', 6, 6, 'data/lips.png', 8, 1, 100.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:50:14', 26),
+(63, 'Product 15', '', '', '', '', '', '', '', 988, 7, 'data/lips.png', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:50:26', 5),
+(42, 'Product 15', '', '', '', '', '', '', '', 986, 7, 'data/lips.png', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, '2009-02-03 21:07:37', '2014-06-24 23:46:33', 42),
+(58, 'Product 21', '', '', '', '', '', '', '', 1000, 7, 'data/cargo.png', 10, 1, 100.0000, 400, 9, '2009-02-03', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 0, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:49:31', 6),
+(59, 'Product 3', '', '', '', '', '', '', '', 6, 6, 'data/darphin.png', 9, 1, 100.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:49:43', 16),
+(47, 'Product 21', '', '', '', '', '', '', '', 1000, 7, 'data/cargo.png', 10, 1, 100.0000, 400, 9, '2009-02-03', 1.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 0, 1, 0, 1, '2009-02-03 21:08:40', '2014-06-27 14:01:26', 266),
+(60, 'Product 4', '', '', '', '', '', '', '', 999, 6, 'data/darphin.png', 9, 1, 80.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 3, 1, 1, 0, 1, '2014-06-24 23:48:49', '2014-06-24 23:49:55', 14),
+(50, 'Product 15', '', '', '', '', '', '', '', 984, 7, 'data/lips.png', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, '2014-06-20 23:16:16', '2014-06-24 23:29:42', 114),
+(51, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'data/darphin.png', 9, 1, 100.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, '2014-06-20 23:16:16', '2014-06-24 23:48:11', 14);
 
 -- --------------------------------------------------------
 
@@ -3015,13 +3013,13 @@ CREATE TABLE IF NOT EXISTS `jc_product_option_value` (
 --
 
 INSERT INTO `jc_product_option_value` (`product_option_value_id`, `product_option_id`, `product_id`, `option_id`, `option_value_id`, `quantity`, `subtract`, `price`, `price_prefix`, `points`, `points_prefix`, `weight`, `weight_prefix`) VALUES
-(32, 240, 62, 5, 40, 5, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(16, 226, 30, 5, 40, 5, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(15, 226, 30, 5, 39, 2, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(33, 240, 62, 5, 39, 1, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(36, 241, 47, 13, 49, 12, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(35, 241, 47, 13, 50, 8, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
-(34, 241, 47, 13, 51, 12, 1, '0.0000', '+', 0, '+', '0.00000000', '+');
+(32, 240, 62, 5, 40, 5, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
+(16, 226, 30, 5, 40, 5, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
+(15, 226, 30, 5, 39, 2, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
+(33, 240, 62, 5, 39, 1, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
+(36, 241, 47, 13, 49, 12, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
+(35, 241, 47, 13, 50, 8, 1, 0.0000, '+', 0, '+', 0.00000000, '+'),
+(34, 241, 47, 13, 51, 12, 1, 0.0000, '+', 0, '+', 0.00000000, '+');
 
 -- --------------------------------------------------------
 
@@ -3148,10 +3146,10 @@ CREATE TABLE IF NOT EXISTS `jc_product_special` (
 --
 
 INSERT INTO `jc_product_special` (`product_special_id`, `product_id`, `customer_group_id`, `priority`, `price`, `date_start`, `date_end`) VALUES
-(457, 30, 1, 2, '90.0000', '0000-00-00', '0000-00-00'),
-(456, 30, 1, 1, '80.0000', '0000-00-00', '0000-00-00'),
-(463, 62, 1, 2, '90.0000', '0000-00-00', '0000-00-00'),
-(462, 62, 1, 1, '80.0000', '0000-00-00', '0000-00-00');
+(457, 30, 1, 2, 90.0000, '0000-00-00', '0000-00-00'),
+(456, 30, 1, 1, 80.0000, '0000-00-00', '0000-00-00'),
+(463, 62, 1, 2, 90.0000, '0000-00-00', '0000-00-00'),
+(462, 62, 1, 1, 80.0000, '0000-00-00', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -3174,8 +3172,8 @@ CREATE TABLE IF NOT EXISTS `jc_product_tab` (
 --
 
 INSERT INTO `jc_product_tab` (`product_id`, `tab_id`, `language_id`, `text`, `position`, `show_empty`) VALUES
-(47, 1, 1, '&lt;p&gt;this is shiping info&lt;/p&gt;\r\n', NULL, NULL),
-(47, 2, 1, '&lt;h5&gt;how much it cost ?&lt;/h5&gt;\r\n\r\n&lt;p&gt;100usd&lt;/p&gt;\r\n\r\n&lt;h5&gt;how much it cost ?&lt;/h5&gt;\r\n\r\n&lt;p&gt;100usd&lt;/p&gt;\r\n\r\n&lt;h5&gt;how much it cost ?&lt;/h5&gt;\r\n\r\n&lt;p&gt;100usd&lt;/p&gt;\r\n', NULL, NULL);
+(47, 1, 1, 0x266c743b702667743b746869732069732073686970696e6720696e666f266c743b2f702667743b0d0a, NULL, NULL),
+(47, 2, 1, 0x266c743b68352667743b686f77206d75636820697420636f7374203f266c743b2f68352667743b0d0a0d0a266c743b702667743b313030757364266c743b2f702667743b0d0a0d0a266c743b68352667743b686f77206d75636820697420636f7374203f266c743b2f68352667743b0d0a0d0a266c743b702667743b313030757364266c743b2f702667743b0d0a0d0a266c743b68352667743b686f77206d75636820697420636f7374203f266c743b2f68352667743b0d0a0d0a266c743b702667743b313030757364266c743b2f702667743b0d0a, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -3456,7 +3454,7 @@ CREATE TABLE IF NOT EXISTS `jc_setting` (
   `value` text NOT NULL,
   `serialized` tinyint(1) NOT NULL,
   PRIMARY KEY (`setting_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3200 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3370 ;
 
 --
 -- Dumping data for table `jc_setting`
@@ -3682,41 +3680,41 @@ INSERT INTO `jc_setting` (`setting_id`, `store_id`, `group`, `key`, `value`, `se
 (2259, 0, 'newslettersubscribe', 'newslettersubscribe_subscribemodule', '1', 0),
 (2258, 0, 'newslettersubscribe', 'newslettersubscribe1_transaction_id', '0Y734327881800043', 0),
 (2309, 0, 'bestseller', 'bestseller_module', 'a:2:{i:0;a:7:{s:5:"limit";s:1:"5";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}i:1;a:7:{s:5:"limit";s:1:"5";s:11:"image_width";s:3:"180";s:12:"image_height";s:3:"180";s:9:"layout_id";s:1:"3";s:8:"position";s:14:"content_bottom";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}}', 1),
-(3189, 0, 'supermenu', 'supermenu_viewallname', 'a:1:{i:1;s:0:"";}', 1),
-(3190, 0, 'supermenu', 'supermenu_settings_status', '0', 0),
-(3191, 0, 'supermenu', 'supermenu_settings', 'a:59:{s:5:"fontf";s:0:"";s:7:"topfont";s:4:"13px";s:8:"dropfont";s:4:"12px";s:2:"bg";s:0:"";s:3:"bg2";s:0:"";s:10:"tmborderpx";s:7:"default";s:9:"tmbordero";s:10:"all-around";s:9:"tmborders";s:5:"solid";s:9:"tmborderc";s:0:"";s:3:"tlc";s:0:"";s:4:"tlch";s:0:"";s:5:"tlcts";s:0:"";s:6:"tlchts";s:0:"";s:3:"tlb";s:0:"";s:3:"dbg";s:0:"";s:4:"fybg";s:0:"";s:10:"slborderpx";s:7:"default";s:9:"slbordero";s:10:"all-around";s:9:"slborders";s:5:"solid";s:9:"slborderc";s:0:"";s:3:"dic";s:0:"";s:4:"dich";s:0:"";s:3:"dib";s:0:"";s:4:"dibh";s:0:"";s:10:"diborderpx";s:7:"default";s:9:"dibordero";s:10:"all-around";s:9:"diborders";s:5:"solid";s:9:"diborderc";s:0:"";s:3:"slc";s:0:"";s:4:"slch";s:0:"";s:3:"slb";s:0:"";s:4:"slbh";s:0:"";s:5:"flyic";s:0:"";s:6:"flyich";s:0:"";s:12:"flyiborderpx";s:7:"default";s:11:"flyibordero";s:10:"all-around";s:11:"flyiborders";s:5:"solid";s:11:"flyiborderc";s:0:"";s:5:"flyib";s:0:"";s:4:"drtc";s:0:"";s:11:"drtborderpx";s:7:"default";s:10:"drtbordero";s:10:"all-around";s:10:"drtborders";s:5:"solid";s:10:"drtborderc";s:0:"";s:6:"pricec";s:0:"";s:7:"pricech";s:0:"";s:4:"valc";s:0:"";s:5:"valch";s:0:"";s:4:"valb";s:0:"";s:5:"valb2";s:0:"";s:11:"valborderpx";s:7:"default";s:10:"valbordero";s:10:"all-around";s:10:"valborders";s:5:"solid";s:10:"valborderc";s:0:"";s:5:"expbm";s:0:"";s:6:"expbme";s:0:"";s:4:"mmol";s:0:"";s:4:"mmod";s:0:"";s:5:"mmobc";s:0:"";}', 1),
-(3195, 0, 'supermenu', 'supermenu_htmlarea4', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 4&lt;/p&gt;\r\n";}', 1),
-(3196, 0, 'supermenu', 'supermenu_htmlarea5', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 5&lt;/p&gt;\r\n";}', 1),
-(3197, 0, 'supermenu', 'supermenu_htmlarea6', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 6&lt;/p&gt;\r\n";}', 1),
-(3198, 0, 'supermenu', 'supermenu_htmlarea7', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 7&lt;/p&gt;\r\n";}', 1),
-(3199, 0, 'supermenu', 'supermenu_htmlarea8', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 8&lt;/p&gt;\r\n";}', 1),
-(3192, 0, 'supermenu', 'supermenu_htmlarea1', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 1&lt;/p&gt;\r\n";}', 1),
-(3193, 0, 'supermenu', 'supermenu_htmlarea2', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 2&lt;/p&gt;\r\n";}', 1),
-(3194, 0, 'supermenu', 'supermenu_htmlarea3', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 3&lt;/p&gt;\r\n";}', 1),
-(3188, 0, 'supermenu', 'supermenu_viewmorename', 'a:1:{i:1;s:0:"";}', 1),
-(3187, 0, 'supermenu', 'supermenu_bestpname', 'a:1:{i:1;s:0:"";}', 1),
-(3186, 0, 'supermenu', 'supermenu_featuredpname', 'a:1:{i:1;s:0:"";}', 1),
-(3185, 0, 'supermenu', 'supermenu_specialpname', 'a:1:{i:1;s:0:"";}', 1),
-(3170, 0, 'supermenu', 'supermenu_topitemlink', 'bottom', 0),
-(3171, 0, 'supermenu', 'supermenu_tophomelink', 'none', 0),
-(3172, 0, 'supermenu', 'supermenu_flyout_width', '', 0),
-(3173, 0, 'supermenu', 'supermenu_bannerspace_width', '', 0),
-(3174, 0, 'supermenu', 'supermenu_3dlevellimit', '', 0),
-(3175, 0, 'supermenu', 'supermenu_image_width', '120', 0),
-(3176, 0, 'supermenu', 'supermenu_image_height', '120', 0),
-(3177, 0, 'supermenu', 'supermenu_dropdowneffect', 'fade', 0),
-(3178, 0, 'supermenu', 'supermenu_usehoverintent', '0', 0),
-(3179, 0, 'supermenu', 'supermenu_more_title', 'a:1:{i:1;s:0:"";}', 1),
-(3180, 0, 'supermenu', 'supermenu_more2_title', 'a:1:{i:1;s:0:"";}', 1),
-(3181, 0, 'supermenu', 'supermenu_mobilemenuname', 'a:1:{i:1;s:0:"";}', 1),
-(3182, 0, 'supermenu', 'supermenu_infodname', 'a:1:{i:1;s:0:"";}', 1),
-(3183, 0, 'supermenu', 'supermenu_brandsdname', 'a:1:{i:1;s:0:"";}', 1),
-(3184, 0, 'supermenu', 'supermenu_latestpname', 'a:1:{i:1;s:0:"";}', 1),
-(3166, 0, 'supermenu', 'supermenu_item', 'a:6:{i:0;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"20";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:42:"data/LipAnimation_MegaNav_071714_image.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"2";s:6:"cchtml";s:5:"area2";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:1;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"1";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"33";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:33:"data/skinstant_meganav_061214.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"1";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:2;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:2:"f1";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"18";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:32:"data/meganav_hair_9.24.13_v2.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:3;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"1";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"31";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:41:"data/meganav_nail_gifts_03.06.14_W154.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"2";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:4;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"1";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"59";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:40:"data/toolsguide_meganav_073114_image.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:5;a:20:{s:4:"type";s:4:"mand";s:4:"view";s:2:"f0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"25";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:0:"";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}}', 1),
+(3364, 0, 'supermenu', 'supermenu_htmlarea3', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 3&lt;/p&gt;\r\n";}', 1),
+(3362, 0, 'supermenu', 'supermenu_htmlarea1', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 1&lt;/p&gt;\r\n";}', 1),
+(3363, 0, 'supermenu', 'supermenu_htmlarea2', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 2&lt;/p&gt;\r\n";}', 1),
+(3351, 0, 'supermenu', 'supermenu_mobilemenuname', 'a:1:{i:1;s:0:"";}', 1),
+(3352, 0, 'supermenu', 'supermenu_infodname', 'a:1:{i:1;s:0:"";}', 1),
+(3353, 0, 'supermenu', 'supermenu_brandsdname', 'a:1:{i:1;s:0:"";}', 1),
+(3354, 0, 'supermenu', 'supermenu_latestpname', 'a:1:{i:1;s:0:"";}', 1),
+(3355, 0, 'supermenu', 'supermenu_specialpname', 'a:1:{i:1;s:0:"";}', 1),
+(3356, 0, 'supermenu', 'supermenu_featuredpname', 'a:1:{i:1;s:0:"";}', 1),
+(3357, 0, 'supermenu', 'supermenu_bestpname', 'a:1:{i:1;s:0:"";}', 1),
+(3358, 0, 'supermenu', 'supermenu_viewmorename', 'a:1:{i:1;s:0:"";}', 1),
+(3359, 0, 'supermenu', 'supermenu_viewallname', 'a:1:{i:1;s:0:"";}', 1),
+(3360, 0, 'supermenu', 'supermenu_settings_status', '0', 0),
+(3361, 0, 'supermenu', 'supermenu_settings', 'a:59:{s:5:"fontf";s:0:"";s:7:"topfont";s:4:"13px";s:8:"dropfont";s:4:"12px";s:2:"bg";s:0:"";s:3:"bg2";s:0:"";s:10:"tmborderpx";s:7:"default";s:9:"tmbordero";s:10:"all-around";s:9:"tmborders";s:5:"solid";s:9:"tmborderc";s:0:"";s:3:"tlc";s:0:"";s:4:"tlch";s:0:"";s:5:"tlcts";s:0:"";s:6:"tlchts";s:0:"";s:3:"tlb";s:0:"";s:3:"dbg";s:0:"";s:4:"fybg";s:0:"";s:10:"slborderpx";s:7:"default";s:9:"slbordero";s:10:"all-around";s:9:"slborders";s:5:"solid";s:9:"slborderc";s:0:"";s:3:"dic";s:0:"";s:4:"dich";s:0:"";s:3:"dib";s:0:"";s:4:"dibh";s:0:"";s:10:"diborderpx";s:7:"default";s:9:"dibordero";s:10:"all-around";s:9:"diborders";s:5:"solid";s:9:"diborderc";s:0:"";s:3:"slc";s:0:"";s:4:"slch";s:0:"";s:3:"slb";s:0:"";s:4:"slbh";s:0:"";s:5:"flyic";s:0:"";s:6:"flyich";s:0:"";s:12:"flyiborderpx";s:7:"default";s:11:"flyibordero";s:10:"all-around";s:11:"flyiborders";s:5:"solid";s:11:"flyiborderc";s:0:"";s:5:"flyib";s:0:"";s:4:"drtc";s:0:"";s:11:"drtborderpx";s:7:"default";s:10:"drtbordero";s:10:"all-around";s:10:"drtborders";s:5:"solid";s:10:"drtborderc";s:0:"";s:6:"pricec";s:0:"";s:7:"pricech";s:0:"";s:4:"valc";s:0:"";s:5:"valch";s:0:"";s:4:"valb";s:0:"";s:5:"valb2";s:0:"";s:11:"valborderpx";s:7:"default";s:10:"valbordero";s:10:"all-around";s:10:"valborders";s:5:"solid";s:10:"valborderc";s:0:"";s:5:"expbm";s:0:"";s:6:"expbme";s:0:"";s:4:"mmol";s:0:"";s:4:"mmod";s:0:"";s:5:"mmobc";s:0:"";}', 1),
+(3348, 0, 'supermenu', 'supermenu_usehoverintent', '0', 0),
+(3349, 0, 'supermenu', 'supermenu_more_title', 'a:1:{i:1;s:0:"";}', 1),
+(3346, 0, 'supermenu', 'supermenu_image_height', '120', 0),
+(3350, 0, 'supermenu', 'supermenu_more2_title', 'a:1:{i:1;s:0:"";}', 1),
+(3347, 0, 'supermenu', 'supermenu_dropdowneffect', 'fade', 0),
+(3345, 0, 'supermenu', 'supermenu_image_width', '120', 0),
+(3344, 0, 'supermenu', 'supermenu_3dlevellimit', '', 0),
+(3343, 0, 'supermenu', 'supermenu_bannerspace_width', '', 0),
+(3342, 0, 'supermenu', 'supermenu_flyout_width', '', 0),
+(3341, 0, 'supermenu', 'supermenu_tophomelink', 'none', 0),
 (2417, 0, 'slideshow', 'slideshow_module', 'a:1:{i:0;a:7:{s:9:"banner_id";s:1:"7";s:5:"width";s:3:"980";s:6:"height";s:3:"360";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:0:"";}}', 1),
-(3167, 0, 'supermenu', 'supermenu_supermenuisresponsive', '0', 0),
-(3168, 0, 'supermenu', 'supermenu_dropdowntitle', '0', 0),
-(3169, 0, 'supermenu', 'supermenu_skin', 'default', 0);
+(3337, 0, 'supermenu', 'supermenu_supermenuisresponsive', '0', 0),
+(3338, 0, 'supermenu', 'supermenu_dropdowntitle', '0', 0),
+(3339, 0, 'supermenu', 'supermenu_skin', 'default', 0),
+(3340, 0, 'supermenu', 'supermenu_topitemlink', 'bottom', 0),
+(3336, 0, 'supermenu', 'supermenu_item', 'a:8:{i:0;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"20";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:42:"data/LipAnimation_MegaNav_071714_image.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area2";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:1;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"33";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:33:"data/skinstant_meganav_061214.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:2;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"18";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:32:"data/meganav_hair_9.24.13_v2.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:3;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"1";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"31";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:41:"data/meganav_nail_gifts_03.06.14_W154.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"2";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:4;a:20:{s:4:"type";s:3:"cat";s:4:"view";s:1:"0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"59";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:40:"data/toolsguide_meganav_073114_image.jpg";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:5;a:20:{s:4:"type";s:4:"mand";s:4:"view";s:2:"f0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"25";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:0:"";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:6;a:20:{s:4:"type";s:6:"custom";s:4:"view";s:1:"0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"25";s:14:"information_id";s:1:"6";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:14:"How To''s Video";}s:9:"customurl";a:1:{i:1;s:63:"http://localhost/lulu/index.php?route=news/category&amp;npath=2";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:0:"";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}i:7;a:20:{s:4:"type";s:5:"infol";s:4:"view";s:1:"0";s:6:"sorder";s:0:"";s:11:"category_id";s:2:"25";s:14:"information_id";s:1:"8";s:8:"products";s:6:"latest";s:12:"productlimit";s:1:"5";s:10:"customname";a:1:{i:1;s:0:"";}s:9:"customurl";a:1:{i:1;s:0:"";}s:6:"addurl";a:1:{i:1;s:0:"";}s:5:"image";a:1:{i:1;s:0:"";}s:7:"tlcolor";s:0:"";s:7:"tlstyle";s:0:"";s:5:"chtml";s:1:"0";s:6:"cchtml";s:5:"area1";s:13:"subcatdisplay";s:3:"all";s:6:"dwidth";s:0:"";s:6:"iwidth";s:0:"";s:6:"stores";a:1:{i:0;s:1:"0";}s:7:"fbrands";s:0:"";}}', 1),
+(3365, 0, 'supermenu', 'supermenu_htmlarea4', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 4&lt;/p&gt;\r\n";}', 1),
+(3366, 0, 'supermenu', 'supermenu_htmlarea5', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 5&lt;/p&gt;\r\n";}', 1),
+(3367, 0, 'supermenu', 'supermenu_htmlarea6', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 6&lt;/p&gt;\r\n";}', 1),
+(3368, 0, 'supermenu', 'supermenu_htmlarea7', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 7&lt;/p&gt;\r\n";}', 1),
+(3369, 0, 'supermenu', 'supermenu_htmlarea8', 'a:1:{i:1;s:41:"&lt;p&gt;Insert custom code 8&lt;/p&gt;\r\n";}', 1);
 
 -- --------------------------------------------------------
 
@@ -3878,8 +3876,8 @@ CREATE TABLE IF NOT EXISTS `jc_tax_rate` (
 --
 
 INSERT INTO `jc_tax_rate` (`tax_rate_id`, `geo_zone_id`, `name`, `rate`, `type`, `date_added`, `date_modified`) VALUES
-(86, 3, 'VAT (17.5%)', '17.5000', 'P', '2011-03-09 21:17:10', '2011-09-22 22:24:29'),
-(87, 3, 'Eco Tax (-2.00)', '2.0000', 'F', '2011-09-21 21:49:23', '2011-09-23 00:40:19');
+(86, 3, 'VAT (17.5%)', 17.5000, 'P', '2011-03-09 21:17:10', '2011-09-22 22:24:29'),
+(87, 3, 'Eco Tax (-2.00)', 2.0000, 'F', '2011-09-21 21:49:23', '2011-09-23 00:40:19');
 
 -- --------------------------------------------------------
 
@@ -4101,10 +4099,10 @@ CREATE TABLE IF NOT EXISTS `jc_weight_class` (
 --
 
 INSERT INTO `jc_weight_class` (`weight_class_id`, `value`) VALUES
-(1, '1.00000000'),
-(2, '1000.00000000'),
-(5, '2.20460000'),
-(6, '35.27400000');
+(1, 1.00000000),
+(2, 1000.00000000),
+(5, 2.20460000),
+(6, 35.27400000);
 
 -- --------------------------------------------------------
 

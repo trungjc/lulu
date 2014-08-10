@@ -69,9 +69,10 @@
               <?php } ?></td>
             <td class="model" style="display: none"><?php echo $product['model']; ?></td>
             <td class="quantity"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
-                </td>
+               <input  type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" /> </td>
             <td class="price" style="display: none"><?php echo $product['price']; ?></td>
             <td class="total"><div><?php echo $product['total']; ?></div>
+                
                 
                  <a class="wl"   onclick="addToWishList(<?php echo $product['prid'] ?>);">Add to wish list</a>
                  <a class="rm"  href="<?php echo $product['remove']; ?>">Remove</a>
@@ -222,7 +223,7 @@
  
   </div>
     <div class="right-form" style="float: right;width: 28%">
-        <p><img src="catalog/view/theme/lulu/image/cart-banner.png" alt="enjoy free shipping on all orders over $75 within aus" style="width: 100%" /></p>
+       <p><img src="catalog/view/theme/lulu/image/cart-banner.png" alt="enjoy free shipping on all orders over $75 within aus" style="width: 100%" /></p>
         <div class="basket-summary">
             <h2>Basket Summary </h2>
              <div class="cart-total">

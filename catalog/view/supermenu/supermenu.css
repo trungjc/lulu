@@ -139,7 +139,7 @@
 }
 #supermenu  ul  li  div .supermenu-left {
 	display: block;
-	vertical-align: top;
+	/*vertical-align: top;*/
 }
 #supermenu  ul  li  div .menu-add {
     width: 200px;
@@ -147,7 +147,7 @@
 	height: 100%;
 	overflow: hidden;
 	float: right;
-	vertical-align: bottom;
+	/*vertical-align: bottom;*/
 	display: inline-block;
 	margin-top: 10px;
 	position: relative;
