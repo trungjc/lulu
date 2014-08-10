@@ -474,6 +474,7 @@ position: relative;
 	position: relative;
 	display: inline-block;
 	z-index: 20;
+        vertical-align: middle;
 }
 #supermenu  > ul > li:hover {
 }
@@ -481,7 +482,7 @@ position: relative;
 	color: #000000;
 	line-height: 14px;
 	text-decoration: none;
-	display: block;
+	display: inline-block;
         font-size: 12px;
         
 	padding: 6px 10px 6px 10px;
@@ -1452,7 +1453,7 @@ html[xmlns] .clearfix {
 .button-container .button:hover{
     background: #d50c8c;
     height: 22px;
-    width: 160px;
+    width: 162px;
     margin: 0 0 10px 0;
 }
 .quantity-container > input {
@@ -1465,7 +1466,7 @@ html[xmlns] .clearfix {
 .supermenu-left {max-width: 390px;}
 .button-container .button {
     background:#d50c8c;text-indent: 0;  height: 22px;
-    width: 160px;font-size: 10px;
+    width: 162px;font-size: 10px;
     margin: 0 0 10px 0;}
 .button-container .links a {
             background: white url("../image/add-to-love-icon.png") no-repeat  6px center;
