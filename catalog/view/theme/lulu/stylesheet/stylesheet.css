@@ -2051,15 +2051,15 @@ html[xmlns] .clearfix {
     color: white;
 }
 /* banner */
-.phome .banner div {
+.phome .banner div,.home .banner div {
 	text-align: center;
 	width: 100%;
 	display: none; 
 }
-.phome  .banner div img {
+.phome  .banner div img,.home .banner div img {
 	margin-bottom: 20px;
 }
-.phome  .banner {
+.phome  .banner,.home .banner {
         float: left;
         width: 33.3333%;
         margin:20px 0;
