@@ -112,10 +112,10 @@ label {
            margin-bottom: 20px;
 }
 #column-left .sbHolder {
-    width: 170px;
+    width: 212px;
 }
 #column-left .sbHolder  .sbOptions {
-    width: 195px;
+    width: 216px;
 }
 #column-right {
 	float: right;
@@ -414,6 +414,17 @@ b, strong,h1,h2,h3,h4,h5 {
 .printest,.addthis_button_printest  {
      background: url("../image/printest.png") no-repeat left center!important;
 }
+.youtubeb {
+     background: url("../image/youtubeb.png") no-repeat left center!important;
+     
+}
+ #footer {
+    margin-top: 50px
+}
+.youtube {
+     background: url("../image/youtube.png") no-repeat left center!important;
+     
+}
 .right-content .addthis_default_style {
 position: relative;
     right: -40px;
@@ -612,20 +623,20 @@ table.form {
 table.form input[type="text"],table.form input[type="password"],table.form textarea {
     background: white;width:100%;margin: 10px 0;
 } 
-.reset-select .sbHolder {
+body .sbHolder {
     background: none repeat scroll 0 0 white;
     border: 1px solid #d4178b;
     border-radius: 0;
     color: #808284;
     height: 19px;
-    margin: 5px 0;
+    margin: 10px 0;
     min-width: 90px;
     padding: 2px 2px;
     position: relative;
     max-width: none;
     width: 100%;
 }
-.reset-select .sbToggle {display: none}
+body .sbToggle {display: none}
 table.form tr td:first-child {
 	width: 150px;
 }
@@ -734,11 +745,12 @@ a.button, input.button,.quickview {
     font-size: 10px;
     height: 16px;
     line-height: 16px;
-    padding: 0 2px;
-    letter-spacing: 4px;
+    padding: 0 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     vertical-align: middle; 
 }
+#tab-description {max-height: 100px;}
 .buttons .button {
     background: #d50c8c;
    
@@ -765,8 +777,8 @@ a.button, input.button,.quickview {
     padding: 0;
     vertical-align: middle;
     text-align: center;
-    margin: 0 2px;
-    width: 50px; color: #f5c2e2;letter-spacing: 4px;
+    margin: 0 5px;
+    width: 48px; color: #f5c2e2;letter-spacing: 3px;
     background:#d50c8c url(../image/plus.jpg) no-repeat 90%  center;
 }
 
@@ -1330,13 +1342,15 @@ ul.box-filter > li ul {
 }
 .product-info .image-additional img {
 	border: 1px solid #E7E7E7;
+       
 }
 .product-info .image-additional a {
 	float: left;
 	display: block;
 	margin-right: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 5px; opacity: 0.8;
 }
+.product-info .image-additional a:hover {opacity: 1;}
 .product-info .description {
 	
 	margin-bottom: 10px;
@@ -1429,7 +1443,10 @@ html[xmlns] .clearfix {
 * html .clearfix {
 	height: 1%;
 }
-.right-content{float: right;    width: 55%;}
+body .sbSelector {
+     width: 210px;
+}
+.right-content{float: right;    width: 50%;}
 .product-info .option-image li.selected img{
     border: 2px solid #d50c8c;
 }
@@ -1439,7 +1456,7 @@ html[xmlns] .clearfix {
 	cursor: pointer;
 }
 .product-info .cart {
-	margin-bottom: 20px;
+	margin-bottom: 20px;margin-top:20px;  min-height: 20px;
 }
 .quantity-container {font-size: 12px;}
 .right-content .share {float: right;margin-bottom: 15px;}
@@ -1479,7 +1496,7 @@ html[xmlns] .clearfix {
 
 .left-content {
     float: left;
-	width: 45%;
+	width: 47%;
 }
 .left-content h1 {
     letter-spacing: 2px;
@@ -2101,14 +2118,14 @@ html[xmlns] .clearfix {
 }
 .right-contact {
         float: right;
-        width: 35%;
-        padding-left: 30px;
+        width: 38%;
+        padding-left: 20px;
 }
 
 .left-contact {
     float: left;
    padding-right: 37px;
-    width: 58%;
+      width: 56%;
     border-right:1px solid #ddd;
 }
 .row {
@@ -2253,3 +2270,4 @@ body  #fancybox-close {
 .class-account-account h2 {
     color:#d64599;
 }
+.nivo-directionNav {display:none!important}

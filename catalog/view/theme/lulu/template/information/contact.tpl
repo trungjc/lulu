@@ -4,12 +4,14 @@
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
+    </div>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
  
     <div class="contact-info">
-      <div class="contents"><div><?php echo $address; ?></div></div>
+      <div class="contents"><div><?php echo $address; ?></div>
     </div>
-    <div class="contents cleafix">
+    </div>
+    <div class="contents clearfix">
         <div class="left-contact">
         <div class="clearfix row row1">
             <div class="left">

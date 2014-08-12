@@ -113,16 +113,16 @@
 .slideshow .nivo-controlNav a {
 	vertical-align: top;
 	display: block;
-	width: 22px;
-	height: 22px;
-	background: url('../image/bullets.png') no-repeat;
+	width: 8px;
+	height: 8px;
+        border:1px solid white;
+	border-radius: 50%;
 	text-indent:-9999px;
-	border:0;
 	margin-right:3px;
 	float:left;
 }
 .slideshow .nivo-controlNav a.active {
-	background-position:0 -22px;
+	background: white;
 }
 .slideshow .nivo-directionNav a {
 	display:block;

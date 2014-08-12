@@ -80,6 +80,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
       <a href="#" class="tiwtter">tiwtter</a>
       <a href="#" class="diagram">diagram</a>
       <a href="#" class="printest">printest</a>
+       <a href="#" class="youtube">youtube</a>
   </div>
 </div>
     <div id="menu">

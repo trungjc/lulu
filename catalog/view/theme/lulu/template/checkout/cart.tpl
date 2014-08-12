@@ -223,7 +223,7 @@
  
   </div>
     <div class="right-form" style="float: right;width: 28%">
-       <p><img src="catalog/view/theme/lulu/image/cart-banner.png" alt="enjoy free shipping on all orders over $75 within aus" style="width: 100%" /></p>
+        <p style="display: none"><img src="catalog/view/theme/lulu/image/cart-banner.png" alt="enjoy free shipping on all orders over $75 within aus" style="width: 100%" /></p>
         <div class="basket-summary">
             <h2>Basket Summary </h2>
              <div class="cart-total">
@@ -240,8 +240,8 @@
         <div class="quickhelp" style="text-align: right"><h3 style="text-align: right">Basket quick help</h3>
                 <ul >
                 <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">our returns policy</a></li>
-                <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">Shipping times</a></li>
-                <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=3">Secure payment options</a></li>
+                <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=10">Shipping times</a></li>
+                <li><a href="<?php echo HTTP_SERVER; ?>/index.php?route=information/information&information_id=11">Secure payment options</a></li>
                 </ul>
             </div>
     </div>

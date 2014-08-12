@@ -105,7 +105,7 @@
                       <td width="30%" class="button-container">
                            <input type="button" value="Add to basket" id="button-cart" class="button" />
 
-                           <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');">Add to love list</a>
+                           <span class="links"><a onclick="addToWishList('<?php echo $product_id; ?>');">Add to wish list</a>
 
                       </td>
                    </tr>
