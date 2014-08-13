@@ -63,6 +63,8 @@
 					data-pin-config="above">
 				 
 					</a>
+                   
+                                  <a class="youtube"></a>
               </div>
               <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
               <!-- AddThis Button END --> 

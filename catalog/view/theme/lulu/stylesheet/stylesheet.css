@@ -427,7 +427,7 @@ b, strong,h1,h2,h3,h4,h5 {
 }
 .right-content .addthis_default_style {
 position: relative;
-    right: -40px;
+    right: 0px;
 	}
 #header .links a {
 	float: left;
