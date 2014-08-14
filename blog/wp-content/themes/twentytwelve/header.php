@@ -61,21 +61,21 @@
 	</header><!-- #masthead -->
         <div id="menu">
             <div id="menu">
-<script type="text/javascript"> 
-$(document).ready(function(){ 
+<script type="text/javascript"> /*
+jQuery(document).ready(function(){ 
 	var setari = {   
-				over: function() { $(this).find('.bigdiv').fadeIn('fast'); }, 
-		out: function() { $(this).find('.bigdiv').fadeOut('fast'); },
+				over: function() { jQuery(this).find('.bigdiv').fadeIn('fast'); }, 
+		out: function() { jQuery(this).find('.bigdiv').fadeOut('fast'); },
 				timeout: 150
 	};
-	$("#supermenu ul li.tlli").hoverIntent(setari);
+	jQuery("#supermenu ul li.tlli").hoverIntent(setari);
 	var setariflyout = {   
-		over: function() { $(this).find('.flyouttoright').fadeIn('fast'); }, 
-		out: function() { $(this).find('.flyouttoright').fadeOut('fast'); },
+		over: function() { jQuery(this).find('.flyouttoright').fadeIn('fast'); }, 
+		out: function() { jQuery(this).find('.flyouttoright').fadeOut('fast'); },
 		timeout: 200
 	};
-	$("#supermenu ul li div.bigdiv.withflyout &gt; .withchildfo").hoverIntent(setariflyout);
-});
+	jQuery("#supermenu ul li div.bigdiv.withflyout &gt; .withchildfo").hoverIntent(setariflyout);
+});*/
 </script>
 <div class="default" id="supermenu">
 		<ul>

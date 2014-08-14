@@ -76,3 +76,7 @@
 2014-08-12 15:29:15 - PHP Notice:  Undefined index:  image in /home/dev/public_html/lulu/vqmod/vqcache/vq2-catalog_controller_product_product.php on line 253
 2014-08-12 15:29:15 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dev/public_html/lulu/index.php:106) in /home/dev/public_html/lulu/catalog/controller/module/viewed.php on line 21
 2014-08-12 15:44:25 - PHP Notice:  Undefined variable: iban in /home/dev/public_html/lulu/catalog/view/theme/lulu/template/account/signup.tpl on line 117
+2014-08-14 11:39:54 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 177
+2014-08-14 11:39:55 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253
+2014-08-14 11:40:52 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 177
+2014-08-14 11:40:52 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253

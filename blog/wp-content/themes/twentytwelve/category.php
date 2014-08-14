@@ -15,15 +15,15 @@ get_header(); ?>
 
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
-
+                         <div class="breadcrumb">
+                           <?php  $categories = get_the_category();
+ 
+                            $category_id = $categories[0]->cat_ID; ?>
+                             <a href="#">Home</a>
+                         // <a href="<?php echo home_url(); ?>/?cat=<?php echo $category_id ?>"><?php echo $categories[0]->cat_name; ?></a>
+                      </div>
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
-
-			<?php if ( category_description() ) : // Show an optional category description ?>
-				<div class="archive-meta"><?php echo category_description(); ?></div>
-			<?php endif; ?>
-			</header><!-- .archive-header -->
+			
 
 			<?php
 			/* Start the Loop */

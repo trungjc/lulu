@@ -18,6 +18,14 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
+                        <div class="breadcrumb">
+                            <!--?php $url= home_url();
+                            $url1= explode('/',$url);                          
+                            array_pop($url1);
+                            ?-->
+                        <a href="#">Home</a>
+                         // <a href="<?php echo home_url(); ?>">Lulu Love Blog</a>
+                      </div>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>

@@ -1,0 +1,62 @@
+[1mdiff --git a/blog/wp-content/themes/twentytwelve/category.php b/blog/wp-content/themes/twentytwelve/category.php[m
+[1mindex 0376977..663f33b 100644[m
+[1m--- a/blog/wp-content/themes/twentytwelve/category.php[m
+[1m+++ b/blog/wp-content/themes/twentytwelve/category.php[m
+[36m@@ -15,15 +15,15 @@[m [mget_header(); ?>[m
+ [m
+ 	<section id="primary" class="site-content">[m
+ 		<div id="content" role="main">[m
+[31m-[m
+[32m+[m[32m                         <div class="breadcrumb">[m
+[32m+[m[32m                           <?php  $categories = get_the_category();[m
+[32m+[m[32m                           print_r($categories);[m
+[32m+[m[32m                            $category_id = $categories[0]->cat_ID; ?>[m
+[32m+[m[32m                        <a href="<?php echo home_url(); ?>/index.php?route=common/home">Home</a>[m
+[32m+[m[32m                         // <a href="<?php echo home_url(); ?>/?cat=<?php echo $category_id ?>"><?php echo $categories[0]->name; ?></a>[m
+[32m+[m[32m                      </div>[m
+ 		<?php if ( have_posts() ) : ?>[m
+[31m-			<header class="archive-header">[m
+[31m-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>[m
+[31m-[m
+[31m-			<?php if ( category_description() ) : // Show an optional category description ?>[m
+[31m-				<div class="archive-meta"><?php echo category_description(); ?></div>[m
+[31m-			<?php endif; ?>[m
+[31m-			</header><!-- .archive-header -->[m
+[32m+[m[41m			[m
+ [m
+ 			<?php[m
+ 			/* Start the Loop */[m
+[1mdiff --git a/blog/wp-content/themes/twentytwelve/index.php b/blog/wp-content/themes/twentytwelve/index.php[m
+[1mindex 74b574e..f60616e 100644[m
+[1m--- a/blog/wp-content/themes/twentytwelve/index.php[m
+[1m+++ b/blog/wp-content/themes/twentytwelve/index.php[m
+[36m@@ -18,6 +18,10 @@[m [mget_header(); ?>[m
+ [m
+ 	<div id="primary" class="site-content">[m
+ 		<div id="content" role="main">[m
+[32m+[m[32m                        <div class="breadcrumb">[m
+[32m+[m[32m                        <a href="<?php echo home_url(); ?>/index.php?route=common/home">Home</a>[m
+[32m+[m[32m                         // <a href="">Lulu Love Blog</a>[m
+[32m+[m[32m                      </div>[m
+ 		<?php if ( have_posts() ) : ?>[m
+ [m
+ 			<?php /* Start the Loop */ ?>[m
+[1mdiff --git a/blog/wp-content/themes/twentytwelve/single.php b/blog/wp-content/themes/twentytwelve/single.php[m
+[1mindex 3817524..8443ee7 100644[m
+[1m--- a/blog/wp-content/themes/twentytwelve/single.php[m
+[1m+++ b/blog/wp-content/themes/twentytwelve/single.php[m
+[36m@@ -11,7 +11,13 @@[m [mget_header(); ?>[m
+ [m
+ 	<div id="primary" class="site-content">[m
+ 		<div id="content" role="main">[m
+[31m-[m
+[32m+[m[32m                     <div class="breadcrumb">[m
+[32m+[m[32m                            <?php $categories = get_the_category( $post->ID ); ?>[m
+[32m+[m[41m                         [m
+[32m+[m[32m                        <a href="<?php echo home_url(); ?>/index.php?route=common/home">Home</a>[m
+[32m+[m[32m                         // <a href="<?php echo home_url(); ?>/?cate=<?php    echo $categories[0]-> term_id; ?>"><?php echo $categories[0]->name ?></a>[m
+[32m+[m[32m                           //<?php the_title(); ?>[m
+[32m+[m[32m                      </div>[m
+ 			<?php while ( have_posts() ) : the_post(); ?>[m
+ [m
+ 				<?php get_template_part( 'content', get_post_format() ); ?>[m

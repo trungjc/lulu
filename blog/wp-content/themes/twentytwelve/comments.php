@@ -22,7 +22,7 @@ if ( post_password_required() )
 ?>
 
 <div id="comments" class="comments-area">
-
+        <?php comment_form(); ?>
 	<?php // You can start editing here -- including this comment! ?>
 
 	<?php if ( have_comments() ) : ?>
@@ -55,6 +55,6 @@ if ( post_password_required() )
 
 	<?php endif; // have_comments() ?>
 
-	<?php comment_form(); ?>
+	
 
 </div><!-- #comments .comments-area -->
