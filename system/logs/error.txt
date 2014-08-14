@@ -80,3 +80,13 @@
 2014-08-14 11:39:55 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253
 2014-08-14 11:40:52 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 177
 2014-08-14 11:40:52 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253
+2014-08-14 6:15:48 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 177
+2014-08-14 6:15:48 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253
+2014-08-14 6:15:49 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 177
+2014-08-14 6:15:49 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253
+2014-08-14 6:15:50 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 177
+2014-08-14 6:15:50 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253
+2014-08-14 6:15:50 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 177
+2014-08-14 6:15:50 - PHP Notice:  Undefined index: image in D:\xampp\htdocs\lulu\vqmod\vqcache\vq2-catalog_controller_product_product.php on line 253
+2014-08-14 6:16:24 - PHP Notice:  Undefined variable: iban in D:\xampp\htdocs\lulu\catalog\view\theme\lulu\template\account\signup.tpl on line 117
+2014-08-14 6:17:22 - PHP Warning:  Division by zero in D:\xampp\htdocs\lulu\system\library\weight.php on line 38
