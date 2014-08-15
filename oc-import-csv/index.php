@@ -34,7 +34,7 @@ if ($handle = opendir('upload')) {
 
 		if ($entry != "." && $entry != "..") {
 
-			echo "<a href='import.php?file=$entry' target='_blank'>$entry</a> | <a href='index.php?rf=$entry'>Remove</a><br/>";
+			echo "<a href='options.php?file=$entry' target='_blank'>$entry</a> | <a href='index.php?rf=$entry'>Remove</a><br/>";
 		}
 	}
 

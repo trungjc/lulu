@@ -1,13 +1,17 @@
 <?php
 include 'dbx.php';
 require_once 'tools.php';
-if (isset($_GET['file'])) {
-	Tools::initFieldFromCSV($_GET['file']);
+$file     = "";
+$category = "";
+if (isset($_POST['file']) && isset($_POST['category'])) {
+	$file     = $_POST['file'];
+	$category = $_POST['category'];
 }
+Tools::initFieldFromCSV($category,$file);
 ?>
 <h3>Products To Be Imported</h3>
 <?php
-$sql    = "select count(*) as total from ".Tools::TABLE_NAME_SYNC_DATA;
+$sql    = "select count(*) as total from ".DB_PREFIX.Tools::$TABLE_NAME_SYNC_DATA;
 $result = getDBResult($sql);
 if ($result) {
 	echo $result->row['total']." Products To Be Imported<br/>";
@@ -17,24 +21,16 @@ if ($result) {
 <h3>Manufacturers Imported</h3>
 <?php
 
-$sql     = "select * from sync_imported_manufacturers";
+$sql     = "select * from ".DB_PREFIX."sync_imported_manufacturers";
 $results = getDBResult($sql);
 foreach ($results->rows as $result)
 echo $result['name']."<br/>";
 
-?>
-<h3>Categories Imported</h3>
-<?php
-
-$sql     = "select * from sync_imported_categories";
-$results = getDBResult($sql);
-foreach ($results->rows as $result)
-echo $result['name']."<br/>";
 ?>
 <h3>Filter Groups Imported</h3>
 <?php
 
-$sql     = "select * from sync_imported_filter_groups";
+$sql     = "select * from ".DB_PREFIX."sync_imported_filter_groups";
 $results = getDBResult($sql);
 foreach ($results->rows as $result)
 echo $result['filter_group_name']."<br/>";
@@ -57,14 +53,6 @@ $results = getDBResult($sql);
 foreach ($results->rows as $result)
 echo $result['name']."<br/>";
 ?>
-<h3>Products Imported</h3>
 <?php
-
-$sql    = "select count(*) as total from sync_imported_products";
-$result = getDBResult($sql);
-if ($result) {
-	echo $result->row['total']." Products Have Been Imported<br/>";
-}
-
 Tools::cleanDraftData();
 ?>
