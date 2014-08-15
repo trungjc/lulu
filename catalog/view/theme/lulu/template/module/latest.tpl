@@ -13,6 +13,7 @@
         <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
 
 	    <?php if ($product['filter_groups']) { ?>	   
+		<div class="filter-container">
 	      <table class="filter">
 	        <?php foreach ($product['filter_groups'] as $filter_group) { ?>
 	          <tr>
@@ -23,6 +24,7 @@
 	          </tr>
 	        <?php } ?>
 	      </table>
+	    </div>
 	    <?php } ?>        
 		 
 	   <?php if ($product['price']) { ?>

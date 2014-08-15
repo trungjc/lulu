@@ -122,7 +122,7 @@
              <div class="description">
                
                 <?php if ($filter_groups) { ?>
-	           
+	           	<div class="filter-container">
 	              <table class="filter">
 	                <?php foreach ($filter_groups as $filter_group) { ?>
 	                  <tr>
@@ -133,7 +133,7 @@
 	                  </tr>
 	                <?php } ?>
 	              </table>
-	                                         
+	            </div>                             
                 <?php } ?>        
                 <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
                 <?php if ($reward) { ?>

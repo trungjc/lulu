@@ -51,6 +51,7 @@
 	  <div class="description"><?php echo $product['description']; ?></div>
 
 	    <?php if ($product['filter_groups']) { ?>	   
+		<div class="filter-container">
 	      <table class="filter">
 	        <?php foreach ($product['filter_groups'] as $filter_group) { ?>
 	          <tr>
@@ -61,7 +62,8 @@
 	          </tr>
 	        <?php } ?>
 	      </table>
-	    <?php } ?>        
+	    </div>
+	    <?php } ?>            
                 
 	  <div class="filter"></div>
       <?php if ($product['price']) { ?>
