@@ -1291,6 +1291,9 @@ table.filter * {
 	display: block; 
 	margin-bottom: 4px;
 }
+.name  {
+        min-height: 40px
+}
 .product-grid .brand { 
 	font-family: "BrandonBold",Helvetica,sans-serif;
 }
