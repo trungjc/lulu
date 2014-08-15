@@ -28,27 +28,28 @@ get_header(); ?>
 
 				
                            <div class="share"><!-- AddThis Button BEGIN -->
-              <div class="addthis_default_style">
-                  <a class="addthis_button_compact"></a> 
-                  
-                  <a class="addthis_button_facebook"></a>
-                  <a class="addthis_button_twitter"></a>
-                  <a class="addthis_button_instagram"></a>
-                 
-				  <a class="addthis_button_printest"> </a>
-				  <a href="http://www.pinterest.com/pin/create/button/
-					?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F
-					&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg
-					&description=Next%20stop%3A%20Pinterest"
-					data-pin-do="buttonPin"
-					data-pin-config="above">
-				 
-					</a>
-              </div>
-              <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
-              <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
-              <!-- AddThis Button END --> 
-            </div>
+                                <div class="addthis_default_style">
+                                  
+
+                                    <a class="addthis_button_facebook"></a>
+                                    <a class="addthis_button_twitter"></a>
+                                    <a class="addthis_button_instagram"></a>
+
+                                                    <a class="addthis_button_printest"> </a>
+                                                    <a href="http://www.pinterest.com/pin/create/button/
+                                                          ?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F
+                                                          &media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg
+                                                          &description=Next%20stop%3A%20Pinterest"
+                                                          data-pin-do="buttonPin"
+                                                          data-pin-config="above">
+
+                                                          </a>
+                                                      <a class="addthis_button_compact"></a> 
+                                </div>
+                                <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
+                                <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+                                <!-- AddThis Button END --> 
+                              </div>
 				<?php comments_template( '', true ); ?>
 
 			<?php endwhile; // end of the loop. ?>

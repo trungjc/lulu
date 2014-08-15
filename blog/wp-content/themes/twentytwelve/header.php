@@ -193,7 +193,12 @@ jQuery(document).ready(function(){
     </div>
 
         </div>
-        <div class="banners" id="">
-        <div style="display: block;"><a href="#"><img title="who is lulu " alt="who is lulu " src="http://localhost/lulu/image/cache/data/banner/whoislulu-980x188.png"></a></div>
-      </div>
+        <?php if ( get_header_image() ) : ?>
+	<div id="site-header">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+		</a>
+	</div>
+	<?php endif; ?>
+       
 	<div id="content" class="wrapper">
