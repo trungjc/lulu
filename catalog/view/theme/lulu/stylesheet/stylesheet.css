@@ -1127,8 +1127,7 @@ ul.box-filter > li ul {
 .manufacturer-list {
 	 border-top: 1px solid #dbdee1;
     float: left;
-    margin-bottom: 20px;
-    overflow: auto;
+    margin-bottom: 20px;    min-height: 150px;
     padding: 5px;
     width: 15.6%;
 }
@@ -1143,8 +1142,6 @@ ul.box-filter > li ul {
 	padding: 8px;
 }
 .manufacturer-list ul {
-	float: left;
-	width: 25%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -1269,7 +1266,10 @@ ul.box-filter > li ul {
     margin: 15px 9px 15px 0;
     vertical-align: top;
     width: 176px;
-        min-height: 300px;
+        min-height: 365px;
+}
+table.filter * {
+    font-size: 11px;
 }
 #fancybox-frame .share{
 	display: none;
@@ -2186,8 +2186,17 @@ body .sbSelector {
 	margin: 0 0 10px 0;
 }
 
-.pnews #column-left ,.pcategory   #column-left,.class-product-manufacturer-info #column-left{
+.pnews #column-left ,.pmanufacturer #column-left,.pcategory   #column-left,
+.class-product-manufacturer-info #column-left{
 	border: none;
+}
+.class-product-manufacturer #column-left{
+    display: none;
+    
+}
+.class-product-manufacturer #content {
+    margin-left: 0!important;
+    
 }
 .pnews .breadcrumb + h1,.pcategory .breadcrumb + h1  {
 	margin-bottom: 40px;
