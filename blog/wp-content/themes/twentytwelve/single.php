@@ -18,7 +18,7 @@ get_header(); ?>
                             ?-->
                             <?php $categories = get_the_category( $post->ID ); ?>
                          
-                       <a href="#">Home</a>
+                       <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu">Home</a>
                          // <a href="<?php echo home_url(); ?>/?cat=<?php    echo $categories[0]-> term_id; ?>"><?php echo $categories[0]->name ?></a>
                          // <a href="#"><?php the_title(); ?></a>
                       </div>

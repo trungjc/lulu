@@ -19,7 +19,7 @@ get_header(); ?>
                            <?php  $categories = get_the_category();
  
                             $category_id = $categories[0]->cat_ID; ?>
-                             <a href="#">Home</a>
+                       <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu">Home</a>
                          // <a href="<?php echo home_url(); ?>/?cat=<?php echo $category_id ?>"><?php echo $categories[0]->cat_name; ?></a>
                       </div>
 		<?php if ( have_posts() ) : ?>

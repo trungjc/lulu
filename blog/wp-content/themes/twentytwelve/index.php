@@ -23,7 +23,7 @@ get_header(); ?>
                             $url1= explode('/',$url);                          
                             array_pop($url1);
                             ?-->
-                        <a href="#">Home</a>
+                       <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu">Home</a>
                          // <a href="<?php echo home_url(); ?>">Lulu Love Blog</a>
                       </div>
 		<?php if ( have_posts() ) : ?>
