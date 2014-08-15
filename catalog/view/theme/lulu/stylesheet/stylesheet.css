@@ -2186,7 +2186,7 @@ body .sbSelector {
 	margin: 0 0 10px 0;
 }
 
-.pnews #column-left ,.pcategory   #column-left{
+.pnews #column-left ,.pcategory   #column-left,.class-product-manufacturer-info #column-left{
 	border: none;
 }
 .pnews .breadcrumb + h1,.pcategory .breadcrumb + h1  {
