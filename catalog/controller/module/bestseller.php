@@ -40,6 +40,7 @@ class ControllerModuleBestSeller extends Controller {
 				$rating = false;
 			}				
 			$this->data['products'][] = array(
+				'filter_groups' => $this->model_catalog_product->getProductFilters($result['product_id']),
 				'product_id' => $result['product_id'],
 				'thumb'   	 => $image,
 				'name'    	 => $result['name'],

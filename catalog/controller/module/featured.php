@@ -49,6 +49,7 @@ class ControllerModuleFeatured extends Controller {
 					$rating = false;
 				}
 				$this->data['products'][] = array(
+					'filter_groups' => $this->model_catalog_product->getProductFilters($product_info['product_id']),
 					'product_id' => $product_info['product_id'],
 					'thumb'   	 => $image,
 					'name'    	 => $product_info['name'],
