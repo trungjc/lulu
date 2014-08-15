@@ -1,24 +1,24 @@
 <?php if ($direction == 'rtl') { ?>
-<link rel="stylesheet" type="text/css" href="catalog/view/supermenu/supermenu-rtl.css?v=21" />
+<link rel="stylesheet" type="text/css" href="<?php echo $base; ?>catalog/view/supermenu/supermenu-rtl.css?v=21" />
 <!--[if IE 7]>
-<link rel="stylesheet" type="text/css" href="catalog/view/supermenu/supermenuie7.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $base; ?>catalog/view/supermenu/supermenuie7.css" />
 <![endif]-->
 <!--[if lt IE 7]>
-<link rel="stylesheet" type="text/css" href="catalog/view/supermenu/supermenuie6.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $base; ?>catalog/view/supermenu/supermenuie6.css" />
 <![endif]-->
-<script type="text/javascript" src="catalog/view/supermenu/supermenu-responsive-rtl.js?v=22"></script>
+<script type="text/javascript" src="<?php echo $base; ?>catalog/view/supermenu/supermenu-responsive-rtl.js?v=22"></script>
 <?php } else { ?>
-<link rel="stylesheet" type="text/css" href="catalog/view/supermenu/supermenu.css?v=21" />
+<link rel="stylesheet" type="text/css" href="<?php echo $base; ?>catalog/view/supermenu/supermenu.css?v=21" />
 <!--[if IE 7]>
-<link rel="stylesheet" type="text/css" href="catalog/view/supermenu/supermenuie7.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $base; ?>catalog/view/supermenu/supermenuie7.css" />
 <![endif]-->
 <!--[if lt IE 7]>
-<link rel="stylesheet" type="text/css" href="catalog/view/supermenu/supermenuie6.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo $base; ?>catalog/view/supermenu/supermenuie6.css" />
 <![endif]-->
-<script type="text/javascript" src="catalog/view/supermenu/supermenu-responsive.js?v=22"></script>
+<script type="text/javascript" src="<?php echo $base; ?>catalog/view/supermenu/supermenu-responsive.js?v=22"></script>
 <?php } ?>
 <?php if ($usehoverintent) { ?>
-<script type="text/javascript" src="catalog/view/supermenu/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="<?php echo $base; ?>catalog/view/supermenu/jquery.hoverIntent.minified.js"></script>
 <?php } ?>
 <?php if ($supermenu_settings_status) { ?>
 <style type="text/css">

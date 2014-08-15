@@ -63,7 +63,7 @@ $(document).ready(function(){
 		<?php foreach ($mitems as $mitem) { ?>
 			<?php echo ($sep > 0 && $skin != "imgmenu") ? '<li class="tlli sep"><span class="item-sep">&nbsp;</span></li>' : ''; $sep++; ?>
 			<li class="tlli<?php if ($mitem['children']) { ?> mkids<?php } ?><?php if ($mitem['cssid'] == 'login_drop') { ?> mkids lad<?php } ?><?php if ($mitem['tlstyle']) { ?> <?php echo $mitem['tlstyle']; ?><?php } ?>">
-				<a class="tll" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if (($mitem['children'] || ($mitem['chtml'] && $mitem['chtml'] == 1)) && $linkoftopitem != 'topitem') { ?><?php } else { ?> <?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?> <?php } ?>><?php echo ($mitem['item_topimg']) ? '<img src="'.$mitem['item_topimg'].'" alt="'.$mitem['name'].'" /><br />' : '' ; ?><?php echo $mitem['name']; ?></a>
+				<a class="tll" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if (($mitem['children'] || ($mitem['chtml'] && $mitem['chtml'] == 1)) && $linkoftopitem != 'topitem') { ?><?php } else { ?> <?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?> <?php } ?>><?php echo ($mitem['item_topimg']) ? '<img src="'.$base.$mitem['item_topimg'].'" alt="'.$mitem['name'].'" /><br />' : '' ; ?><?php echo $mitem['name']; ?></a>
 				
 				<?php if ($mitem['children'] && ($mitem['view'] == 'f0' || $mitem['view'] == 'f1')) { ?>
 					<div class="bigdiv withflyout"<?php if ($mitem['dwidth']) { ?> style="width: <?php echo $mitem['dwidth']; ?>px;"<?php } ?>>
@@ -103,7 +103,7 @@ $(document).ready(function(){
 													<div class="withimage" <?php if ($mitem['iwidth']) { ?> style="width: <?php echo $mitem['iwidth']; ?>px;"<?php } ?>>
 														<div class="image">
 															<a href="<?php echo $gmildren['href']; ?>">
-																<img src="<?php echo $gmildren['thumb']; ?>" alt="<?php echo $gmildren['name']; ?>" title="<?php echo $gmildren['name']; ?>" />
+																<img src="<?php echo $base; ?><?php echo $gmildren['thumb']; ?>" alt="<?php echo $gmildren['name']; ?>" title="<?php echo $gmildren['name']; ?>" />
 															</a>
 														</div>
 														<div class="name">
@@ -151,7 +151,7 @@ $(document).ready(function(){
 								<?php if ($mitem['chtml'] && $mitem['chtml'] == 2) { ?>
 									<?php echo $mitem['cchtml']; ?>
 								<?php } else { ?>
-									<a <?php if ($mitem['addurl']) { ?>href="<?php echo $mitem['addurl']; ?>"<?php } ?>><img src="image/<?php echo $mitem['add']; ?>" alt="<?php echo $mitem['name']; ?>" /></a>
+									<a <?php if ($mitem['addurl']) { ?>href="<?php echo $mitem['addurl']; ?>"<?php } ?>><img src="<?php echo $base; ?>image/<?php echo $mitem['add']; ?>" alt="<?php echo $mitem['name']; ?>" /></a>
 								<?php } ?>
 							</div>
 						<?php } ?>
@@ -221,7 +221,7 @@ $(document).ready(function(){
 									<?php foreach ($mitem['children'] as $mildren) { ?>
 										<div class="withimage"<?php if ($mitem['iwidth']) { ?> style="width: <?php echo $mitem['iwidth']; ?>px;"<?php } ?>>
 											<div class="image">
-												<a href="<?php echo $mildren['href']; ?>"><img src="<?php echo $mildren['thumb']; ?>" alt="<?php echo $mildren['name']; ?>" title="<?php echo $mildren['name']; ?>" /></a>
+												<a href="<?php echo $mildren['href']; ?>"><img src="<?php echo $base; ?><?php echo $mildren['thumb']; ?>" alt="<?php echo $mildren['name']; ?>" title="<?php echo $mildren['name']; ?>" /></a>
 											</div>
 											<div class="name">
 												<?php if ($mildren['gchildren']) { ?><span class="mainexpand"></span><?php } ?>
@@ -271,7 +271,7 @@ $(document).ready(function(){
 					<?php foreach ($mitems as $mitem) { ?>
 						<div class="withchild">
 							<?php if ($mitem['children']) { ?><span class="toexpand"></span><?php } ?>
-							<a class="theparent" id="<?php echo $mitem['cssid']; ?>" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?>><?php echo ($mitem['item_topimg']) ? '<img align="left" width="30" style="margin-right: 5px;" src="'.$mitem['item_topimg'].'" alt="'.$mitem['name'].'" /><br />' : '' ; ?><?php echo $mitem['name']; ?></a>
+							<a class="theparent" id="<?php echo $mitem['cssid']; ?>" <?php if ($mitem['tlcolor']) { ?>style="color: <?php echo $mitem['tlcolor']; ?>;" <?php } ?><?php if ($mitem['href']) { ?>href="<?php echo $mitem['href']; ?>"<?php } ?>><?php echo ($mitem['item_topimg']) ? '<img align="left" width="30" style="margin-right: 5px;" src="'.$base.$mitem['item_topimg'].'" alt="'.$mitem['name'].'" /><br />' : '' ; ?><?php echo $mitem['name']; ?></a>
 							<?php if ($mitem['children']) { ?>
 								<ul>
 									<?php foreach ($mitem['children'] as $mildren) { ?>
