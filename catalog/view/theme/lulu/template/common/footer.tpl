@@ -47,9 +47,9 @@ Please donate via PayPal to donate@opencart.com
 //-->
 </div>
 
-<script type="text/javascript" src="catalog/view/theme/lulu/js/jquery.selectbox-0.1.3.min.js"></script>
+<script type="text/javascript" src="<?php echo $base;?>catalog/view/theme/lulu/js/jquery.selectbox-0.1.3.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="catalog/view/theme/lulu/stylesheet/jquery.selectbox.css" >
+    <link rel="stylesheet" type="text/css" href="<?php echo $base;?>catalog/view/theme/lulu/stylesheet/jquery.selectbox.css" >
 <script type="text/javascript">
     jQuery(document).ready(function(){ 
         jQuery('select').selectbox();

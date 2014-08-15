@@ -1,6 +1,12 @@
 <?php  
 class ControllerCommonFooter extends Controller {
 	protected function index() {
+		if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+			$server = $this->config->get('config_ssl');
+		} else {
+			$server = $this->config->get('config_url');
+		}
+		$this->data['base'] = $server;
 		$this->language->load('common/footer');
 
 		$this->data['text_information'] = $this->language->get('text_information');

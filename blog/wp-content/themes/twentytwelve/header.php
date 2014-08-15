@@ -60,29 +60,10 @@
                   </div>
 	</header><!-- #masthead -->
         <div id="menu">
-            <div id="menu">
-<script type="text/javascript"> /*
-jQuery(document).ready(function(){ 
-	var setari = {   
-				over: function() { jQuery(this).find('.bigdiv').fadeIn('fast'); }, 
-		out: function() { jQuery(this).find('.bigdiv').fadeOut('fast'); },
-				timeout: 150
-	};
-	jQuery("#supermenu ul li.tlli").hoverIntent(setari);
-	var setariflyout = {   
-		over: function() { jQuery(this).find('.flyouttoright').fadeIn('fast'); }, 
-		out: function() { jQuery(this).find('.flyouttoright').fadeOut('fast'); },
-		timeout: 200
-	};
-	jQuery("#supermenu ul li div.bigdiv.withflyout &gt; .withchildfo").hoverIntent(setariflyout);
-});*/
-</script>
 <?php 
 $menu = file_get_contents('http://localhost/lulu/index.php?route=common/menu');
 echo $menu;
 ?>	
-    </div>
-
         </div>
         <?php if ( get_header_image() ) : ?>
 	<div id="site-header">

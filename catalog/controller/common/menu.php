@@ -12,7 +12,10 @@ class ControllerCommonMenu extends Controller {
 		if (isset($this->request->get['type'])) {
 			$type = $this->request->get['type'];
 		}
-		$this->data['menu_type'] = $type;
+		$this->data['links'] = $this->document->getLinks();
+		$this->data['styles'] = $this->document->getStyles();
+		$this->data['scripts'] = $this->document->getScripts();
+		$this->data['wpmenu'] = $type;		
 		$this->children = array(
 			'module/supermenu',
 			'module/supermenu_settings',
