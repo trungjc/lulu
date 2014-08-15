@@ -119,7 +119,22 @@
         <div class="left-content">
 		  
             <h1><?php echo $heading_title;   ?></h1>
-             <div class="description">        
+             <div class="description">
+               
+                <?php if ($filter_groups) { ?>
+	           
+	              <table class="filter">
+	                <?php foreach ($filter_groups as $filter_group) { ?>
+	                  <tr>
+	                    <td><?php echo $filter_group['name']; ?></td>
+	                    <?php foreach ($filter_group['filter'] as $filter) { ?>
+		                    <td><?php echo $filter['name']; ?></td>
+	                  <?php } ?>                    
+	                  </tr>
+	                <?php } ?>
+	              </table>
+	                                         
+                <?php } ?>        
                 <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
                 <?php if ($reward) { ?>
                 <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />

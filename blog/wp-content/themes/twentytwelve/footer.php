@@ -12,7 +12,7 @@
 	</div>
 	
 <?php 
-$menu = file_get_contents('http://localhost/lulu/index.php?route=common/menu&type=footer');
+$menu = file_get_contents('http://'.$_SERVER['SERVER_NAME'].'/lulu/index.php?route=common/menu&type=footer');
 echo $menu;
 ?>	
 
