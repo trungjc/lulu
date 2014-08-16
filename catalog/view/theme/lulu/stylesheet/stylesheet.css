@@ -496,7 +496,7 @@ position: relative;
 	display: inline-block;
         font-size: 12px;
         
-	padding: 6px 10px 6px 10px;
+	padding: 6px 8px;
         text-transform: uppercase;
 	z-index: 6;
 	position: relative;
@@ -2255,9 +2255,10 @@ body .sbSelector {
 }
 
 body  #fancybox-close {
-    background: url("../image/close-popup.png") no-repeat scroll 0 0 / 100% auto transparent;
+    background: url("../image/close-popup.png") no-repeat  ;
     height: 14px;
     right: 18px;
+    background-size: 100%;
     top: 18px;
     width: 12px;
 }

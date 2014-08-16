@@ -1543,26 +1543,24 @@ img#wpstats {
 		margin-left: 3.57142857rem;
 	}
 }
-
-
 @font-face {
 	font-family: 'DidotBold';
 	src: url('fonts/DidotBold.eot');
-	src: local('â˜º'), url('fonts/DidotBold.woff') format('woff'), url('fonts/DidotBold.ttf') format('truetype'), url('fonts/DidotBold.svg') format('svg');
+	src: local('☺'), url('fonts/DidotBold.woff') format('woff'), url('fonts/DidotBold.ttf') format('truetype'), url('fonts/DidotBold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Brandon';
 	src: url('fonts/Brandon.eot');
-	src: local('â˜º'), url('fonts/Brandon.woff') format('woff'), url('fonts/Brandon.ttf') format('truetype'), url('fonts/Brandon.svg') format('svg');
+	src: local('☺'), url('fonts/Brandon.woff') format('woff'), url('fonts/Brandon.ttf') format('truetype'), url('fonts/Brandon.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'BrandonBold';
 	src: url('fonts/BrandonBold.eot');
-	src: local('â˜º'), url('fonts/BrandonBold.woff') format('woff'), url('fonts/BrandonBold.ttf') format('truetype'), url('fonts/BrandonBold.svg') format('svg');
+	src: local('☺'), url('fonts/BrandonBold.woff') format('woff'), url('fonts/BrandonBold.ttf') format('truetype'), url('fonts/BrandonBold.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1570,7 +1568,7 @@ img#wpstats {
 @font-face {
 	font-family: 'BrandonLight';
 	src: url('fonts/BrandonLight.eot');
-	src: local('â˜º'), url('fonts/BrandonLight.woff') format('woff'), url('fonts/BrandonLight.ttf') format('truetype'), url('fonts/BrandonLight.svg') format('svg');
+	src: local('☺'), url('fonts/BrandonLight.woff') format('woff'), url('fonts/BrandonLight.ttf') format('truetype'), url('fonts/BrandonLight.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1680,7 +1678,7 @@ label {
 }
 /* header */
 #header {
-	height: 123px;
+	height: 150px;
 	margin-bottom: 7px;
 	padding-bottom: 4px;
 	position: relative;
@@ -2043,7 +2041,7 @@ position: relative;
 	display: inline-block;
         font-size: 12px;
         
-	padding: 6px 10px 6px 10px;
+	padding: 6px 8px;
         text-transform: uppercase;
 	z-index: 6;
 	position: relative;
@@ -2086,23 +2084,17 @@ position: relative;
 }
 .breadcrumb {
 	color:#6d6e71;
-	margin-bottom: 46px; font-size: 12px;
+	margin-bottom: 20px; font-size: 12px;
 }
 .addthis_button_compact {
     color:#d50c8c;
 }
 .breadcrumb a {
     color:#6d6e71;
-    font-size: 11px;
-	font-weight: bold;
+    font-size: 12px;
 }
 .breadcrumb a:last-child {
     color:#000;
-}
-
-.entry-date{
-	font-size: 10px;
-	color: #8b8b8b;
 }
 
 body .success,body  .warning,body .attention, body .information {
@@ -2680,8 +2672,7 @@ ul.box-filter > li ul {
 .manufacturer-list {
 	 border-top: 1px solid #dbdee1;
     float: left;
-    margin-bottom: 20px;
-    overflow: auto;
+    margin-bottom: 20px;    min-height: 150px;
     padding: 5px;
     width: 15.6%;
 }
@@ -2696,8 +2687,6 @@ ul.box-filter > li ul {
 	padding: 8px;
 }
 .manufacturer-list ul {
-	float: left;
-	width: 25%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -2821,8 +2810,20 @@ ul.box-filter > li ul {
     float: left;
     margin: 15px 9px 15px 0;
     vertical-align: top;
-    width: 176px;
-        min-height: 300px;
+    width: 235px;
+        min-height: 385px;
+}
+.filter {
+    min-height: 66px;
+}
+.filter > div {
+    max-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.filter + .filter{
+    min-height:0px;
 }
 #fancybox-frame .share{
 	display: none;
@@ -2843,6 +2844,9 @@ ul.box-filter > li ul {
 	text-decoration: none;
 	display: block; 
 	margin-bottom: 4px;
+}
+.name  {
+        min-height: 40px
 }
 .product-grid .brand { 
 	font-family: "BrandonBold",Helvetica,sans-serif;
@@ -3739,8 +3743,17 @@ body .sbSelector {
 	margin: 0 0 10px 0;
 }
 
-.pnews #column-left ,.pcategory   #column-left{
+.pnews #column-left ,.pmanufacturer #column-left,.pcategory   #column-left,
+.class-product-manufacturer-info #column-left{
 	border: none;
+}
+.class-product-manufacturer #column-left{
+    display: none;
+    
+}
+.class-product-manufacturer #content {
+    margin-left: 0!important;
+    
 }
 .pnews .breadcrumb + h1,.pcategory .breadcrumb + h1  {
 	margin-bottom: 40px;
@@ -3787,9 +3800,10 @@ body .sbSelector {
 }
 
 body  #fancybox-close {
-    background: url("../image/close-popup.png") no-repeat scroll 0 0 / 100% auto transparent;
+    background: url("../image/close-popup.png") no-repeat  ;
     height: 14px;
     right: 18px;
+    background-size: 100%;
     top: 18px;
     width: 12px;
 }
