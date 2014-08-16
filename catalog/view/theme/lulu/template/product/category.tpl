@@ -50,20 +50,17 @@
         
 	  <div class="description"><?php echo $product['description']; ?></div>
 
-	    <?php if ($product['filter_groups']) { ?>	   
-		<div class="filter-container">
-	      <table class="filter">
+	    <?php if ($product['filter_groups']) { ?>	   	
+	      <div class="filter">
+	      
 	        <?php foreach ($product['filter_groups'] as $filter_group) { ?>
-	          <tr>
-	            <td><?php echo $filter_group['name']; ?></td>
 	            <?php foreach ($filter_group['filter'] as $filter) { ?>
-	                <td><?php echo $filter['name']; ?></td>
+	                <div><?php echo $filter['name']; ?></div>
 	          <?php } ?>                    
-	          </tr>
 	        <?php } ?>
-	      </table>
-	    </div>
-	    <?php } ?>            
+	      
+	      </div>
+	    <?php } ?>           
                 
 	  <div class="filter"></div>
       <?php if ($product['price']) { ?>

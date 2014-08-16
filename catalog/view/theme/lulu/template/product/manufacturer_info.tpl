@@ -21,20 +21,19 @@
       <?php } ?>
       <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
       <div class="description"><?php echo $product['description']; ?></div>
-      <?php if ($product['filter_groups']) { ?>	 
-      <div class="filter-container">  
-	      <table class="filter">
+
+	    <?php if ($product['filter_groups']) { ?>	   	
+	      <div class="filter">
+	      
 	        <?php foreach ($product['filter_groups'] as $filter_group) { ?>
-	          <tr>
-	            <td><?php echo $filter_group['name']; ?></td>
 	            <?php foreach ($filter_group['filter'] as $filter) { ?>
-	                <td><?php echo $filter['name']; ?></td>
+	                <div><?php echo $filter['name']; ?></div>
 	          <?php } ?>                    
-	          </tr>
 	        <?php } ?>
-	      </table>
-	  	</div>
-	    <?php } ?>        
+	      
+	      </div>
+	    <?php } ?> 
+     
       <?php if ($product['price']) { ?>
       <div class="price">
         <?php if (!$product['special']) { ?>
