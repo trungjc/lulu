@@ -1265,11 +1265,20 @@ ul.box-filter > li ul {
     float: left;
     margin: 15px 9px 15px 0;
     vertical-align: top;
-    width: 176px;
-        min-height: 365px;
+    width: 235px;
+        min-height: 385px;
 }
-table.filter * {
-    font-size: 11px;
+.filter {
+    min-height: 66px;
+}
+.filter > div {
+    max-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.filter + .filter{
+    min-height:0px;
 }
 #fancybox-frame .share{
 	display: none;

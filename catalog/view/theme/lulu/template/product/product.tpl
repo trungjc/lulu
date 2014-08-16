@@ -364,7 +364,7 @@
     </div>
         <div class="tab2">
        <div id="tabs2" class="htabs">
-           <a href="#recently-viewed">recently viewd</a>
+           <a href="#recently-viewed">Recently Viewed</a>
            <a href="#tab-also-bought">others also bought </a>
             <?php if ($products) { ?>
             <a href="#tab-related"><?php echo $tab_related; ?> </a>
