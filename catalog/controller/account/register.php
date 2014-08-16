@@ -8,7 +8,7 @@ class ControllerAccountRegister extends Controller {
 			$this->redirect($this->url->link('account/account', '', 'SSL'));
 		}
 		// redirect to new sign up page
-	//	$this->redirect($this->url->link('account/signup', '', 'SSL')); 
+		$this->redirect($this->url->link('account/signup', '', 'SSL')); 
 		
 		$this->language->load('account/register');
 
