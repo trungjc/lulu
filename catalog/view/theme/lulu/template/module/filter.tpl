@@ -7,7 +7,7 @@
           <?php foreach ($filter_group['filter'] as $filter) { ?>
          
           <li>
-              <a href="<?php echo HTTP_SERVER; ?>index.php?route=product/category&path=20&filter=<?php echo $filter['filter_id']; ?>" ><?php echo $filter['name']; ?></a>
+              <a href="<?php echo HTTP_SERVER; ?>index.php?route=product/category&path=<?php echo $path; ?>&filter=<?php echo $filter['filter_id']; ?>" ><?php echo $filter['name']; ?></a>
           </li>
          
           <?php } ?>

@@ -70,7 +70,7 @@ class ControllerModuleFilter extends Controller {
 						'filter'          => $filter_data
 					);
 				} 
-			
+				$this->data['path'] = $category_id;
 				if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/filter.tpl')) {
 					$this->template = $this->config->get('config_template') . '/template/module/filter.tpl';
 				} else {
