@@ -34,28 +34,26 @@
 <body <?php body_class(); ?>>
 <div id="container">
 	<header id="header" class="site-header" role="banner">
-                    <div class="notice">Complimentary shipping on orders over $75</div>
+                    <div class="notice">Complimentary shipping on orders over $100</div>
                     <div style="display: none" class="livechat">
                         <a href="#">live chat</a>
                     </div>
-                    <div id="logo"><a href="http://localhost/lulu/index.php?route=common/home"><img alt="Your Store" title="Your Store" src="http://localhost/lulu/image/data/logo.png"></a></div>
+                    <div id="logo"><a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu/index.php?route=common/home"><img alt="Your Store" title="Your Store" src="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu/image/data/logo.png"></a></div>
                     <div id="search">
                     <div class="button-search"></div>
                     <input type="text" value="" placeholder="Search" name="search">
                   </div>
                   <div id="welcome">
-                        <a href="http://localhost/lulu/index.php?route=account/login">Sign In</a> / <a href="http://localhost/lulu/index.php?route=account/register">Register</a>.      </div>
+                        <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu/index.php?route=account/login">Sign In</a> / <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu/index.php?route=account/register">Register</a>.      </div>
                   <div class="links"><!--a href="http://localhost/lulu/index.php?route=common/home">Home</a!-->
-                      <a id="wishlist-total" href="http://localhost/lulu/index.php?route=account/wishlist">Wish List (0)</a>
-                      <!--a href="http://localhost/lulu/index.php?route=account/account">My Account</a-->
-                      <!--a href="http://localhost/lulu/index.php?route=checkout/cart">Shopping Cart</a-->
-                      <a href="http://localhost/lulu/index.php?route=checkout/checkout">Checkout</a>
+                      <a id="wishlist-total" href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu/index.php?route=account/wishlist">Wish List</a>
+                      <a href="http://<?php echo $_SERVER['SERVER_NAME']; ?>/lulu/index.php?route=checkout/checkout">Checkout</a>
                   </div>
                   <div class="social">
-                      <a class="facebook" href="#">facebook</a>
-                      <a class="tiwtter" href="#">tiwtter</a>
-                      <a class="diagram" href="#">diagram</a>
-                      <a class="printest" href="#">printest</a>
+                      <a class="facebook" href="https://www.facebook.com/LuluandLipstick">facebook</a>
+                      <a class="tiwtter" href="https://twitter.com/LuluandLipstick">tiwtter</a>
+                      <a class="diagram" href="http://instagram.com/luluandlipstick">diagram</a>
+                      <a class="printest" href="https://www.pinterest.com/luluandlipstick">printest</a>
                        <a class="youtube" href="#">youtube</a>
                   </div>
 	</header><!-- #masthead -->

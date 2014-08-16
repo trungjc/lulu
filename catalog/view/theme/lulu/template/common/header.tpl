@@ -51,7 +51,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <body>
 <div id="container">
 <div id="header">
-    <div class="notice">Complimentary shipping on orders over $75</div>
+    <div class="notice">Complimentary shipping on orders over $100</div>
     <div class="livechat" style="display: none">
         <a href="#">live chat</a>
     </div>
@@ -76,11 +76,11 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
       <a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a>
   </div>
   <div class="social">
-      <a href="#" class="facebook">facebook</a>
-      <a href="#" class="tiwtter">tiwtter</a>
-      <a href="#" class="diagram">diagram</a>
-      <a href="#" class="printest">printest</a>
-       <a href="#" class="youtube">youtube</a>
+      <a class="facebook" href="https://www.facebook.com/LuluandLipstick">facebook</a>
+                      <a class="tiwtter" href="https://twitter.com/LuluandLipstick">tiwtter</a>
+                      <a class="diagram" href="http://instagram.com/luluandlipstick">diagram</a>
+                      <a class="printest" href="https://www.pinterest.com/luluandlipstick">printest</a>
+                       <a class="youtube" href="#">youtube</a>
   </div>
 </div>
     <div id="menu">
