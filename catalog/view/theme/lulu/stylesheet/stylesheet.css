@@ -1009,8 +1009,13 @@ ul.box-filter li.active {
 }
 ul.box-category > li + li,ul.box-filter li + li {
 	border-top: 1px solid #ccc7cd;
+}/*
+ul.box-category  li {
+  border-bottom: 1px solid #ccc7cd;
+    
 }
 
+ul.box-category  li:last-child {border: none}*/
 ul.box-filter > li ul {
     margin: 0 -8px;
     padding-bottom: 10px;
@@ -1035,7 +1040,7 @@ ul.box-category > li a.active + ul {
 	display: block;
 }
 ul.box-category > li ul > li {
-	padding: 5px 5px 0px 10px;
+	margin: 5px 5px 5px 10px;
 }
 ul.box-category > li ul > li > a {
 	text-decoration: none;
@@ -1127,7 +1132,7 @@ ul.box-filter > li ul {
 .manufacturer-list {
 	 border-top: 1px solid #dbdee1;
     float: left;
-    margin-bottom: 20px;    min-height: 150px;
+    margin-bottom: 20px;    height: 200px;overflow: auto;
     padding: 5px;
     width: 15.6%;
 }
@@ -1277,6 +1282,12 @@ ul.box-filter > li ul {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.description .filter > div {
+    height: auto;
+    margin-bottom: 5px;
+    overflow: visible;
+    white-space: normal;
+}
 .filter + .filter{
     min-height:0px;
 }
@@ -1360,7 +1371,7 @@ ul.box-filter > li ul {
 	float: left;
 	display: block;
 	margin-right: 10px;
-	margin-bottom: 5px; opacity: 0.8;
+	margin-bottom: 5px; opacity: 0.6;
 }
 .product-info .image-additional a:hover {opacity: 1;}
 .product-info .description {
@@ -1874,6 +1885,9 @@ body .sbSelector {
 }
 .cart-info tbody .image {
 	text-align: center;
+}
+.cart-info tbody .name {
+    max-width: 210px;
 }
 .cart-info tbody .name, .cart-info tbody .model, .cart-info tbody .quantity {
 	text-align: left;

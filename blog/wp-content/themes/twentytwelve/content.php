@@ -28,7 +28,17 @@
 			<?php endif; // is_single() ?>
 			
 		</header><!-- .entry-header -->
-
+                <?php if ( !is_single() && ! is_paged() ) : ?>
+                <?php 
+                if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                    ?>
+                <a href="<?php the_permalink(); ?>" >
+                <?php    the_post_thumbnail(); ?>
+                </a>
+               <?php   } 
+                ?>
+                <?php endif; ?>
+                
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
